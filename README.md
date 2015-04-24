@@ -13,38 +13,44 @@ To be used with an express Node.js application
 * Framework for easily adding index management commands
 * Entrypoint for any of EEA's Elastic Search Docker applications
 
+### Install
+
+```bash
+npm install eea-searchserver
+```
+
 ## Contents
 
 ### Server
 #### Initial setup
 Start by writing the base configurtion file:
 
-```json
+```js
 {
   "http": {
-    "port": 8080         # Port on which the app will listen, default(3000)
+    "port": 8080         // Port on which the app will listen, default(3000)
   },
-  "elastic": {           # Remote Elastic Endpoint configuration
+  "elastic": {           // Remote Elastic Endpoint configuration
     "host":
-      "my-elastic-host", # Host running an Elastic Server (required)
+      "my-elastic-host", // Host running an Elastic Server (required)
     "path":
-      "/elastic/",       # Path on host to the Elastic Server (default /)
-    "port": 80,          # Port on which Elastic listens (default 9200)
+      "/elastic/",       // Path on host to the Elastic Server (default /)
+    "port": 80,          // Port on which Elastic listens (default 9200)
     "index":
-      "data",            # Index to be queried (required)
+      "data",            // Index to be queried (required)
     "type":
-      "resource"         # Type to be queried (required)
+      "resource"         // Type to be queried (required)
   },
-  "external_templates": { # External template service (optional)
+  "external_templates": { // External template service (optional)
     "local_path":
-      "/path/to/external_templates", # Path to save external templates locally
+      "/path/to/external_templates", // Path to save external templates locally
     "host":
-      "www.eea.europa.eu",           # Host to query for external templates
-    "head_path":                     # Path on host for the page HEAD
+      "www.eea.europa.eu",          // Host to query for external templates
+    "head_path":                    // Path on host for the page HEAD
       "/templates/v2/getRequiredHead?jsdisable=all",
-    "header_path":                   # Path on host for the page HEADER
+    "header_path":                  // Path on host for the page HEADER
       "/templates/v2/getHeader?jsdisable=all",
-    "footer_path":                   # Path on host for the page FOOTER
+    "footer_path":                  // Path on host for the page FOOTER
       "/templates/v2/getFooter"
   }
 }
@@ -110,7 +116,7 @@ or Any POST request with the body an valid Elastic query will be forwarded
 to the Elastic host set up in the ```settings.json``` file.
 
 The queries will be carried out to the index and type configured in
-```settings.json```.
+```settings.json``` .
 
 ```js
 var app = express();
