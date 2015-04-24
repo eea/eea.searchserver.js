@@ -1,0 +1,27 @@
+{
+  "name": "eea-searchserver",
+  "version": "0.0.1",
+  "description": "EEA Node.js Search Server module",
+  "main": "index.js",
+  "dependencies" : {
+    "nconf": "*",    
+    "underscore": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eea/eea.searchserver.js.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "EEA",
+    "Elastic"
+  ],
+  "author": "Mihai Bivol",
+  "license": "GPL-2.0",
+  "readmeFilename": "README.md",
+  "gitHead": "b4cc2b13532732fdff8472ebe0e691f90cd4c895"
+}
