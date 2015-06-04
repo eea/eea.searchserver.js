@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        title EEA database on climate change mitigation policies and measures in Europe &mdash; European Environment AgencyXXX
+
+        != templateRender(headFile)
+        script(type='text/javascript').
+            var field_base="#{field_base}";
+        link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
+        link(rel='stylesheet', href='stylesheets/bootstrap.min.css')
+        link(rel='stylesheet', href='stylesheets/facetview.css')
+        link(rel='stylesheet', href='stylesheets/style.css')
+        link(rel='stylesheet', href='stylesheets/no-more-tables.css')
+
+        link(rel='stylesheet', href='stylesheets/jquery-ui-1.8.18.custom.css')
+
+        script(type='text/javascript', src='javascripts/jquery-1.7.1.min.js')
+        script(type='text/javascript', src='javascripts/bootstrap.min.js')
+        script(type='text/javascript', src='javascripts/jquery.tools.min.js')
+        script(type='text/javascript', src='javascripts/jquery.facetview.js')
+        script(type='text/javascript', src='javascripts/jquery.linkify-1.0-min.js')
+        script(type='text/javascript', src='javascripts/jquery-ui-1.8.18.custom.min.js')
+        script(type='text/javascript', src='javascripts/pam.facetview.js')
+    body
+        != templateRender(headerFile)
+        div(id="visual-portal-wrapper")
+            div(id="portal-columns")
+                div(id="content",class="column-area")
+                    block content
+                    div(class="documentActions")
+                        h5(class="hiddenStructure") Document Actions
+                div(id="right-column", class="right-column-area")
+                    div(class="visualPadding")
+                div(class="visualClear")
+                div(class="visualization-info")
+                    h3 Data sources
+                    a(href="http://www.eea.europa.eu/data-and-maps/data/climate-change-mitigation-policies-and-measures-1") Climate change mitigation policies and measures
+                    span  provided by 
+                    a(href="http://www.eea.europa.eu") European Environment Agency (EEA)
+        != templateRender(footerFile)
