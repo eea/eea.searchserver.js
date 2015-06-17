@@ -4,8 +4,9 @@
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
-    "nconf": "*",    
-    "underscore": "*"
+    "nconf": "*",
+    "underscore": "*",
+    "csv-stringify": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
