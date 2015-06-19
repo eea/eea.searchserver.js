@@ -141,4 +141,14 @@ h4 {
 
 .download_data {
     display: none;
+    float:right;
+    height:20px;
+}
+
+.eea_download_btn,
+.eea_download_btn:hover,
+.eea_download_btn:visited{
+    border:1px solid #ddd;
+    padding:7px !important;
+    color:black !important;
 }
