@@ -1,0 +1,261 @@
+#portal-searchbox form {
+    margin: 0;
+}
+
+#portal-searchbox form input {
+    width: 286px;
+}
+
+.notify_loading {
+    margin-top: -30px;
+    width: 100%;
+    min-height: 30px;
+    background: url(http://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center top;
+}
+
+.facetview_freetext {
+    height: 24px;
+    font-size: 18px;
+    margin-top: 26px;
+    padding: 4px;
+}
+
+.content .page-header {
+    background-color: transparent;
+    display: inline;
+    border-bottom-color: #fff;
+}
+
+.page-header h1 {
+    border-bottom-color: #fff;
+}
+
+#facetview_filters > h2 {
+    font-size: 120%;
+}
+
+.facetview_selection {
+    width: 100%;
+    float:left;
+}
+
+.facetview_selected .rel-between {
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: none;
+}
+
+.facetview_selected .facetview_clear {
+    padding: 1px;
+    background: none;
+    background-color: #f0f0f0;
+    border-color: #ccc;
+}
+
+.facet-rel-between .facet_operator, .facet_operator:hover {
+    cursor: auto;
+    width: 100%;
+    background: none;
+    background-color: #e6e6e6;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display:none;
+}
+
+.facetview_filterselected .eea-icon {
+    color: #aaa;
+    text-shadow: none;
+}
+
+.facetview_top .order-by {
+    margin-left: 0px;
+    float: right;
+}
+
+.top-pagination .facetview_metadata .pagination, .facetview_top .top-pagination  {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.facetview_metadata .pagination, .facetview_metadata .pagination .next {
+    padding: 0px;
+    margin : 0px;
+}
+
+.facetview_metadata .pagination .active a:hover, .facetview_metadata .pagination .active a{
+    color: #999999;
+    cursor: default;
+    padding: 0px;
+    margin: 0px;
+}
+
+.facet-share {
+    float:right;
+}
+
+
+
+
+
+/* stupid style fixes */
+.eea-icon:before { margin: auto; }
+.jstree-default a.jstree-anchor { white-space: nowrap; }
+
+/* tile clearing */
+.facetview_top:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.facetview_top .top-pagination,
+.facetview_top .order-by {
+    width: auto;
+    line-height: 26px;
+}
+
+/* tile */
+.eea-tileInner img {
+    padding-top: 0;
+}
+.eea-tileInner .eea-titleTile {
+    line-height: 1;
+    padding-bottom: 0;
+    font-size: 100%;
+}
+
+.eea-titleTile:before {
+    content:'';
+    width:100%;
+    height:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(transparent 50%, white);
+}
+
+/* pagination */
+.pagination {
+    height: auto;
+}
+/*.pagination li, */
+.facetview_metadata .pagination .prev,
+.facetview_metadata .pagination .next {
+    min-width: 0;
+}
+.pagination a {
+    float: none;
+}
+
+.pagination li {
+    float: none !important;
+}
+
+.pagination ul {
+    box-shadow: none !important;
+}
+
+/* filter group */
+.eea-accordion-panels .eea-accordion-panel > h2 {
+    background-color: #fff;
+    border-bottom: none;
+    border-left-style: none;
+    border-right-style: none;
+    font-size: 100%;
+}
+.eea-accordion-panel .facetview_open .eea-icon:before {
+    content: "\f078";
+}
+.eea-accordion-panel .facetview_open:hover .eea-icon:before {
+    content: "\f053";
+}
+
+/* filter group container */
+.facetview_tree {
+    margin: -1px;
+    border-color: #DDD!important;
+    box-shadow: inset 0 2px 3px -1px rgba(0,0,0,.1);
+}
+
+/* filter group sort */
+.facetview_filter_options {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.facetview_filter_options > * {
+    display: inline-block;
+    border: 1px solid;
+    border-color: #ccc;
+    border-radius: 4px;
+}
+
+.facetview_filter_options span,
+.facetview_filter_options .btn {
+    border: 0 !important;
+    color: #000 !important;
+    background-image: none;
+    float: none;
+    text-shadow: none;
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 10px 2px 4px !important;
+    box-shadow: none;
+    vertical-align: middle !important;
+    line-height: 16px;
+}
+
+.facetview_filter_options span {
+    margin: 0;
+    background-color: #f0f0f0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.facetview_filter_options .btn {
+    background-color: #fff;
+    font-weight: bold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.facetview_filter_options i {
+    margin-top: auto;
+    vertical-align: -3px;
+}
+
+
+/* current filters */
+.filters-header,
+.facetview-filter-values {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.facetview_selection {
+    margin-bottom: 3px;
+}
+.facetview_selection .facetview_filterselected {
+    float: none;
+    margin-right: 3px;
+    padding: 0;
+    vertical-align: baseline;
+}
+.facetview_selection i {
+    width: 17px;
+    background-image: none !important;
+}
+.clear-all {
+    float:right;
+}
+
+/* overall alignment */
+.facet-view-simple h1,
+.facet-view-simple h2 {
+    margin-top: auto;
+}
