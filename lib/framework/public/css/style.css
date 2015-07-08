@@ -298,8 +298,7 @@ div.content h1 {
   line-height: 1.4;
 }
 
-#content h2,
-div.content h2 {
+#content h2 {
   font-size: 110%;
   margin: 0.83em 0;
   color: #2d749c;
@@ -316,14 +315,30 @@ div.container {
     max-width:1024px;
 }
 
-.facetview_search_options_container.span12 {
-    display:none;
-}
-
 div#right-column {
     display:none;
 }
 
 div#footer-wrapper {
     margin-top:0;
+}
+
+.eea-icon-share-alt {
+    cursor: pointer;
+}
+
+.download_data {
+    display: none;
+    float:right;
+    height:20px;
+    position:relative;
+    left:1px;
+}
+
+.eea_download_btn,
+.eea_download_btn:hover,
+.eea_download_btn:visited{
+    border:1px solid #ddd;
+    padding:7px !important;
+    color:black !important;
 }
