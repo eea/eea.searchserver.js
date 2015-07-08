@@ -259,3 +259,71 @@
 .facet-view-simple h2 {
     margin-top: auto;
 }
+
+.item_detail_table {
+  width: 98%;
+}
+
+.item_detail_table th{
+    text-align: left;
+}
+
+div#facetview_rightcol {
+    width: 69%;
+}
+
+input.facetview_freetext.span9 {
+    width: 100%;
+}
+
+div.content {
+    margin:0!important;
+    padding:10px;
+    -webkit-border-radius: 0 0 0 0;
+        -moz-border-radius: 0 0 0 0;
+            border-radius: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 rgba(0,0,0, 0);
+        -moz-box-shadow: 0 0 0 rgba(0,0,0, 0);
+            box-shadow: 0 0 0 rgba(0,0,0, 0);
+}
+
+#content h1,
+div.content h1 {
+  color: #00446a;
+  font-size: 130%;
+  margin: 0.67em 0;
+  border-bottom: 1px solid #e9efcd;
+  padding-bottom: 0.25em;
+  padding-right: 4em;
+  line-height: 1.4;
+}
+
+#content h2,
+div.content h2 {
+  font-size: 110%;
+  margin: 0.83em 0;
+  color: #2d749c;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+table#facetview_results {
+    display:block;
+    overflow-x:auto;
+}
+
+div.container {
+    max-width:1024px;
+}
+
+.facetview_search_options_container.span12 {
+    display:none;
+}
+
+div#right-column {
+    display:none;
+}
+
+div#footer-wrapper {
+    margin-top:0;
+}
