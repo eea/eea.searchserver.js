@@ -104,3 +104,45 @@
 .btn-group{
     margin-left: 0px !important;
 }
+
+.facetview_geocontainer input {
+  margin: 0 0 10px 0;
+  background: #ecf4ff;
+  height: 24px;
+  width: 150px;
+}
+
+.facetview_geocontainer span {
+  float: left;
+  width: 75px;
+  color: rgb(45, 116, 156);
+}
+
+.facetview_geocontainer ul{
+    background:none;
+    border:none;
+    margin:0 !important;
+}
+
+li.ui-state-default.ui-corner-top.ui-tabs-active.ui-state-active {
+    background-color:white !important;
+}
+
+.facetview_geocontainer li{
+    background:none !important;
+}
+
+li.ui-state-default.ui-corner-top.ui-state-hover {
+    background-color:#e6e6e6 !important;
+
+}
+
+li.ui-state-default.ui-corner-top {
+
+    background-color: #ddd !important;
+}
+
+.facetview_geocontainer a.geo-facet-type{
+    color: rgb(45, 116, 156) !important;
+    font-weight: bold;
+}
