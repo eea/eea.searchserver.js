@@ -264,7 +264,7 @@
   width: 98%;
 }
 
-.item_detail_table th{
+#content .item_detail_table th{
     text-align: left;
 }
 
