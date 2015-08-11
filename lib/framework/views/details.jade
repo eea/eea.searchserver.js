@@ -1,0 +1,24 @@
+mixin tr_th_td(item, link_item)
+    if(item && item.value)
+        tr
+            th= item.label
+            if(item.link)
+                td
+                    +ext_link(item)
+            else
+                td
+                    span(class="simple-value")= item.value
+
+mixin ext_link(item)
+    a(href= "http://cr.eionet.europa.eu/factsheet.action?uri=" +item.link  title="go to source details" class="detail_extlink")= item.value
+
+mixin detail_tables(section, data)
+    each section in sections
+        if (section.title)
+            h2= section.title
+        table(class="item_detail_table datatable")
+            colgroup
+                col(style="width: 25%")
+                col(style="width: 75%")
+            each field in section.fields
+                +tr_th_td(data[field.name])
