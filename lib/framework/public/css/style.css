@@ -268,6 +268,10 @@
     text-align: left;
 }
 
+.content .item_detail_table th{
+    text-align: left;
+}
+
 div#facetview_rightcol {
     width: 69%;
 }
@@ -345,3 +349,15 @@ div#footer-wrapper {
     padding:7px !important;
     color:black !important;
 }
+@media (max-width: 768px){
+    .row-fluid .span9,
+    div#facetview_rightcol{ width: 60%; }
+    .row-fluid .span3{ width: 35%; }
+    div.content{ padding-top: 65px; }
+}
+@media (max-width: 500px){
+    .row-fluid .span9,
+    div#facetview_rightcol{ width: 100%; margin-left: 0px; }
+    .row-fluid .span3{ width: 100%; }
+}
+

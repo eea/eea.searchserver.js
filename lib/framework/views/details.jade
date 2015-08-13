@@ -14,11 +14,12 @@ mixin ext_link(item, href_base)
 
 mixin detail_tables(section, data, href_base)
     each section in sections
-        if (section.title)
-            h2= section.title
-        table(class="item_detail_table datatable")
-            colgroup
-                col(style="width: 25%")
-                col(style="width: 75%")
-            each field in section.fields
-                +tr_th_td(data[field.name], href_base)
+        div(class=section.name+"_container")
+            if (section.title)
+                h2= section.title
+            table(class="item_detail_table datatable")
+                colgroup
+                    col(style="width: 25%")
+                    col(style="width: 75%")
+                each field in section.fields
+                    +tr_th_td(data[field.name], href_base)
