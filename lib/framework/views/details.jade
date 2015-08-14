@@ -1,6 +1,6 @@
-mixin tr_th_td(item, href_base)
+mixin tr_th_td(item, href_base, field_name, show_missing)
     if(item && item.value)
-        tr
+        tr(class=field_name)
             th= item.label
             if(item.link)
                 td
@@ -8,11 +8,16 @@ mixin tr_th_td(item, href_base)
             else
                 td
                     span(class="simple-value")= item.value
+    else
+        if(show_missing)
+            tr(class=field_name)
+                th= item.label
+                td
 
 mixin ext_link(item, href_base)
     a(href= href_base + item.link  title="go to source details" class="detail_extlink")= item.value
 
-mixin detail_tables(section, data, href_base)
+mixin detail_tables(section, data, href_base, show_missing)
     each section in sections
         div(class=section.name+"_container")
             if (section.title)
@@ -22,4 +27,4 @@ mixin detail_tables(section, data, href_base)
                     col(style="width: 25%")
                     col(style="width: 75%")
                 each field in section.fields
-                    +tr_th_td(data[field.name], href_base)
+                    +tr_th_td(data[field.name], href_base, field.name, show_missing)
