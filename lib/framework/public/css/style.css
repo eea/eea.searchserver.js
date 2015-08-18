@@ -371,3 +371,6 @@ div#footer-wrapper {
     .row-fluid .span3{ width: 100%;}
 }
 
+@media (min-width:768px) and (max-width:979px) {
+    .row-fluid .span3{ width: 190px !important;}
+}
