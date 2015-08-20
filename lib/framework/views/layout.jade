@@ -6,6 +6,8 @@ html
         script(type='text/javascript').
             var field_base="#{field_base}";
 
+        script
+            != mapping
 
         link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
         script(type="text/javascript", src="facetview/vendor/dist/libs/jquery.js")
@@ -17,9 +19,9 @@ html
         script(type="text/javascript" src="facetview/jquery.facetview.js")
         script(type="text/javascript" src="facetview/facetviewhelpers.js")
         block extrajavascripts
+
         script(type='text/javascript', src='facetview/vendor/jquery-tools-1.2.7/jquery.tools.min.js')
         script(type="text/javascript" src="javascripts/main.js")
-
         link(rel="stylesheet", href="facetview/vendor/jquery-ui-1.11.4.custom/jquery-ui.css")
         link(rel="stylesheet", href="facetview/vendor/bootstrap/css/bootstrap.min.css")
         link(rel="stylesheet", href="facetview/vendor/dist/themes/default/style.min.css")
