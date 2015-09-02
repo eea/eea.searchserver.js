@@ -4,6 +4,7 @@
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
+    "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
     "csv-stringify": "*"
