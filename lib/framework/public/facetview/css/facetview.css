@@ -146,3 +146,12 @@ li.ui-state-default.ui-corner-top {
     color: rgb(45, 116, 156) !important;
     font-weight: bold;
 }
+
+.facetview_showtree_eealabel{
+    width:85%;
+    height:35px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float:left;
+}
