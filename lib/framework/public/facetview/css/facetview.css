@@ -148,10 +148,20 @@ li.ui-state-default.ui-corner-top {
 }
 
 .facetview_showtree_eealabel{
-    width:85%;
-    height:35px;
-    overflow:hidden;
+    width: 85%;
+    height: 35px;
+    overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    float:left;
+    float: left;
+}
+
+#facetview_results th {
+    display: table-cell;
+    vertical-align: top;
+}
+
+#facetview_results th div {
+    height: 48px;
+    overflow: hidden;
 }
