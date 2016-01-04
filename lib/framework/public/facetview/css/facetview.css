@@ -76,10 +76,9 @@
 }
 
 .facetview_tree {
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     width: 100%;
-    resize: vertical;
 }
 
 .jstree-default a.jstree-anchor {
@@ -164,4 +163,15 @@ li.ui-state-default.ui-corner-top {
 #facetview_results th div {
     height: 48px;
     overflow: hidden;
+}
+
+.facetview_tree.jstree .ui-resizable-handle.ui-resizable-s{
+    background-color: #efefef;
+    height: 9px;
+}
+.facetview_tree.jstree .ui-resizable-handle.ui-resizable-s .ui-icon-grip-solid-horizontal{
+    margin: 0 auto;
+    position: relative;
+    top: -6px;
+    z-index: 91;
 }
