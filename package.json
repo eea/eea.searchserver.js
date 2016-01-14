@@ -9,7 +9,8 @@
     "underscore": "*",
     "csv-stringify": "*",
     "request": "*",
-    "sync-request": "*"
+    "sync-request": "*",
+    "wait-for-port": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
