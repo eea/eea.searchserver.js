@@ -316,7 +316,11 @@ table#facetview_results {
 }
 
 div.container {
-    max-width:1024px;
+    width: 100%;
+}
+div#facetview_rightcol {
+    width: 79%;
+    margin-right: 1%;
 }
 
 div#right-column {
@@ -352,6 +356,7 @@ div#footer-wrapper {
 
 .row-fluid .span3 {
     float:right;
+    width: 20%;
 }
 
 .row-fluid .span9 {
@@ -359,18 +364,42 @@ div#footer-wrapper {
     margin-right:10px;
 }
 
+.eea-icon.eea-icon-right {
+    margin-left: 0em;
+}
+
+div#portal-header{ 
+    max-width: 100% !important;
+    width: 100%;
+    padding-right: 20px;
+}
+
+#portal-globalnav {
+    max-width: 100% !important;
+}
+#portaltab-europe{
+    position: absolute;
+    right: 20px;
+}
+
+div#portal-searchbox{
+    margin-right: 0px;    
+}
+
 @media (max-width: 768px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 60%; margin-right:0px;}
     .row-fluid .span3{ width: 35%;}
     div.content{ padding-top: 65px; }
+    div.container { max-width: 1024px; }
 }
 @media (max-width: 500px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
     .row-fluid .span3{ width: 100%;}
 }
-
+/*
 @media (min-width:768px) and (max-width:979px) {
     .row-fluid .span3{ width: 190px !important;}
 }
+*/
