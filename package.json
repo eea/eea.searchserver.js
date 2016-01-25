@@ -1,6 +1,6 @@
 {
   "name": "eea-searchserver",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
