@@ -10,7 +10,8 @@
     "csv-stringify": "*",
     "request": "*",
     "sync-request": "*",
-    "wait-for-port": "*"
+    "wait-for-port": "*",
+    "getenv": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
