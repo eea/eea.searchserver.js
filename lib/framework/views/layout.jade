@@ -34,12 +34,14 @@ html
 
     body
         != templateRender(headerFile)
-        div(class="container")
-            div(class="content" id="content")
-                block content
-                div(class="documentActions")
-                    h5(class="hiddenStructure") Document Actions
-            div(id="right-column", class="right-column-area")
-                div(class="visualPadding")
-            div(class="visualClear")
+        div(id="portal-columns")
+            div(class="container")
+                div(class="content" id="content")
+                    block content
+                    div(class="documentActions")
+                        h5(class="hiddenStructure") Document Actions
+                div(id="right-column", class="right-column-area")
+                    div(class="visualPadding")
+                div(class="visualClear")
+
     != templateRender(footerFile)

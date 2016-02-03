@@ -30,10 +30,6 @@
     border-bottom-color: #fff;
 }
 
-#facetview_filters > h2 {
-    font-size: 120%;
-}
-
 .facetview_selection {
     width: 100%;
     float:left;
@@ -160,13 +156,17 @@
 }
 
 /* filter group */
-.eea-accordion-panels .eea-accordion-panel > h2 {
+#content .eea-accordion-panels .eea-accordion-panel > h2 {
     background-color: #fff;
+    color: #00446A;
     border-bottom: none;
     border-left-style: none;
     border-right-style: none;
     font-size: 100%;
+    margin: 0;
+    line-height: 3em;
 }
+
 .eea-accordion-panel .facetview_open .eea-icon:before {
     content: "\f078";
 }
@@ -308,6 +308,11 @@ div.content h1 {
   color: #2d749c;
   font-weight: bold;
   line-height: 1.3;
+}
+
+#facetview_filters h2 {
+    font-size: 120%;
+    color: #00446A;
 }
 
 table#facetview_results {
