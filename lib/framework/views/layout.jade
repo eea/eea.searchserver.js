@@ -20,7 +20,6 @@ html
         script(type="text/javascript" src="facetview/facetviewhelpers.js")
         block extrajavascripts
 
-        script(type='text/javascript', src='facetview/vendor/jquery-tools-1.2.7/jquery.tools.min.js')
         script(type="text/javascript" src="javascripts/main.js")
         link(rel="stylesheet", href="facetview/vendor/jquery-ui-1.11.4.custom/jquery-ui.css")
         link(rel="stylesheet", href="facetview/vendor/bootstrap/css/bootstrap.min.css")
@@ -36,7 +35,7 @@ html
     body
         != templateRender(headerFile)
         div(class="container")
-            div(class="content")
+            div(class="content" id="content")
                 block content
                 div(class="documentActions")
                     h5(class="hiddenStructure") Document Actions
