@@ -13,3 +13,10 @@ mixin portal_breadcrumbs(parent_title, current_title)
             if current_title
                 span(id="breadcrumbs-2")
                     span(class="breadcrumbs-current")= current_title
+
+mixin visualization_info(href, title)
+    div(class="visualization-info")
+        h3 Data sources
+        a(href=href)= title
+        span  provided by
+        a(href="http://www.eea.europa.eu") European Environment Agency (EEA)
