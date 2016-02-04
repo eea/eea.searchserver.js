@@ -76,8 +76,10 @@
 }
 
 .facetview_tree {
+/*    
     overflow-y: auto;
     overflow-x: hidden;
+*/
     width: 100%;
 }
 
@@ -174,4 +176,10 @@ li.ui-state-default.ui-corner-top {
     position: relative;
     top: -6px;
     z-index: 91;
+}
+.facetview_tree.jstree .facetview_tree_container{
+    position : relative;
+    height:100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
