@@ -5,7 +5,11 @@ mixin portal_breadcrumbs(parent_title, current_title)
                 a(href="http://www.eea.europa.eu/") Home
                 span(class="breadcrumbSeparator")  /
             span(id="breadcrumbs-1")
-                a(href="./")= parent_title
-                span(class="breadcrumbSeparator")  /
-            span(id="breadcrumbs-2")
-                span(class="breadcrumbs-current")= current_title
+                if current_title
+                    a(href="./")= parent_title
+                    span(class="breadcrumbSeparator")  /
+                else
+                    span(class="breadcrumbs-current")= parent_title
+            if current_title
+                span(id="breadcrumbs-2")
+                    span(class="breadcrumbs-current")= current_title
