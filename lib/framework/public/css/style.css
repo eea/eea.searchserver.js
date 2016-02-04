@@ -149,6 +149,7 @@
 
 .pagination li {
     float: none !important;
+    display: inline-block !important;
 }
 
 .pagination ul {
