@@ -28,3 +28,15 @@ mixin detail_tables(section, data, href_base, show_missing)
                     col(style="width: 75%")
                 each field in section.fields
                     +tr_th_td(data[field.name], href_base, field.name, show_missing)
+
+mixin portal_breadcrumbs(parent_title, current_title)
+        div(id="portal-breadcrumbs")
+            span(id="breadcrumbs-you-are-here") You are here:
+            span(id="breadcrumbs-home")
+                a(href="http://www.eea.europa.eu/") Home
+                span(class="breadcrumbSeparator")  /
+            span(id="breadcrumbs-1")
+                a(href="./") parent_title
+                span(class="breadcrumbSeparator")  /
+            span(id="breadcrumbs-2")
+                span(class="breadcrumbs-current")= current_title
