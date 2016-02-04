@@ -20,3 +20,9 @@ mixin visualization_info(href, title)
         a(href=href)= title
         span  provided by
         a(href="http://www.eea.europa.eu") European Environment Agency (EEA)
+
+mixin app_error(title, app_id)
+    div(class = "portalMessage errorMessage")
+        span= "PAM with ID: "
+        b= pamid
+        span= " does not exist"
