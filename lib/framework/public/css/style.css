@@ -103,6 +103,10 @@
 #content .jstree-container-ul {
     margin-left: 0;
 }
+.jstree-default .jstree-container-ul .jstree-node {
+    margin-left: 0;
+    margin-right: 0;
+}
 .jstree-default a.jstree-anchor { white-space: nowrap; }
 
 /* tile clearing */
