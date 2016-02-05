@@ -100,6 +100,9 @@
 
 /* stupid style fixes */
 .eea-icon:before { margin: auto; }
+#content .jstree-container-ul {
+    margin-left: 0;
+}
 .jstree-default a.jstree-anchor { white-space: nowrap; }
 
 /* tile clearing */
@@ -178,7 +181,7 @@
 /* filter group container */
 .facetview_tree {
     margin: -1px;
-    border-color: #DDD!important;
+    border-color: #DDD !important;
     box-shadow: inset 0 2px 3px -1px rgba(0,0,0,.1);
 }
 
@@ -231,6 +234,9 @@
     vertical-align: -3px;
 }
 
+#content .facetview_geocontainer a.geo-facet-type:link {
+    color: rgb(45, 116, 156) !important;
+}
 
 /* current filters */
 .filters-header,
@@ -349,16 +355,22 @@ div#footer-wrapper {
 }
 
 .download_data div {
-    float:right
+    float:right;
 }
 
 .eea_download_btn,
 .eea_download_btn:hover,
 .eea_download_btn:visited{
-    border:1px solid #ddd;
+    border:1px solid #ddd !important;
     padding:7px !important;
     color:black !important;
 }
+
+/* bootstrap fixes */
+.table-bordered {
+    border-collapse: separate !important;
+}
+
 
 .row-fluid .span3 {
     float:right;
