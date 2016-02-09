@@ -30,10 +30,6 @@
     border-bottom-color: #fff;
 }
 
-#facetview_filters > h2 {
-    font-size: 120%;
-}
-
 .facetview_selection {
     width: 100%;
     float:left;
@@ -104,6 +100,13 @@
 
 /* stupid style fixes */
 .eea-icon:before { margin: auto; }
+#content .jstree-container-ul {
+    margin-left: 0;
+}
+.jstree-default .jstree-container-ul .jstree-node {
+    margin-left: 0;
+    margin-right: 0;
+}
 .jstree-default a.jstree-anchor { white-space: nowrap; }
 
 /* tile clearing */
@@ -153,6 +156,7 @@
 
 .pagination li {
     float: none !important;
+    display: inline-block !important;
 }
 
 .pagination ul {
@@ -160,13 +164,17 @@
 }
 
 /* filter group */
-.eea-accordion-panels .eea-accordion-panel > h2 {
+#content .eea-accordion-panels .eea-accordion-panel > h2 {
     background-color: #fff;
+    color: #00446A;
     border-bottom: none;
     border-left-style: none;
     border-right-style: none;
     font-size: 100%;
+    margin: 0;
+    line-height: 3em;
 }
+
 .eea-accordion-panel .facetview_open .eea-icon:before {
     content: "\f078";
 }
@@ -177,7 +185,7 @@
 /* filter group container */
 .facetview_tree {
     margin: -1px;
-    border-color: #DDD!important;
+    border-color: #DDD !important;
     box-shadow: inset 0 2px 3px -1px rgba(0,0,0,.1);
 }
 
@@ -230,6 +238,9 @@
     vertical-align: -3px;
 }
 
+#content .facetview_geocontainer a.geo-facet-type:link {
+    color: rgb(45, 116, 156) !important;
+}
 
 /* current filters */
 .filters-header,
@@ -310,6 +321,11 @@ div.content h1 {
   line-height: 1.3;
 }
 
+#facetview_filters h2 {
+    font-size: 120%;
+    color: #00446A;
+}
+
 table#facetview_results {
     display:block;
     overflow-x:auto;
@@ -343,16 +359,22 @@ div#footer-wrapper {
 }
 
 .download_data div {
-    float:right
+    float:right;
 }
 
 .eea_download_btn,
 .eea_download_btn:hover,
 .eea_download_btn:visited{
-    border:1px solid #ddd;
+    border:1px solid #ddd !important;
     padding:7px !important;
     color:black !important;
 }
+
+/* bootstrap fixes */
+.table-bordered {
+    border-collapse: separate !important;
+}
+
 
 .row-fluid .span3 {
     float:right;

@@ -1,3 +1,5 @@
+include ./mixins.jade
+
 mixin tr_th_td(item, href_base, field_name, show_missing)
     if(item && item.value)
         tr(class=field_name)
@@ -28,3 +30,4 @@ mixin detail_tables(section, data, href_base, show_missing)
                     col(style="width: 75%")
                 each field in section.fields
                     +tr_th_td(data[field.name], href_base, field.name, show_missing)
+
