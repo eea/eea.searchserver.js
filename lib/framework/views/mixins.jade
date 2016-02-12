@@ -23,6 +23,6 @@ mixin visualization_info(href, title)
 
 mixin app_error(title, app_id)
     div(class = "portalMessage errorMessage")
-        span= "PAM with ID: "
+        span= title
         b= app_id
         span= " does not exist"
