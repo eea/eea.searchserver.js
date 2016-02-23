@@ -398,11 +398,9 @@ div#portal-header{
 
 #portal-globalnav {
     max-width: 100% !important;
+    padding-right: 1em !important;
 }
-#portaltab-europe{
-    position: absolute;
-    right: 20px;
-}
+
 
 div#portal-searchbox{
     margin-right: 0px;    
