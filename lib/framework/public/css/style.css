@@ -390,7 +390,7 @@ div#footer-wrapper {
     margin-left: 0em;
 }
 
-div#portal-header{ 
+div#portal-header{
     max-width: 100% !important;
     width: 100%;
     padding-right: 20px;
@@ -405,7 +405,12 @@ div#portal-header{
 }
 
 div#portal-searchbox{
-    margin-right: 0px;    
+    margin-right: 0px;
+}
+
+#secondary-portaltabs li#portaltab-media a,
+#secondary-portaltabs li#portaltab-abouteea a{
+    text-indent: -999em; display: block;
 }
 
 @media (max-width: 768px){
