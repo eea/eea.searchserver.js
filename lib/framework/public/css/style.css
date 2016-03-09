@@ -408,11 +408,6 @@ div#portal-searchbox{
     margin-right: 0px;
 }
 
-#secondary-portaltabs li#portaltab-media a,
-#secondary-portaltabs li#portaltab-abouteea a{
-    text-indent: -999em; display: block;
-}
-
 @media (max-width: 768px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 60%; margin-right:0px;}
