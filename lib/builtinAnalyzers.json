@@ -1,0 +1,15 @@
+{
+    "none" : {
+      "type" : "keyword"
+    },
+    "coma" : {
+      "type" : "pattern",
+      "lowercase" : false,
+      "pattern" : ", "
+    },
+    "semicolon" : {
+      "type" : "pattern",
+      "lowercase" : false,
+      "pattern" : "; "
+    }
+}

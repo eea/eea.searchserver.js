@@ -390,7 +390,7 @@ div#footer-wrapper {
     margin-left: 0em;
 }
 
-div#portal-header{ 
+div#portal-header{
     max-width: 100% !important;
     width: 100%;
     padding-right: 20px;
@@ -401,9 +401,8 @@ div#portal-header{
     padding-right: 1em !important;
 }
 
-
 div#portal-searchbox{
-    margin-right: 0px;    
+    margin-right: 0px;
 }
 
 @media (max-width: 768px){
