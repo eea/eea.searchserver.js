@@ -11,7 +11,8 @@
     "request": "*",
     "sync-request": "*",
     "wait-for-port": "*",
-    "getenv": "*"
+    "getenv": "*",
+    "dateformat": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

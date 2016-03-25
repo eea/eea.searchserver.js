@@ -405,6 +405,10 @@ div#portal-searchbox{
     margin-right: 0px;
 }
 
+div.visualization-date {
+    margin:15px 0;
+}
+
 @media (max-width: 768px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 60%; margin-right:0px;}
