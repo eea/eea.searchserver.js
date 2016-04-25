@@ -14,10 +14,10 @@
 }
 
 .facetview_freetext {
-    height: 24px;
+    height: 100%;
     font-size: 18px;
     margin-top: 26px;
-    padding: 4px;
+    padding: 5px 5px 5px 10px;
 }
 
 .content .page-header {
