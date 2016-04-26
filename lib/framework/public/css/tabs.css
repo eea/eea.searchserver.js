@@ -1,0 +1,177 @@
+/* folder_tabs_view and folder_accordion_view styling
+ * as well as generic tabs and accordion styling */
+.eea-tabs {
+    padding: 0 10px 0 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: normal!important;
+    list-style: none none;
+    /*background-color: #006699;*/
+    border-bottom: 1px solid #ddd;
+}
+
+.eea-tabs {
+    position: relative;
+}
+
+#topic-selector {
+    position: absolute;
+    margin-top: 2em;
+    left: 0;
+    margin-left: 8em;
+}
+
+.eea-tabs > li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.eea-tabs > li > a {
+    display: block;
+    color: #777;
+    /*text-shadow: 1px 1px 1px #000000;*/
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 8px 8px;
+}
+
+.eea-tabs.two-rows > li > a {
+    height: 40px;
+    white-space: normal;
+    max-width: 195px;
+}
+
+.eea-tabs > li > a:hover {
+    color: #006699;
+    text-decoration: none;
+    /*text-shadow: 1px 1px 1px #FFFFFF;*/
+    /*background-color: #f3f3f3;*/
+}
+
+.eea-tabs > li > .current,
+.eea-tabs > li > .current:hover {
+    cursor: default;
+    color: #006699;
+    text-decoration: none;
+    border-bottom: 2px solid #006699;
+    /*text-shadow: 1px 1px 1px #FFFFFF;*/
+    /*background-color: #f3f3f3;*/
+    position: relative;
+}
+
+.eea-tabs > li > .current::after {
+    content: '';
+    position: absolute;
+    top: 99%;
+    left: 50%;
+    display: block;
+    margin-left: -5px;
+    border: 5px solid transparent;
+    margin-top: 2px;
+    border-top-color: #006699;
+}
+
+
+/* Clear floated elements */
+.eea-tabs:before,
+.eea-tabs:after {
+    display: table;
+    content: " ";
+}
+
+.eea-tabs:after {
+    clear: both;
+}
+
+.eea-tabs-panel {
+    padding: 20px;
+    /*background-color: #f3f3f3;*/
+    overflow: auto;
+}
+
+.eea-tabs-panel .listingBar {
+    margin: 0 0 1em 0;
+    padding: 0 1em;
+}
+
+.eea-tabs-panel .portalMessage {
+    margin-top: 0;
+    position: relative;
+    top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.eea-tabs-panels {
+    border: 1px solid #DDD;
+    border-top: 0;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+.eea-accordion-panels {
+    border: 1px solid #DDD;
+    border-top: 0;
+    padding: 10px;
+}
+
+/* TODO fix padding differences */
+#relatedItems .eea-tabs-panels {
+    padding: 1px;
+}
+
+/* eea accordion styles */
+.eea-accordion-panels {
+    padding: 0;
+}
+
+.eea-accordion-panel .pane {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.eea-accordion-title, .eea-accordion-panel > h2 {
+    background: #E2E2E2 none;
+    border: 1px solid #E0E0E0;
+    margin: 0;
+    font-size: 115%;
+    color: #00446A;
+    line-height: 3em;
+    padding: 0 0.5em;
+    font-weight: bold;
+}
+
+.eea-accordion-title-manual-icons {
+    text-shadow: none;
+    padding: 0 1em;
+    margin: 2px 0 0 0;
+    /* #19875; 2px is needed because of a visual bug where the floated icons are not moved to the margin */
+    line-height: 3em;
+    cursor: pointer;
+}
+
+.eea-accordion-panel > h2 .eea-icon-right:before,
+.eea-accordion-title > .eea-icon-right:before {
+    content: "\f053";
+}
+
+.eea-accordion-panel h2:hover > .eea-icon-right:before,
+.eea-accordion-panel .current > .eea-icon-right:before {
+    content: "\f078";
+}
+
+.eea-accordion-title:hover, .eea-accordion-panel > h2:hover {
+    cursor: pointer;
+    background-color: #F0F0F0;
+}
+
+.eea-accordion-title.current,
+.eea-accordion-panel > h2.current {
+    background-color: #F0F0F0;
+}
+
+.eea-accordion-title a,
+.eea-accordion-panel > h2 a {
+    color: #00446A !important;
+}
