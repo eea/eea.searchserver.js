@@ -20,7 +20,7 @@
     margin-left: 8em;
 }
 
-.eea-tabs > li {
+#content .eea-tabs > li {
     float: left;
     margin: 0;
     padding: 0;
@@ -81,6 +81,11 @@
 .eea-tabs-panel {
     padding: 20px;
     overflow: auto;
+}
+
+#content .eea-tabs-panels,
+#content .eea-tabs-panel {
+    background-color: transparent;
 }
 
 .eea-tabs-panel .listingBar {
