@@ -1,12 +1,11 @@
 /* folder_tabs_view and folder_accordion_view styling
  * as well as generic tabs and accordion styling */
-.eea-tabs {
+#content .eea-tabs {
     padding: 0 10px 0 0;
     margin: 0;
     font-size: 12px;
     line-height: normal!important;
     list-style: none none;
-    /*background-color: #006699;*/
     border-bottom: 1px solid #ddd;
 }
 
@@ -27,10 +26,9 @@
     padding: 0;
 }
 
-.eea-tabs > li > a {
+#content .eea-tabs > li > a {
     display: block;
     color: #777;
-    /*text-shadow: 1px 1px 1px #000000;*/
     text-decoration: none;
     white-space: nowrap;
     padding: 8px 8px;
@@ -45,18 +43,14 @@
 .eea-tabs > li > a:hover {
     color: #006699;
     text-decoration: none;
-    /*text-shadow: 1px 1px 1px #FFFFFF;*/
-    /*background-color: #f3f3f3;*/
 }
 
-.eea-tabs > li > .current,
-.eea-tabs > li > .current:hover {
+#content .eea-tabs > li > .current,
+#content .eea-tabs > li > .current:hover {
     cursor: default;
     color: #006699;
     text-decoration: none;
     border-bottom: 2px solid #006699;
-    /*text-shadow: 1px 1px 1px #FFFFFF;*/
-    /*background-color: #f3f3f3;*/
     position: relative;
 }
 
@@ -86,7 +80,6 @@
 
 .eea-tabs-panel {
     padding: 20px;
-    /*background-color: #f3f3f3;*/
     overflow: auto;
 }
 
@@ -106,7 +99,6 @@
 .eea-tabs-panels {
     border: 1px solid #DDD;
     border-top: 0;
-    background-color: #f3f3f3;
     padding: 10px;
 }
 
