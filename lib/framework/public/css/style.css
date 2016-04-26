@@ -13,6 +13,9 @@
     background: url(http://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center top;
 }
 
+.facetview_top {
+    margin-top: 1em;
+}
 .facetview_freetext {
     height: 100%;
     font-size: 18px;
@@ -90,15 +93,11 @@
     margin: 0px;
 }
 
-.facet-share {
-    float:right;
-}
-
-
-
-
-
 /* stupid style fixes */
+
+#content {
+    font-size: 12px;
+}
 .eea-icon:before { margin: auto; }
 #content .jstree-container-ul {
     margin-left: 0;
