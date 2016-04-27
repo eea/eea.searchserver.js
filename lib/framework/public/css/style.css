@@ -39,10 +39,7 @@
 }
 
 .facetview_selected .rel-between {
-    padding-top: 0px;
-    padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding: 0 0 2px;
     display: none;
 }
 
@@ -56,12 +53,8 @@
 .facet-rel-between .facet_operator, .facet_operator:hover {
     cursor: auto;
     width: 100%;
-    background: none;
-    background-color: #e6e6e6;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
+    background: #e6e6e6 none;
+    padding: 0 0 2px;
     display:none;
 }
 
@@ -116,7 +109,7 @@
 }
 .facetview_top .top-pagination,
 .facetview_top .order-by {
-    width: auto;
+    width: 100%;
     line-height: 26px;
 }
 
@@ -190,16 +183,12 @@
 
 /* filter group sort */
 .facetview_filter_options {
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 5px 5px 10px;
 }
 
 .facetview_filter_options > * {
     display: inline-block;
-    border: 1px solid;
-    border-color: #ccc;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
@@ -410,7 +399,7 @@ div.visualization-date {
 
 @media (max-width: 768px){
     .row-fluid .span9,
-    div#facetview_rightcol{ width: 60%; margin-right:0px;}
+    div#facetview_rightcol{ width: 100%; margin-right:0px;}
     .row-fluid .span3{ width: 35%;}
     div.content{ padding-top: 65px; }
     div.container { max-width: 1024px; }
