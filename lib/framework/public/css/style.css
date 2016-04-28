@@ -13,6 +13,10 @@
     background: url(http://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center top;
 }
 
+.facetview_search_options_container {
+    display: none;    
+}
+
 .facetview_top {
     margin-top: 1em;
 }
@@ -24,8 +28,9 @@
 
 .content .page-header {
     background-color: transparent;
-    display: block;
-    border-bottom-color: #fff;
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .page-header h1 {
@@ -63,14 +68,19 @@
 }
 
 .facetview_top .order-by {
-    margin-left: 0px;
-    float: right;
+    margin-left: 2em;
+    float: left;
+    line-height: 2;
 }
 
-.top-pagination .facetview_metadata .pagination, .facetview_top .top-pagination  {
+.top-pagination .facetview_metadata .pagination,
+.facetview_top .top-pagination  {
     margin: 0px;
     padding: 0px;
     font-size: 14px;
+}
+.facetview_top .top-pagination  {
+    float: left;
 }
 
 .facetview_metadata .pagination, .facetview_metadata .pagination .next {
@@ -106,13 +116,16 @@
     display: table;
     clear: both;
 }
-.facetview_top .top-pagination,
-.facetview_top .order-by {
-    width: 100%;
-    line-height: 26px;
-}
+/*.facetview_top .top-pagination,*/
+/*.facetview_top .order-by {*/
+    /*width: 100%;*/
+    /*line-height: 26px;*/
+/*}*/
 
 /* tile */
+.eea-tiles {
+    clear: both;
+}
 .eea-tileInner img {
     padding-top: 0;
 }
@@ -279,7 +292,7 @@ input.facetview_freetext.span9 {
 }
 
 div.content {
-    margin:0!important;
+    margin:0 0 2.5em 0 !important;
     padding:15px;
     -webkit-border-radius: 0 0 0 0;
         -moz-border-radius: 0 0 0 0;
@@ -296,7 +309,7 @@ div.content h1 {
   margin: 0.67em 0;
   border-bottom: 1px solid #e9efcd;
   padding-bottom: 0.25em;
-  padding-right: 4em;
+  padding-right: 5em;
   line-height: 1.4;
 }
 
@@ -341,21 +354,25 @@ div#footer-wrapper {
 
 .download_data {
     display: none;
-    height:20px;
     position:relative;
-    width:100%;
 }
 
-.download_data div {
-    float:right;
+#content .documentExportActions {
+    float: right;
+    margin-top: -52px;
 }
 
+#content .documentExportActions ul {
+    margin: 0;
+}
+#content .documentExportActions li {
+    display: inline-block;
+    line-height: 1;
+}
 .eea_download_btn,
 .eea_download_btn:hover,
 .eea_download_btn:visited{
-    border:1px solid #ddd !important;
     padding:7px !important;
-    color:black !important;
 }
 
 /* bootstrap fixes */
@@ -402,7 +419,7 @@ div.visualization-date {
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-right:0px;}
     .row-fluid .span3{ width: 35%;}
-    div.content{ padding-top: 65px; }
+    div.content{ padding-top: 80px; }
     div.container { max-width: 1024px; }
 }
 @media (max-width: 500px){
