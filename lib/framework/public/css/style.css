@@ -281,7 +281,7 @@ input.facetview_freetext.span9 {
 
 div.content {
     margin:0!important;
-    padding:10px;
+    padding:15px;
     -webkit-border-radius: 0 0 0 0;
         -moz-border-radius: 0 0 0 0;
             border-radius: 0 0 0 0;
@@ -396,6 +396,7 @@ div#portal-searchbox{
 div.visualization-date {
     margin:15px 0;
 }
+
 
 @media (max-width: 768px){
     .row-fluid .span9,
