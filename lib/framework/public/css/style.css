@@ -19,13 +19,12 @@
 .facetview_freetext {
     height: 100%;
     font-size: 18px;
-    margin-top: 26px;
     padding: 5px 5px 5px 10px;
 }
 
 .content .page-header {
     background-color: transparent;
-    display: inline;
+    display: block;
     border-bottom-color: #fff;
 }
 
@@ -312,6 +311,7 @@ div.content h1 {
 #facetview_filters h2 {
     font-size: 120%;
     color: #00446A;
+    display: none;
 }
 
 table#facetview_results {
