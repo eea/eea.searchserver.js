@@ -69,7 +69,8 @@
 
 .facetview_top .order-by {
     margin-left: 2em;
-    float: left;
+    margin-bottom: 2em;
+    float: right;
     line-height: 2;
 }
 
@@ -434,10 +435,10 @@ div.visualization-date {
 
 @media (min-width:768px) and (max-width: 800px){
     .row-fluid .span3 {
-        width: 25%;
+        width: 40%;
     }
     div#facetview_rightcol {
-        width: 74%;
+        width: 59%;
     }
 
 }
@@ -453,6 +454,7 @@ div.visualization-date {
 
     .facetview_top .order-by {
         margin-left: 0;
+        float: left;
     }
 
 }
