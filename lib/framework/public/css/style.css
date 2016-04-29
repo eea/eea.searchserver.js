@@ -73,11 +73,15 @@
     line-height: 2;
 }
 
+.facetview_top select {
+    width: 200px; /* avoid select spanning too long on iphone */
+}
+
 .top-pagination .facetview_metadata .pagination,
 .facetview_top .top-pagination  {
-    margin: 0px;
-    padding: 0px;
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
 }
 .facetview_top .top-pagination  {
     float: left;
@@ -408,6 +412,11 @@ div.visualization-date {
     margin:15px 0;
 }
 
+@media (max-width: 320px){
+    .content {
+        padding: 8px !important; /* avoid footer spanning too long on iphone */
+    }
+}
 
 @media (max-width: 768px){
     .row-fluid .span9,
@@ -422,10 +431,15 @@ div.visualization-date {
         display: block;
     }
 }
+
 @media (max-width: 500px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
     .row-fluid .span3{ width: 100%;}
+
+    .facetview_top .order-by {
+        margin-left: 0;
+    }
 }
 /*
 @media (min-width:768px) and (max-width:979px) {
