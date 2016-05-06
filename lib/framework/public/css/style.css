@@ -67,8 +67,7 @@
 }
 
 .facetview_top .order-by {
-    margin-left: 2em;
-    margin-bottom: 2em;
+    margin: 0 1.5em 2em 2em;
     float: right;
     line-height: 2;
 }
