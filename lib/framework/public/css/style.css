@@ -65,7 +65,10 @@
     color: #aaa;
     text-shadow: none;
 }
-
+.facetview_top .eea-section-trigger {
+    line-height: 2;
+    vertical-align: middle;
+}
 .facetview_top .order-by {
     margin: 0 1.5em 2em 2em;
     float: right;
