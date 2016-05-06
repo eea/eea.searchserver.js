@@ -76,7 +76,7 @@
 }
 
 .facetview_top select {
-    width: 200px; /* avoid select spanning too long on iphone */
+    width: 140px; /* avoid select spanning too long on iphone */
 }
 
 .top-pagination .facetview_metadata .pagination,
@@ -448,7 +448,7 @@ div.visualization-date {
     min-width: 100% !important;
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .facetview_top .order-by {
         margin-right: 1.5em;
     }
