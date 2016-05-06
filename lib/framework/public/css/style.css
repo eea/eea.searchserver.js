@@ -70,7 +70,7 @@
     vertical-align: middle;
 }
 .facetview_top .order-by {
-    margin: 0 1.5em 2em 2em;
+    margin: 0 0 2em 2em;
     float: right;
     line-height: 2;
 }
@@ -448,6 +448,11 @@ div.visualization-date {
     min-width: 100% !important;
 }
 
+@media (max-width: 767px){
+    .facetview_top .order-by {
+        margin-right: 1.5em;
+    }
+}
 @media (max-width: 500px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}

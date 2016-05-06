@@ -41,4 +41,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.abovescrollbar{ height: 15px; }
+.abovescrollbar {
+    height: 15px;
+    clear: both;
+}
