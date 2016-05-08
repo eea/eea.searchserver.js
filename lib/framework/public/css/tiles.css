@@ -79,7 +79,7 @@
 }
 @media (min-width: 960px) {
     .eea-tile {
-        width: 23%;
+        width: 22.8%;
     }
     .eea-tile:nth-of-type(4n) {
         padding-right: 0;
