@@ -4,6 +4,7 @@ exports.middleware = require('./lib/middleware');
 exports.Server = require('./lib/Server');
 exports.Helpers = require('./lib/Helpers');
 exports.builtinCommands = require('./lib/builtinCommands');
+exports.builtinCommandsRDF = require('./lib/builtinCommandsRDF');
 exports.builtinRoutes = require('./lib/builtinRoutes');
 exports.esAPI = require('./lib/esAPI');
 exports.EEAFacetFramework = require('./lib/framework/EEAFacetFramework');
