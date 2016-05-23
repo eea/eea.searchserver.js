@@ -16,7 +16,7 @@ To be used with an express Node.js application
 ### Install
 
 ```bash
-npm install eea-searchserver
+npm install git://github.com/eea/eea.searchserver.js
 ```
 
 ## Contents
