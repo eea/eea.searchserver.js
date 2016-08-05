@@ -415,7 +415,7 @@ div.visualization-date {
 }
 
 .facetview_display_type {margin:0;}
-.facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;}
+.facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;text-transform:capitalize;}
 .facetview_display_type a.active, .facetview_display_type a:hover {border: 1px solid #ccc;border-radius:3px;background-color:#ececec;}
 
 #facetview_results_wrapper {}
