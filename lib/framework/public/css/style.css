@@ -427,9 +427,9 @@ div.visualization-date {
 }
 
 @media (max-width: 480px){
-    .tileImage, #content a.tileImage {
-        float: none;
-        border: 0;
+    .tileImage {
+        float: none !important;
+        border: 0 !important;
 }
 
 @media (max-width: 767px){
