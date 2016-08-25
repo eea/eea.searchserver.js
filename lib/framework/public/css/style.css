@@ -69,7 +69,7 @@
     line-height: 2;
     vertical-align: middle;
 }
-.facetview_top .order-by {
+.facetview_top .filter-by {
     margin: 0 0 2em 2em;
     float: right;
     line-height: 2;
@@ -426,6 +426,12 @@ div.visualization-date {
     }
 }
 
+@media (max-width: 480px){
+    .tileImage, #content a.tileImage {
+        float: none;
+        border: 0;
+}
+
 @media (max-width: 767px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-right:0px;}
@@ -455,20 +461,32 @@ div.visualization-date {
 }
 
 @media (max-width: 768px){
-    .facetview_top .order-by {
-        margin-right: 1.5em;
+    .facetview_top .filter-by {
+        margin: 1em 0;
+        clear: right;
+        float: left;
+    }
+    .facetview_top .facetview_display_type {
+        float: right;
     }
 }
+
 @media (max-width: 500px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
     .row-fluid .span3{ width: 100%;}
 
-    .facetview_top .order-by {
+    .facetview_top .filter-by {
         margin-left: 0;
         float: left;
     }
 
+}
+
+@media (width: 768px) {
+    .facetview_top .top-pagination {
+        float: none;
+    }
 }
 
 @media (min-width: 768px) {
