@@ -69,7 +69,7 @@
     line-height: 2;
     vertical-align: middle;
 }
-.facetview_top .order-by {
+.facetview_top .filter-by {
     margin: 0 0 2em 2em;
     float: right;
     line-height: 2;
@@ -414,9 +414,22 @@ div.visualization-date {
     margin:15px 0;
 }
 
+.facetview_display_type {margin:0;}
+.facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;text-transform:capitalize;}
+.facetview_display_type a.active, .facetview_display_type a:hover {border: 1px solid #ccc;border-radius:3px;background-color:#ececec;}
+
+#facetview_results_wrapper {}
+
 @media (max-width: 320px){
     .content {
         padding: 8px !important; /* avoid footer spanning too long on iphone */
+    }
+}
+
+@media (max-width: 480px){
+    .tileImage {
+        float: none !important;
+        border: 0 !important;
     }
 }
 
@@ -449,20 +462,32 @@ div.visualization-date {
 }
 
 @media (max-width: 768px){
-    .facetview_top .order-by {
-        margin-right: 1.5em;
+    .facetview_top .filter-by {
+        margin: 1em 0;
+        clear: right;
+        float: left;
+    }
+    .facetview_top .facetview_display_type {
+        float: right;
     }
 }
+
 @media (max-width: 500px){
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
     .row-fluid .span3{ width: 100%;}
 
-    .facetview_top .order-by {
+    .facetview_top .filter-by {
         margin-left: 0;
         float: left;
     }
 
+}
+
+@media (width: 768px) {
+    .facetview_top .top-pagination {
+        float: none;
+    }
 }
 
 @media (min-width: 768px) {
