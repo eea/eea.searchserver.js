@@ -199,11 +199,6 @@
     color: gray;
 }
 
-.eea-tileThumb.eea-tileThumb-default {
-    background-size: 50%;
-    background-position: center;
-}
-
 .eea-tileType {
     right: 5%;
     bottom: 15%;
