@@ -6,7 +6,10 @@ html
 
         script(type='text/javascript').
             var field_base="#{field_base}";
-
+        script
+            != settings_search_sortby
+        script
+            != settings_sort
         script
             != mapping
 
