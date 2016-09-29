@@ -6,7 +6,14 @@ html
 
         script(type='text/javascript').
             var field_base="#{field_base}";
-
+        script
+            != settings_search_sortby
+        script
+            != settings_sort
+        script
+            != settings_display_options
+        script
+            != settings_default_display
         script
             != mapping
 
