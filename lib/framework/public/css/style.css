@@ -500,3 +500,7 @@ div.visualization-date {
     .row-fluid .span3{ width: 190px !important;}
 }
 */
+
+#facetview_results_wrapper em{
+    background-color: yellow;
+}
