@@ -35,10 +35,12 @@
 .page-header h1 {
     border-bottom-color: #fff;
 }
-
-.facetview_selection {
-    width: 100%;
-    float:left;
+.facetview_group_title {
+    float: left;
+}
+.facetview_selected {
+    float: left;
+    margin-right: 1em;
 }
 
 .facetview_selected .rel-between {
