@@ -35,10 +35,12 @@
 .page-header h1 {
     border-bottom-color: #fff;
 }
-
-.facetview_selection {
-    width: 100%;
-    float:left;
+.facetview_group_title {
+    float: left;
+}
+.facetview_selected {
+    float: left;
+    margin-right: 1em;
 }
 
 .facetview_selected .rel-between {
@@ -169,6 +171,12 @@
 }
 
 /* filter group */
+.current-filters {
+	background-color: #ececec;
+	margin-top: 1.5em;
+	padding: 1em;
+}
+
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
     background-color: #fff;
     color: #00446A;
@@ -263,7 +271,7 @@
     background-image: none !important;
 }
 .clear-all {
-    float:right;
+    margin-left: 0.5em;
 }
 
 /* overall alignment */
@@ -500,3 +508,9 @@ div.visualization-date {
     .row-fluid .span3{ width: 190px !important;}
 }
 */
+
+#facetview_results_wrapper em{
+    background-color: #00838f;
+    color: white;
+    font-weight: bold;
+}
