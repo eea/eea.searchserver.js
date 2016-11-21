@@ -148,6 +148,10 @@
     background:linear-gradient(transparent 50%, white);
 }
 
+.tileImage, #content a.tileImage {
+    border: none !important;
+}
+
 /* pagination */
 .pagination {
     height: auto;
@@ -322,8 +326,8 @@ div.content h1 {
 }
 
 #content h2 {
-  font-size: 110%;
-  margin: 0.83em 0;
+  font-size: 150%;
+  margin: 0.5em 0;
   color: #2d749c;
   font-weight: bold;
   line-height: 1.3;
