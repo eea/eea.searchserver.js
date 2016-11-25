@@ -55,7 +55,11 @@
 .facetview_selected {
     float: left;
     margin-right: 2em;
-    min-width: 17%;
+    min-width: 10.7%;
+}
+
+.facetview_selected:last-child {
+    margin-right: 0;
 }
 
 .facetview_selected .rel-between {
@@ -568,8 +572,14 @@ div.visualization-date {
     }
 }
 @media (min-width: 1285px) {
-    .facetview_selected:nth-child(5n + 6) {
+    .facetview_selected:nth-child(5n + 8) {
         clear: both;
+    }
+}
+
+@media (min-width: 1900px) {
+    .facetview_selected:nth-child(5n + 6) {
+        clear: none;
     }
 }
 
