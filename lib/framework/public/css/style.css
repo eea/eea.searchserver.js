@@ -19,11 +19,20 @@
 .facetview_top {
     margin-top: 1em;
 }
+.facetedview_search {
+    position: relative;
+}
+ .facetedview_search .eea-icon-search {
+     position: absolute;
+     top: 35%;
+     left: 5px;
+ }
+
 .facetview_freetext {
     height: 100%;
     font-size: 18px;
     border: 0;
-    padding: 1em;
+    padding: 1em 1em 1em 1.5em;
 }
 
 .content .page-header {
@@ -56,8 +65,7 @@
 
 .facetview_selected .facetview_clear {
     padding: 1px;
-    background: none;
-    background-color: #f0f0f0;
+    background: #f0f0f0 none;
     border-color: #ccc;
 }
 
@@ -109,15 +117,15 @@
 }
 
 .facetview_metadata .pagination, .facetview_metadata .pagination .next {
-    padding: 0px;
-    margin : 0px;
+    padding: 0;
+    margin : 0;
 }
 
 .facetview_metadata .pagination .active a:hover, .facetview_metadata .pagination .active a{
     color: #999999;
     cursor: default;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* stupid style fixes */
@@ -278,12 +286,17 @@
     overflow: hidden;
 }
 .facetview_selection {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     background-color: white;
     padding: 0.5em 1.5em;
     border-radius: 15px;
     float: left;
     clear: both;
+}
+
+.facetview_selection:hover {
+    border: 1px solid #ccc;
+    padding: 5px 1.5em;
 }
 
 .facetview_selection .facetview_filterselected {
@@ -430,7 +443,7 @@ div#footer-wrapper {
 }
 
 .eea-icon.eea-icon-right {
-    margin-left: 0em;
+    margin-left: 0;
 }
 
 div#portal-header{
@@ -445,7 +458,7 @@ div#portal-header{
 }
 
 div#portal-searchbox{
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 div.visualization-date {
@@ -473,7 +486,7 @@ div.visualization-date {
 
 @media (max-width: 767px){
     .row-fluid .span9,
-    div#facetview_rightcol{ width: 100%; margin-right:0px;}
+    div#facetview_rightcol{ width: 100%; margin-right:0;}
     .row-fluid .span3{ width: 35%;}
     div.content{ padding-top: 80px; }
     div.container { max-width: 1024px; }
@@ -512,7 +525,7 @@ div.visualization-date {
 
 @media (max-width: 500px){
     .row-fluid .span9,
-    div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
+    div#facetview_rightcol{ width: 100%; margin-left: 0; margin-right:0;}
     .row-fluid .span3{ width: 100%;}
 
     .facetview_top .filter-by {
@@ -522,9 +535,19 @@ div.visualization-date {
 
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+    .facetview_selected:nth-child(2n + 6) {
+        clear: both;
+    }
+}
+
 @media (width: 768px) {
     .facetview_top .top-pagination {
         float: none;
+    }
+
+    .facetview_selected:nth-child(2n + 6) {
+        clear: both;
     }
 }
 
@@ -534,10 +557,22 @@ div.visualization-date {
     }
 }
 /*
-@media (min-width:768px) and (max-width:979px) {
+@media (min-width: 768px) and (max-width:979px) {
     .row-fluid .span3{ width: 190px !important;}
 }
 */
+
+@media (min-width: 769px) and (max-width: 1284px) {
+    .facetview_selected:nth-child(3n + 6) {
+        clear: both;
+    }
+}
+@media (min-width: 1285px) {
+    .facetview_selected:nth-child(5n + 6) {
+        clear: both;
+    }
+}
+
 
 #facetview_results_wrapper em{
     background-color: #00838f;
