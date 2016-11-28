@@ -514,3 +514,24 @@ div.visualization-date {
     color: white;
     font-weight: bold;
 }
+
+.jstree-node.facetview_filterchoice.leaf a.jstree-anchor{
+    display:flex;
+    margin-right:1%;
+}
+
+.jstree-node.facetview_filterchoice.leaf a.jstree-anchor i.jstree-checkbox{
+    width:24px;
+}
+
+.jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_count{
+    width:100px;
+    text-align:right;
+}
+
+.jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_text{
+    flex-grow:1;
+    width:100px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
