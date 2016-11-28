@@ -19,10 +19,20 @@
 .facetview_top {
     margin-top: 1em;
 }
+.facetedview_search {
+    position: relative;
+}
+ .facetedview_search .eea-icon-search {
+     position: absolute;
+     top: 35%;
+     left: 5px;
+ }
+
 .facetview_freetext {
     height: 100%;
     font-size: 18px;
-    padding: 5px 5px 5px 10px;
+    border: 0;
+    padding: 1em 1em 1em 1.5em;
 }
 
 .content .page-header {
@@ -36,11 +46,20 @@
     border-bottom-color: #fff;
 }
 .facetview_group_title {
-    float: left;
+    font-size: 1.2em;
+    line-height: 2;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #cccccc;
 }
+
 .facetview_selected {
     float: left;
-    margin-right: 1em;
+    margin-right: 2em;
+    min-width: 10.7%;
+}
+
+.facetview_selected:last-child {
+    margin-right: 0;
 }
 
 .facetview_selected .rel-between {
@@ -50,8 +69,7 @@
 
 .facetview_selected .facetview_clear {
     padding: 1px;
-    background: none;
-    background-color: #f0f0f0;
+    background: #f0f0f0 none;
     border-color: #ccc;
 }
 
@@ -64,9 +82,20 @@
 }
 
 .facetview_filterselected .eea-icon {
-    color: #aaa;
+    color: red;
     text-shadow: none;
+    margin-left: -1.2em;
+    position: absolute;
+    left: 0;
 }
+
+#facetview_selected_filters .facetview_clear {
+    border: 0;
+    background-color: transparent;
+    position: relative;
+    display: block;
+}
+
 .facetview_top .eea-section-trigger {
     line-height: 2;
     vertical-align: middle;
@@ -92,15 +121,15 @@
 }
 
 .facetview_metadata .pagination, .facetview_metadata .pagination .next {
-    padding: 0px;
-    margin : 0px;
+    padding: 0;
+    margin : 0;
 }
 
 .facetview_metadata .pagination .active a:hover, .facetview_metadata .pagination .active a{
     color: #999999;
     cursor: default;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 /* stupid style fixes */
@@ -148,6 +177,10 @@
     background:linear-gradient(transparent 50%, white);
 }
 
+.tileImage, #content a.tileImage {
+    border: none !important;
+}
+
 /* pagination */
 .pagination {
     height: auto;
@@ -172,8 +205,7 @@
 
 /* filter group */
 .current-filters {
-	background-color: #ececec;
-	margin-top: 1.5em;
+	background-color: #f5f9fc;
 	padding: 1em;
 }
 
@@ -258,8 +290,19 @@
     overflow: hidden;
 }
 .facetview_selection {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
+    background-color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 15px;
+    float: left;
+    clear: both;
 }
+
+.facetview_selection:hover {
+    border: 1px solid #ccc;
+    padding: 5px 1.5em;
+}
+
 .facetview_selection .facetview_filterselected {
     float: none;
     margin-right: 3px;
@@ -296,6 +339,10 @@ div#facetview_rightcol {
     width: 69%;
 }
 
+#facetview_rightcol .filters-header__header {
+    display: inline-block;
+}
+
 input.facetview_freetext.span9 {
     width: 100%;
 }
@@ -322,8 +369,8 @@ div.content h1 {
 }
 
 #content h2 {
-  font-size: 110%;
-  margin: 0.83em 0;
+  font-size: 150%;
+  margin: 0.5em 0;
   color: #2d749c;
   font-weight: bold;
   line-height: 1.3;
@@ -400,7 +447,7 @@ div#footer-wrapper {
 }
 
 .eea-icon.eea-icon-right {
-    margin-left: 0em;
+    margin-left: 0;
 }
 
 div#portal-header{
@@ -415,7 +462,7 @@ div#portal-header{
 }
 
 div#portal-searchbox{
-    margin-right: 0px;
+    margin-right: 0;
 }
 
 div.visualization-date {
@@ -443,7 +490,7 @@ div.visualization-date {
 
 @media (max-width: 767px){
     .row-fluid .span9,
-    div#facetview_rightcol{ width: 100%; margin-right:0px;}
+    div#facetview_rightcol{ width: 100%; margin-right:0;}
     .row-fluid .span3{ width: 35%;}
     div.content{ padding-top: 80px; }
     div.container { max-width: 1024px; }
@@ -482,7 +529,7 @@ div.visualization-date {
 
 @media (max-width: 500px){
     .row-fluid .span9,
-    div#facetview_rightcol{ width: 100%; margin-left: 0px; margin-right:0px;}
+    div#facetview_rightcol{ width: 100%; margin-left: 0; margin-right:0;}
     .row-fluid .span3{ width: 100%;}
 
     .facetview_top .filter-by {
@@ -492,9 +539,19 @@ div.visualization-date {
 
 }
 
+@media (min-width: 640px) and (max-width: 767px) {
+    .facetview_selected:nth-child(2n + 6) {
+        clear: both;
+    }
+}
+
 @media (width: 768px) {
     .facetview_top .top-pagination {
         float: none;
+    }
+
+    .facetview_selected:nth-child(2n + 6) {
+        clear: both;
     }
 }
 
@@ -504,10 +561,28 @@ div.visualization-date {
     }
 }
 /*
-@media (min-width:768px) and (max-width:979px) {
+@media (min-width: 768px) and (max-width:979px) {
     .row-fluid .span3{ width: 190px !important;}
 }
 */
+
+@media (min-width: 769px) and (max-width: 1284px) {
+    .facetview_selected:nth-child(3n + 6) {
+        clear: both;
+    }
+}
+@media (min-width: 1285px) {
+    .facetview_selected:nth-child(5n + 8) {
+        clear: both;
+    }
+}
+
+@media (min-width: 1900px) {
+    .facetview_selected:nth-child(5n + 6) {
+        clear: none;
+    }
+}
+
 
 #facetview_results_wrapper em{
     background-color: #00838f;
