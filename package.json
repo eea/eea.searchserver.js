@@ -7,6 +7,7 @@
     "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
+    "csv-parse": "*",
     "csv-stringify": "*",
     "request": "*",
     "sync-request": "*",
