@@ -605,3 +605,7 @@ div.visualization-date {
     overflow:hidden;
     text-overflow:ellipsis;
 }
+
+.jstree-default .jstree-leaf>.jstree-ocl {
+	display: none;
+}
