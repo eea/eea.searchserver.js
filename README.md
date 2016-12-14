@@ -52,7 +52,8 @@ Start by writing the base configurtion file:
       "/templates/v2/getHeader?jsdisable=all",
     "footer_path":                  // Path on host for the page FOOTER
       "/templates/v2/getFooter"
-  }
+  },
+  "switch_condition_value_percent": -5  // resync protection condition
 }
 ```
 
