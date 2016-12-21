@@ -227,6 +227,11 @@
     content: "\f053";
 }
 
+#content .eea-accordion-panels .eea-accordion-panel > h2.facetview_open {
+    background-color: #1A679B;
+    color: white;
+}
+
 /* filter group container */
 .facetview_tree {
     margin: -1px;
@@ -236,33 +241,42 @@
 
 /* filter group sort */
 .facetview_filter_options {
+    margin-top:0px;
     padding: 5px 5px 10px;
+    background-color: #144E76;
 }
 
 .facetview_filter_options > * {
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    display: inline;
 }
 
 .facetview_filter_options span,
 .facetview_filter_options .btn {
     border: 0 !important;
-    color: #000 !important;
     background-image: none;
     float: none;
     text-shadow: none;
     display: inline-block;
     font-size: 11px;
-    padding: 2px 10px 2px 4px !important;
     box-shadow: none;
     vertical-align: middle !important;
     line-height: 16px;
 }
 
+.facetview_filter_options .btn {
+    color: #1B9591;
+    padding: 2px 4px 2px 4px;
+    margin-right:5px;
+}
+
+.facetview_filter_options span{
+    color: white;
+    padding: 2px 4px 2px 4px;
+}
+
 .facetview_filter_options span {
+    padding-left:0px !important;
     margin: 0;
-    background-color: #f0f0f0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
