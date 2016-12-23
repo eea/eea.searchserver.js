@@ -52,6 +52,10 @@
     border-bottom: 1px solid #cccccc;
 }
 
+.facetview_group_title span{
+    font-style:italic;
+}
+
 .facetview_selected {
     float: left;
     margin-right: 2em;
