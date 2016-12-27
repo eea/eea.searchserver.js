@@ -54,6 +54,7 @@
 
 .facetview_group_title span{
     font-style:italic;
+    font-size: x-small;
 }
 
 .facetview_selected {
@@ -398,6 +399,20 @@ div.content h1 {
     font-size: 120%;
     color: #00446A;
     display: none;
+}
+#facetview_rightcol .filters-header .clear-all,
+#facetview_rightcol .filters-header .clear-all:hover,
+#facetview_rightcol .filters-header .clear-all:visited {
+    color: white;
+}
+#facetview_rightcol .filters-header > h2 {
+    color: #FFF;
+    border: 0;
+}
+.filters-header {
+    margin: -1em;
+    padding: 0 1em;
+    background-color: #1A679B;
 }
 
 table#facetview_results {
