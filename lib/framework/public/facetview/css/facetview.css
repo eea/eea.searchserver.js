@@ -182,3 +182,37 @@ li.ui-state-default.ui-corner-top {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+#facetview_trees .jstree-node {
+    margin-bottom: 0;
+    padding: 0.5em;
+}
+ #facetview_trees .jstree-icon {
+     font-family: 'FontAwesome';
+     background-image: none;
+     font-style: normal;
+ }
+
+#facetview_trees .jstree-checkbox:before {
+    content: "\f096";
+}
+
+#facetview_trees .jstree-clicked .jstree-checkbox:before {
+    content: "\f14a";
+    color: #1A679B;
+}
+#facetview_trees .jstree-node .jstree-anchor {
+    color: #000;
+}
+#facetview_trees .jstree-anchor .facet_label_count {
+    color: #c0c7d3;
+}
+
+.jstree-node:nth-child(odd) {
+    background-color: #f6fafd;
+}
+
+.jstree-node:nth-child(even) {
+    background-color: #f0f6f9;
+}
+
