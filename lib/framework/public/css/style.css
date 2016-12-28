@@ -115,7 +115,7 @@
     width: 140px; /* avoid select spanning too long on iphone */
     color: #009590;
 }
-#content .facetview_orderby option {
+#content .facetview_top option {
     color: #009590;
 }
 
