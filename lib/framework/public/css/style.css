@@ -113,6 +113,10 @@
 
 .facetview_top select {
     width: 140px; /* avoid select spanning too long on iphone */
+    color: #009590;
+}
+#content .facetview_orderby option {
+    color: #009590;
 }
 
 .top-pagination .facetview_metadata .pagination,
@@ -365,6 +369,9 @@ div#facetview_rightcol {
 input.facetview_freetext.span9 {
     width: 100%;
 }
+.facetview_freetext {
+    color: #006699;   
+ }
 
 div.content {
     margin:0 0 2.5em 0 !important;
@@ -402,8 +409,11 @@ div.content h1 {
 }
 #facetview_rightcol .filters-header .clear-all,
 #facetview_rightcol .filters-header .clear-all:hover,
-#facetview_rightcol .filters-header .clear-all:visited {
-    color: white;
+#facetview_rightcol .filters-header .clear-all:visited,
+#facetview_rightcol .facetview_top .eea_download_btn,
+#facetview_rightcol .facetview_top .eea_download_btn:hover,
+#facetview_rightcol .facetview_top .eea_download_btn:visited {
+    color: white !important;
 }
 #facetview_rightcol .filters-header > h2 {
     color: #FFF;
@@ -461,6 +471,14 @@ div#footer-wrapper {
 .eea_download_btn:hover,
 .eea_download_btn:visited{
     padding:7px !important;
+}
+.eea_download_stripe:after {
+    border-right: 1px solid lightgray;
+    height: 14px;
+    display: inline-block;
+    width: 13px;
+    position: relative;
+    content: '';
 }
 
 /* bootstrap fixes */
