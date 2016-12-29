@@ -658,5 +658,19 @@ div.visualization-date {
 }
 
 .jstree-default .jstree-leaf>.jstree-ocl {
-	display: none;
+    display: none;
+}
+
+.facetview_header_exact_container{
+    color: white;
+    width: 450px;
+    float: right;
+}
+
+.facetview_header_exact_container p{
+    float:left;
+}
+
+.facetview_header_exact_container input[type="radio"]{
+    margin-left: 10px;
 }
