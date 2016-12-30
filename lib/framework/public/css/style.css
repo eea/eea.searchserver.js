@@ -663,8 +663,9 @@ div.visualization-date {
 
 .facetview_header_exact_container{
     color: white;
-    width: 450px;
+    width: 480px;
     float: right;
+    padding: 1em 0 0;
 }
 
 .facetview_header_exact_container p{
