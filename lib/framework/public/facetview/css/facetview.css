@@ -185,9 +185,9 @@ li.ui-state-default.ui-corner-top {
 
 #facetview_trees .jstree-node {
     margin-bottom: 0;
-    padding: 0.5em;
 }
- #facetview_trees .jstree-icon {
+
+#facetview_trees .jstree-icon {
      font-family: 'FontAwesome';
      background-image: none;
      font-style: normal;
@@ -226,4 +226,10 @@ li.ui-state-default.ui-corner-top {
     color: #006699;
 }
 
+.exact_helper {
+    display:none;
+}
 
+.facetview_filter_options > .exact_facet_helper{
+    display:none;
+}
