@@ -521,6 +521,33 @@ div.visualization-date {
 }
 
 .facetview_display_type {margin:0;}
+
+.facetview_display_type .eea-icon { 
+    color: #009590; 
+    border: 1px solid #009590;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+}
+
+.eea-icon.selected,
+.facetview_display_type .eea-icon:hover {
+    color: #FFF;
+    background-color: #009590;
+}
+
+.eea-icon.tabular:before {
+    content: "\f0ce";
+}
+
+.eea-icon.card:before {
+    content: "\f0c8";
+}
+
+.eea-icon.list:before {
+    content: "\f03a";
+}
+
+
 .facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;text-transform:capitalize;}
 .facetview_display_type a.active, .facetview_display_type a:hover {border: 1px solid #ccc;border-radius:3px;background-color:#ececec;}
 
