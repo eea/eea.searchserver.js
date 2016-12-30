@@ -112,7 +112,7 @@
 }
 
 .facetview_top select {
-    width: 140px; /* avoid select spanning too long on iphone */
+    width: 97px; /* avoid select spanning too long on iphone */
     color: #009590;
 }
 #content .facetview_top option {
@@ -613,9 +613,17 @@ div.visualization-date {
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
+	.facetview_top .facetview_include_expired { 
+		float: left;
+		margin: 0;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
     .facetview_selected:nth-child(5n + 6) {
         clear: both;
     }
+
 }
 
 @media (min-width: 1280px) and (max-width: 1679px)  {
