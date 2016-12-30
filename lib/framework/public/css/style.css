@@ -569,9 +569,12 @@ div.visualization-date {
 
 @media (max-width: 768px){
     .facetview_top .filter-by {
-        margin: 1em 0;
+        margin: 1em 1.5em 0 0;
         clear: right;
         float: left;
+    }
+    .facetview_top .facetview_include_expired {
+	clear: both;
     }
     .facetview_top .facetview_display_type {
         float: right;
@@ -586,6 +589,7 @@ div.visualization-date {
     .facetview_top .filter-by {
         margin-left: 0;
         float: left;
+	clear: left;
     }
 
 }
@@ -601,8 +605,14 @@ div.visualization-date {
 }
 
 @media (width: 768px) {
-    .facetview_top .top-pagination {
-        float: none;
+
+    .facetview_top .filter-by {
+        margin: 1em 0 0;
+    }
+
+    .facetview_top .facetview_orderby {
+	float: right;
+	margin: 0;
     }
 }
 
