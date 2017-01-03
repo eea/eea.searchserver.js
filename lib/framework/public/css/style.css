@@ -112,7 +112,7 @@
 }
 
 .facetview_top select {
-    width: 140px; /* avoid select spanning too long on iphone */
+    width: 97px; /* avoid select spanning too long on iphone */
     color: #009590;
 }
 #content .facetview_top option {
@@ -521,6 +521,33 @@ div.visualization-date {
 }
 
 .facetview_display_type {margin:0;}
+
+.facetview_display_type .eea-icon { 
+    color: #009590; 
+    border: 1px solid #009590;
+    cursor: pointer;
+    padding: 0.2em 0.5em;
+}
+
+.eea-icon.selected,
+.facetview_display_type .eea-icon:hover {
+    color: #FFF;
+    background-color: #009590;
+}
+
+.eea-icon.tabular:before {
+    content: "\f0ce";
+}
+
+.eea-icon.card:before {
+    content: "\f0c8";
+}
+
+.eea-icon.list:before {
+    content: "\f03a";
+}
+
+
 .facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;text-transform:capitalize;}
 .facetview_display_type a.active, .facetview_display_type a:hover {border: 1px solid #ccc;border-radius:3px;background-color:#ececec;}
 
@@ -569,9 +596,12 @@ div.visualization-date {
 
 @media (max-width: 768px){
     .facetview_top .filter-by {
-        margin: 1em 0;
+        margin: 1em 1.5em 0 0;
         clear: right;
         float: left;
+    }
+    .facetview_top .facetview_include_expired {
+	clear: both;
     }
     .facetview_top .facetview_display_type {
         float: right;
@@ -586,6 +616,7 @@ div.visualization-date {
     .facetview_top .filter-by {
         margin-left: 0;
         float: left;
+	clear: left;
     }
 
 }
@@ -601,8 +632,14 @@ div.visualization-date {
 }
 
 @media (width: 768px) {
-    .facetview_top .top-pagination {
-        float: none;
+
+    .facetview_top .filter-by {
+        margin: 1em 0 0;
+    }
+
+    .facetview_top .facetview_orderby {
+	float: right;
+	margin: 0;
     }
 }
 
@@ -613,9 +650,17 @@ div.visualization-date {
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
+	.facetview_top .facetview_include_expired { 
+		float: left;
+		margin: 0;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1279px) {
     .facetview_selected:nth-child(5n + 6) {
         clear: both;
     }
+
 }
 
 @media (min-width: 1280px) and (max-width: 1679px)  {
