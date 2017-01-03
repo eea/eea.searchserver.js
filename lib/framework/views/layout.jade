@@ -15,6 +15,8 @@ html
         script
             != settings_default_display
         script
+            != settings_landingpage_enabled
+        script
             != mapping
 
         link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
@@ -57,5 +59,7 @@ html
                 div(id="right-column", class="right-column-area")
                     div(class="visualPadding")
                 div(class="visualClear")
+        div(id="landing")
+            block landing
 
     != templateRender(footerFile)

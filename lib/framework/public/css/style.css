@@ -675,3 +675,7 @@ div.visualization-date {
 .facetview_header_exact_container input[type="radio"]{
     margin-left: 10px;
 }
+
+#landing {
+    display:none;
+}
