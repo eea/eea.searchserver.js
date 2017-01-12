@@ -203,6 +203,7 @@ li.ui-state-default.ui-corner-top {
 }
 #facetview_trees .jstree-node .jstree-anchor {
     color: #000;
+    position: relative;
 }
 #facetview_trees .jstree-anchor .facet_label_count {
     color: #666;

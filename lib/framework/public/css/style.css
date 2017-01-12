@@ -699,11 +699,14 @@ div.visualization-date {
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor i.jstree-checkbox{
     width:24px;
+    position: absolute;
+    right: 0;
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_count{
     width:30px;
     text-align:right;
+    margin-right: 5px;
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_text{
