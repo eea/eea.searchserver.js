@@ -413,16 +413,21 @@ div.content h1 {
     color: #00446A;
     display: none;
 }
-#facetview_rightcol .filters-header .clear-all,
-#facetview_rightcol .filters-header .clear-all:hover,
-#facetview_rightcol .filters-header .clear-all:visited,
+
 #facetview_rightcol .facetview_top .eea_download_btn,
 #facetview_rightcol .facetview_top .eea_download_btn:hover,
 #facetview_rightcol .facetview_top .eea_download_btn:visited {
-    color: white !important;
+    color: #FFF !important;
 }
+
+#facetview_rightcol .filters-header .clear-all,
+#facetview_rightcol .filters-header .clear-all:hover,
+#facetview_rightcol .filters-header .clear-all:visited {
+    color: #2d749c !important;
+}
+
 #facetview_rightcol .filters-header > h2 {
-    color: #FFF;
+    color: #2d749c;
     border: 0;
 }
 .filters-header {
@@ -697,7 +702,7 @@ div.visualization-date {
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_count{
-    width:100px;
+    width:30px;
     text-align:right;
 }
 
