@@ -129,6 +129,12 @@
     float: left;
 }
 
+.facetview_top .top-pagination,
+.facetview_top .facetview_include_expired,
+.facetview_top .facetview_orderby {
+    line-height: 2.5;
+}
+
 .facetview_metadata .pagination, .facetview_metadata .pagination .next {
     padding: 0;
     margin : 0;
