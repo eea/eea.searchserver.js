@@ -185,6 +185,7 @@ li.ui-state-default.ui-corner-top {
 
 #facetview_trees .jstree-node {
     margin-bottom: 0;
+    background-image: none;
 }
 
 #facetview_trees .jstree-icon {
