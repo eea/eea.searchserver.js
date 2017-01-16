@@ -155,6 +155,7 @@
 .eea-icon:before { margin: auto; }
 #content .jstree-container-ul {
     margin-left: 0;
+    background-color: #f6fafd;
 }
 .jstree-default .jstree-container-ul .jstree-node {
     margin-left: 0;
@@ -704,16 +705,19 @@ div.visualization-date {
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_count{
-    width:30px;
-    text-align:right;
-    margin-right: 5px;
+    position: relative;
+    left: -91%;
+    text-align: right;
+    vertical-align: bottom;
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor span.facet_label_text{
-    flex-grow:1;
-    width:100px;
+    width: 81%;
     overflow:hidden;
     text-overflow:ellipsis;
+    margin-left: 3.5em;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .jstree-default .jstree-leaf>.jstree-ocl {
