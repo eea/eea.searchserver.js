@@ -221,8 +221,8 @@
 
 /* filter group */
 .current-filters {
-	background-color: #f5f9fc;
-	padding: 1em;
+background-color: #f5f9fc;
+padding: 1em;
 }
 
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
@@ -509,8 +509,10 @@ div#footer-wrapper {
     margin-right:10px;
 }
 
-.eea-icon.eea-icon-right {
+.eea-icon.eea-icon-right,
+.right-column-area .eea-icon.eea-icon-right {
     margin-left: 0;
+    padding: 0;
 }
 
 div#portal-header{
@@ -678,7 +680,7 @@ div.visualization-date {
     .facetview_top .filter-by {
         margin-left: 0;
         float: left;
-	clear: left;
+clear: left;
     }
 
 }
@@ -701,7 +703,7 @@ div.visualization-date {
     }
 
     .facetview_top .facetview_orderby {
-	    float: left;
+    float: left;
         clear: both;
     }
 
@@ -726,12 +728,22 @@ div.visualization-date {
     }
 
 }
-@media (min-width: 769px) and (max-width: 1279px) {
-	.facetview_top .facetview_include_expired { 
-		float: left;
-		margin: 0;
-	}
+
+@media (min-width: 767px) and (max-width: 1280px) {
+  .facetview_filter_options span,
+    .facetview_filter_options .btn {
+      font-size: 9px;
+  }
 }
+
+@media (min-width: 769px) and (max-width: 1279px) {
+.facetview_top .facetview_include_expired { 
+float: left;
+margin: 0;
+}
+
+}
+
 
 @media (min-width: 769px) and (max-width: 1279px) {
     .facetview_selected:nth-child(5n + 6) {
@@ -739,6 +751,7 @@ div.visualization-date {
     }
 
 }
+
 
 @media (min-width: 1280px) and (max-width: 1679px)  {
     .facetview_selected:nth-child(7n + 6) {
