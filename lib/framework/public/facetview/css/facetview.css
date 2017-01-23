@@ -232,6 +232,10 @@ li.ui-state-default.ui-corner-top {
     display:none;
 }
 
+.exact_facet_helper .eea-icon-question-circle {
+    cursor: help;
+}
+
 /*
 .facetview_filter_options > .exact_facet_helper{
     display:none;
