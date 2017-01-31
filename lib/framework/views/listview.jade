@@ -1,13 +1,13 @@
 div(class="tileItem visualIEFloatFix")
-    a(title="${result.title}", href="${result.url}", class="tileImage")
-        img(alt="${result.title}",title="${result.title}",src="${result.thumbUrl}")
+    a(title="${title}", href="${url}", class="tileImage")
+        img(alt="${title}",title="${title}",src="${thumbUrl}")
     div(class="tileContent")
         h2(class="tileHeadline", id="data-centre-overview")
-            a(title="${result.title}", class="state-published", href="${result.url}") ${result.title}
-        span(class="date") ${result.date}
-        p(class="eea-tileUrl") ${result.url}
+            a(title="${title}", class="state-published", href="${url}") ${title}
+        span(class="date") ${date}
+        p(class="eea-tileUrl") ${url}
     p(class="tileBody")
-        span(class="description") ${result.description}
+        span(class="description") ${description}
     p(class="tileFooter")
-        a(class="moreLink", href="${result.url}") Read more
+        a(class="moreLink", href="${url}") Read more
     div(style="padding-bottom:1.0em;", class="visualClear") 

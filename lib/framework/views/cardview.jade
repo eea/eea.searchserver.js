@@ -1,12 +1,12 @@
 div(class="eea-tile")
-    a(class="eea-tileInner", title="${result.title}", href="${result.url}")
-        div(class="eea-tileThumb", style="background-image: url(${result.thumbUrl})")
-            img(src="${result.thumbUrl}", alt="${result.title}")
+    a(class="eea-tileInner", title="${title}", href="${url}")
+        div(class="eea-tileThumb", style="background-image: url(${thumbUrl})")
+            img(src="${thumbUrl}", alt="${title}")
         div(class="eea-tileBody")
-            p(class="eea-tileUrl")${result.url}
-            strong(class="eea-tileType", title="${result.type}", style="background-image: url(${result.typeIcon})")
-                span(class="eea-tileTypeIcon, eea-tileType-${result.typeClass}", title="${result.type}")
-                ${result.type}
-            h4(class="eea-tileTitle") ${result.title}
-            span(class="eea-tileTopic", title="${result.topics}") ${result.topics}
-            time(class="eea-tileIssued", datetime="${result.date}") ${result.date}
+            p(class="eea-tileUrl")${url}
+            strong(class="eea-tileType", title="${type}", style="background-image: url(${typeIcon})")
+                span(class="eea-tileTypeIcon, eea-tileType-${typeClass}", title="${type}")
+                ${type}
+            h4(class="eea-tileTitle") ${title}
+            span(class="eea-tileTopic", title="${topics}") ${topics}
+            time(class="eea-tileIssued", datetime="${date}") ${date}
