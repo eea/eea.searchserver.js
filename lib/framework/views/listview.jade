@@ -1,14 +1,13 @@
-block list_view_template
-    div(class="tileItem visualIEFloatFix")
-        a(title="${result.title}", href="${result.url}", class="tileImage")
-            img(alt="${result.title}",title="${result.title}",src="${result.thumbUrl}")
-        div(class="tileContent")
-            h2(class="tileHeadline", id="data-centre-overview")
-                a(title="${result.title}", class="state-published", href="${result.url}") ${result.title}
-            span(class="date") ${result.date}
-            p(class="eea-tileUrl") ${result.url}
-        p(class="tileBody")
-            span(class="description") ${result.description}
-        p(class="tileFooter")
-            a(class="moreLink", href="${result.url}") Read more
-        div(style="padding-bottom:1.0em;", class="visualClear")<!-- -->
+div(class="tileItem visualIEFloatFix")
+    a(title="${result.title}", href="${result.url}", class="tileImage")
+        img(alt="${result.title}",title="${result.title}",src="${result.thumbUrl}")
+    div(class="tileContent")
+        h2(class="tileHeadline", id="data-centre-overview")
+            a(title="${result.title}", class="state-published", href="${result.url}") ${result.title}
+        span(class="date") ${result.date}
+        p(class="eea-tileUrl") ${result.url}
+    p(class="tileBody")
+        span(class="description") ${result.description}
+    p(class="tileFooter")
+        a(class="moreLink", href="${result.url}") Read more
+    div(style="padding-bottom:1.0em;", class="visualClear") 

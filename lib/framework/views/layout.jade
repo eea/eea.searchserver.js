@@ -63,10 +63,9 @@ html
                 div(class="visualClear")
         div(id="landing")
             block landing
-        div(id="card_view_template",style="display:none")
-            block card_view_template
 
-        div(id="list_view_template",style="display:none")
-            block list_view_template
+        input(id="card_view_template", type="hidden", value="#{cardViewTemplate}")
+
+        input(id="list_view_template", type="hidden", value="#{listViewTemplate}")
 
     != templateRender(footerFile)
