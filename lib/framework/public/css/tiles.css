@@ -71,6 +71,27 @@
 }
 .eea-tileThumb img {
     display: none;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
+}
+
+.eea-tile:hover img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: .6;
+}
+
+.eea-tileDescription {
+    display: none;
+}
+.eea-tile:hover .eea-tileDescription {
+    display: block !important;
+    height: auto !important;
+    opacity: 1 !important;
 }
 
 .eea-tileBody {
@@ -248,3 +269,4 @@
     }
 }
 
+/* /MEDIA Queries, place normal css above this entire section */
