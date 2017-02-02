@@ -1,5 +1,6 @@
 
 .eea-tiles::after,
+.eea-tileDescription::after,
 .eea-tile::after {
     content: '';
     display: table;
@@ -8,9 +9,7 @@
 
 .eea-tile {
     position: relative;
-    box-sizing: content-box;
-    overflow: hidden;
-    height: 280px;
+    height: 360px;
     z-index: 1;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
@@ -40,6 +39,7 @@
     cursor: pointer;
     transition: color .1s, box-shadow .1s;
     height: 100%;
+    overflow: hidden;
 
     bottom: 0;
     width: 100%;
@@ -58,24 +58,26 @@
 .eea-tileThumb {
     position: relative;
     overflow: hidden;
+    height: 200px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.eea-tileThumb::after {
+.eea-tileDescription::after {
     content: '';
     display: block;
     /* 16:9 ratio */
-    padding-top: 56.25%;
+    padding-top: 5.25%;
 }
 .eea-tileThumb img {
-    display: none;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -ms-transition: all 0.3s linear 0s;
     -o-transition: all 0.3s linear 0s;
     transition: all 0.3s linear 0s;
+    height: 100%;
+    width: auto;
 }
 
 .eea-tile:hover img {
@@ -90,7 +92,6 @@
 }
 .eea-tile:hover .eea-tileDescription {
     display: block !important;
-    height: auto !important;
     opacity: 1 !important;
 }
 
@@ -98,7 +99,24 @@
     position: relative;
     padding: 10px;
     border-top: 1px solid #ddd;
+    height: 140px;
+    bottom: 0;
+    width: 100%;
+    -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+    transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 }
+
+.eea-tile:hover .eea-tileBody {
+    height: 260px;
+    background-color: #FFF;
+    position: absolute;
+    bottom: 3%;
+    width: 94%;
+}
+
 
 .eea-tileType {
     position: absolute;
@@ -147,8 +165,8 @@
 }
 
 .eea-tileType {
-    right: 5%;
-    bottom: 15%;
+    right: 0;
+    bottom: 17%;
     background-size: 100%;
 }
 
@@ -160,6 +178,12 @@
 }
 .eea-tile:hover .eea-tileDescription { 
     display: block;
+}
+
+.eea-tileMetadata {
+    position: absolute;
+    bottom: 5%;
+    width: 93%;
 }
 
 
@@ -235,12 +259,12 @@
     .eea-tile {
         width: 22.8%;
     }
-    .eea-tile:nth-of-type(4n) {
-        padding-right: 0;
-    }
-    .eea-tile:nth-of-type(4n + 1) {
-        padding-left: 0;
-    }
+    /*.eea-tile:nth-of-type(4n) {*/
+        /*padding-right: 0;*/
+    /*}*/
+    /*.eea-tile:nth-of-type(4n + 1) {*/
+        /*padding-left: 0;*/
+    /*}*/
     #content .eea-section-trigger {
         display: none;
     }
@@ -248,14 +272,14 @@
 
 @media (min-width: 320px) {
     .eea-tileTitle {
-        height: 4.5em;
+        min-height: 2.5em;
         overflow: hidden;
         position: relative;
     }
-    .eea-tileTitle::after {
+    .eea-tileDescription::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 15%;
         left: 0;
         right: 0;
         height: .75em;
