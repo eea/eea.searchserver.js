@@ -40,6 +40,7 @@
     transition: color .1s, box-shadow .1s;
     height: 100%;
     overflow: hidden;
+    position: relative;
 
     bottom: 0;
     width: 100%;
@@ -58,7 +59,7 @@
 .eea-tileThumb {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 160px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-size: cover;
@@ -87,9 +88,6 @@
   opacity: .6;
 }
 
-.eea-tileDescription {
-    display: none;
-}
 .eea-tile:hover .eea-tileDescription {
     display: block !important;
     opacity: 1 !important;
@@ -99,7 +97,7 @@
     position: relative;
     padding: 10px;
     border-top: 1px solid #ddd;
-    height: 140px;
+    min-height: 180px;
     bottom: 0;
     width: 100%;
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
@@ -110,11 +108,11 @@
 }
 
 .eea-tile:hover .eea-tileBody {
-    height: 260px;
+    height: 290px;
     background-color: #FFF;
     position: absolute;
-    bottom: 3%;
-    width: 94%;
+    bottom: 1%;
+    width: 100%;
 }
 
 
@@ -158,6 +156,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    max-width: 85%;
 }
 
 .eea-tileIssued {
@@ -172,9 +171,10 @@
 
 .eea-tileDescription {
     text-overflow: ellipsis;
-    height: 9em;
+    max-height: 53%;
     overflow: hidden;
     display: none;
+    position: relative;
 }
 .eea-tile:hover .eea-tileDescription { 
     display: block;
@@ -184,6 +184,10 @@
     position: absolute;
     bottom: 5%;
     width: 93%;
+}
+
+.eea-tile:hover .eea-tileMetadata {
+    bottom: 2%;
 }
 
 
@@ -257,14 +261,14 @@
 }
 @media (min-width: 960px) {
     .eea-tile {
-        width: 22.8%;
+        width: 25%;
     }
-    /*.eea-tile:nth-of-type(4n) {*/
-        /*padding-right: 0;*/
-    /*}*/
-    /*.eea-tile:nth-of-type(4n + 1) {*/
-        /*padding-left: 0;*/
-    /*}*/
+    .eea-tile:nth-of-type(4n) {
+        padding-right: 0;
+    }
+    .eea-tile:nth-of-type(4n + 1) {
+        padding-left: 0;
+    }
     #content .eea-section-trigger {
         display: none;
     }
@@ -279,7 +283,7 @@
     .eea-tileDescription::after {
         content: '';
         position: absolute;
-        bottom: 15%;
+        bottom: 0;
         left: 0;
         right: 0;
         height: .75em;
