@@ -50,10 +50,11 @@
 
 .eea-tileThumb {
     overflow: hidden;
-    height: 160px;
+    height: 180px;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 .eea-tileDescription::after {
@@ -80,8 +81,8 @@
     position: absolute;
     padding: 10px;
     background-color: #FFF;
-    overflow: hidden;
-    /*min-height: 180px;*/
+    border-top: 1px solid #ddd;
+    min-height: 180px;
     bottom: 0;
     width: 100%;
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
@@ -91,14 +92,19 @@
     transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
 }
 
-/*.eea-tile:hover .eea-tileBody {*/
-    /*max-height: 240px;*/
-    /*background-color: #FFF;*/
-    /*position: absolute;*/
-    /*bottom: 1%;*/
-    /*width: 100%;*/
-/*}*/
+.eea-tileHeadMetadata {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+}
 
+.eea-tileTypeHead {
+    background-color: #009590;
+    padding: 0.5em;
+    color: #FFF;
+    font-weight: bold;
+}
 
 .eea-tileType {
     position: absolute;
@@ -254,10 +260,10 @@
         overflow: hidden;
         position: relative;
     }
-    .eea-tileDescription::after {
+    .eea-tile:hover .eea-tileMetadata::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        top: -7px;
         left: 0;
         right: 0;
         height: .75em;
