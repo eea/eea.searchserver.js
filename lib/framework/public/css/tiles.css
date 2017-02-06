@@ -6,8 +6,6 @@
     clear: both;
 }
 
-.eea-tile {
-}
 .eea-list-tiles .eea-tileUrl,
 .eea-tile .eea-tileUrl{
     display: inline-block;
@@ -48,14 +46,27 @@
     box-shadow: 0 0 3px 1px rgb(55, 146, 218);
 }
 
+.eea-tileHead {
+    overflow: hidden;
+    height: 57%;
+}
+
+.eea-hoverDarkBg {
+    background-color: #000;
+}
+
 .eea-tileThumb {
     overflow: hidden;
-    height: 180px;
+    height: 100%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: no-repeat center center;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+    transition: all 0.3s linear 0s;
 }
 .eea-tileDescription::after {
     content: '';
@@ -73,8 +84,11 @@
     width: auto;
 }
 
-.eea-tile:hover .eea-tileThumb {
-  opacity: .6;
+.eea-tileHovered {
+    opacity: .6;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .eea-tileBody {
@@ -82,7 +96,7 @@
     padding: 10px;
     background-color: #FFF;
     border-top: 1px solid #ddd;
-    min-height: 180px;
+    min-height: 43%;
     bottom: 0;
     width: 100%;
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
@@ -168,7 +182,10 @@
 }
 
 .eea-tileMetadata {
-    position: relative;
+    position: absolute;
+    bottom: 5px;
+    width: 95%;
+    background-color: white;
 }
 
 /* MEDIA Queries, place normal css above this section */
@@ -176,31 +193,22 @@
     .eea-tile {
         float: left;
         padding: 10px;
-        width: 48.5%;
+        width: 50%;
     }
 }
 
+@media (max-width: 500px) {
+    .eea-tileMetadata {
+        width: 92%;
+    }
+}
 
 @media (min-width: 381px) and (max-width: 767px) {
-    .eea-tile {
-        float: left;
-        padding: 10px;
-        width: 47%;
-    }
     .eea-tile:nth-child(odd) {
         padding-left: 1px;
     }
     .eea-tile:nth-of-type(2n) {
         padding-right: 1px;
-    }
-}
-
-@media (min-width: 560px) and (max-width: 767px) {
-
-    .eea-tile {
-        float: left;
-        padding: 10px;
-        width: 48%;
     }
 }
 
@@ -221,15 +229,9 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 800px) {
+@media (min-width: 800px) and (max-width: 1023px){
     .eea-tile {
-        width: 45%;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 959px){
-    .eea-tile {
-        width: 30.5%;
+        width: 33.3%;
     }
 
     .eea-tile:nth-of-type(3n) {
@@ -239,7 +241,7 @@
         padding-left: 1px;
     }
 }
-@media (min-width: 960px) {
+@media (min-width: 1025px) {
     .eea-tile {
         width: 25%;
     }
