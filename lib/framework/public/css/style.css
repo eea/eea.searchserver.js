@@ -742,11 +742,10 @@ clear: left;
 }
 
 @media (min-width: 769px) and (max-width: 1279px) {
-.facetview_top .facetview_include_expired { 
-float: left;
-margin: 0;
-}
-
+    .facetview_top .facetview_include_expired {
+        float: left;
+        margin: 0;
+    }
 }
 
 
@@ -754,7 +753,6 @@ margin: 0;
     .facetview_selected:nth-child(5n + 6) {
         clear: both;
     }
-
 }
 
 
@@ -769,4 +767,3 @@ margin: 0;
         clear: both;
     }
 }
-
