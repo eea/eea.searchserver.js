@@ -232,7 +232,7 @@
     }
 }
 
-@media (min-width: 800px) and (max-width: 1023px){
+@media (min-width: 1025px) and (max-width: 1280px){
     .eea-tile {
         width: 33.3%;
     }
@@ -244,7 +244,7 @@
         padding-left: 1px;
     }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1281px) {
     .eea-tile {
         width: 25%;
     }
@@ -281,6 +281,5 @@
         font-size: 1.4em;
     }
 }
-
 
 /* /MEDIA Queries, place normal css above this entire section */
