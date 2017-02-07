@@ -118,6 +118,9 @@
     padding: 0.5em;
     color: #FFF;
     font-weight: bold;
+    max-width: 85%;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .eea-tileType {
