@@ -13,7 +13,9 @@
     "sync-request": "*",
     "wait-for-port": "*",
     "getenv": "*",
-    "dateformat": "*"
+    "dateformat": "*",
+    "memory-cache": "*",
+    "body-parser": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
