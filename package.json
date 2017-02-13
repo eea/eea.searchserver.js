@@ -4,6 +4,8 @@
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
+    "express": "*",
+    "jade": "*",
     "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
@@ -13,7 +15,13 @@
     "sync-request": "*",
     "wait-for-port": "*",
     "getenv": "*",
-    "dateformat": "*"
+    "dateformat": "*",
+    "memory-cache": "*",
+    "body-parser": "*",
+    "node-crontab": "*",
+    "morgan": "*",
+    "request": "*",
+    "nodemon": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
