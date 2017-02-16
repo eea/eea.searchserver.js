@@ -166,17 +166,23 @@ li.ui-state-default.ui-corner-top {
     overflow: hidden;
 }
 
-.facetview_tree.jstree .ui-resizable-handle.ui-resizable-s{
+.facetview_filter .ui-resizable-s{
     background-color: #efefef;
-    height: 9px;
+    height: 12px;
+    display: none;
 }
-.facetview_tree.jstree .ui-resizable-handle.ui-resizable-s .ui-icon-grip-solid-horizontal{
+
+.facetview_open ~ .ui-resizable-s {
+    display: block;
+}
+
+.facetview_filter .ui-icon-grip-solid-horizontal {
     margin: 0 auto;
     position: relative;
     top: -6px;
     z-index: 91;
 }
-.facetview_tree.jstree .facetview_tree_container{
+.facetview_tree  .jstree-container-ul {
     position : relative;
     height:100%;
     overflow-y: auto;
