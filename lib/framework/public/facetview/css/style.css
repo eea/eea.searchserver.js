@@ -44,4 +44,6 @@ h4 {
 .abovescrollbar {
     height: 15px;
     clear: both;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
