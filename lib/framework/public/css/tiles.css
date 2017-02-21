@@ -30,9 +30,8 @@
     text-decoration: none;
     color: inherit;
     cursor: pointer;
-
     position: relative;
-    height: 360px;
+    height: 305px;
     z-index: 1;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
@@ -51,8 +50,8 @@
     height: 57%;
 }
 
-.eea-hoverDarkBg {
-    background-color: #000;
+.eea-hoverBg {
+    background-color: #FFF;
 }
 
 .eea-tileThumb {
@@ -60,8 +59,8 @@
     height: 100%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
-    background-size: cover;
     background: no-repeat center center;
+    background-size: cover;
     -webkit-transition: all 0.3s linear 0s;
     -moz-transition: all 0.3s linear 0s;
     -ms-transition: all 0.3s linear 0s;
