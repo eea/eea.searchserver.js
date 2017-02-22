@@ -257,6 +257,10 @@ padding: 1em 1em 0em 1em;
     box-shadow: inset 0 2px 3px -1px rgba(0,0,0,.1);
 }
 
+.facetview_filter {
+    position: relative;
+}
+
 /* filter group sort */
 .facetview_filter_options {
     margin-top:0;
@@ -570,9 +574,9 @@ div.visualization-date {
 #facetview_results_wrapper {}
 
 #facetview_results_wrapper em{
-    background-color: #00838f;
-    color: white;
+    color: #663366;
     font-weight: bold;
+    font-style: normal;
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor{
