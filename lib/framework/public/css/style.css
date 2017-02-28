@@ -771,3 +771,34 @@ clear: left;
         clear: both;
     }
 }
+
+ul.ui-autocomplete .ui-menu-item {
+    float:left;
+    font-size:20px;
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+    padding:5px 0px 5px 37px;
+    color: gray;
+}
+
+ul.ui-autocomplete .ui-menu-item.ui-state-focus {
+    border:0;
+}
+
+span.did_you_mean,
+a.did_you_mean{
+    font-size:18px;
+}
+
+a.did_you_mean {
+    font-style: italic;
+    font-weight: bold;
+}
+
+a.did_you_mean:visited,
+a.did_you_mean:hover,
+a.did_you_mean:active,
+a.original_term:visited,
+a.original_term:hover,
+a.original_term:active {
+    color:#2d749c !important;
+}
