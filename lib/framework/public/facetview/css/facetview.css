@@ -242,6 +242,11 @@ li.ui-state-default.ui-corner-top {
     cursor: help;
 }
 
+.google_map_dialog {
+    height: 500px;
+    width: 700px
+}
+
 /*
 .facetview_filter_options > .exact_facet_helper{
     display:none;
