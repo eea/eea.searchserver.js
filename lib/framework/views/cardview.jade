@@ -1,6 +1,6 @@
 div(class="eea-tile")
     a(class="eea-tileInner", title="${title}", href="${url}")
-        div(class="eea-tileThumb", style="background-image: url(${thumbUrl})")
+        div(class="eea-tileThumb")
             img(src="${thumbUrl}", alt="${title}")
         div(class="eea-tileBody")
             p(class="eea-tileUrl")${url}
@@ -8,5 +8,8 @@ div(class="eea-tile")
                 span(class="eea-tileTypeIcon, eea-tileType-${typeClass}", title="${type}")
                 ${type}
             h4(class="eea-tileTitle") ${title}
-            span(class="eea-tileTopic", title="${topics}") ${topics}
-            time(class="eea-tileIssued", datetime="${date}") ${date}
+            div(class="eea-tileDescription") ${description}
+            div(class="eea-tileMetadata")
+                span(class="eea-tileTopic", title="${topics}") ${topics}
+                time(class="eea-tileIssued", datetime="${date}") ${date}
+
