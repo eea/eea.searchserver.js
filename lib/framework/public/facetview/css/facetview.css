@@ -247,6 +247,10 @@ li.ui-state-default.ui-corner-top {
     width: 700px
 }
 
+.btn-group .btn:last-child, .btn-group .dropdown-toggle {
+    border-radius: 4px;
+}
+
 /*
 .facetview_filter_options > .exact_facet_helper{
     display:none;
