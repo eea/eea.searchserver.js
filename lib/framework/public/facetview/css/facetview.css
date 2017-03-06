@@ -247,6 +247,12 @@ li.ui-state-default.ui-corner-top {
     width: 700px
 }
 
+.google_map_facet {
+    width: 348px;
+    height: 300px;
+    margin: 7px;
+}
+
 .btn-group .btn:last-child, .btn-group .dropdown-toggle {
     border-radius: 4px;
 }
