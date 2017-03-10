@@ -248,7 +248,7 @@ li.ui-state-default.ui-corner-top {
 }
 
 .google_map_facet {
-    width: 348px;
+    width: auto;
     height: 300px;
     margin: 7px;
 }
@@ -257,28 +257,19 @@ li.ui-state-default.ui-corner-top {
     border-radius: 4px;
 }
 
-#geo-accordion {
+.geo-accordion.ui-accordion {
     width: 350px;
-    margin: 0px auto 15px auto;
+    margin: 10px auto 15px auto;
 }
 
-#geo-accordion.ui-accordion .ui-accordion-header-icon {
+.geo-accordion.ui-accordion .ui-accordion-header-icon {
     width: 16px;
-    /* background-image: url(/++resource++jquery-ui-themes/sunburst/images/ui-icons_ffffff_256x240.png) !important; */
 }
 
-#geo-accordion.ui-accordion .ui-accordion-content {
+.geo-accordion.ui-accordion .ui-accordion-content {
     padding: 10px !important;
 }
-/* 
-#geo-accordion.ui-accordion .ui-accordion-header.ui-state-focus,
-#geo-accordion.ui-accordion .ui-accordion-header.ui-state-active,
-#geo-accordion.ui-accordion .ui-accordion-header:hover {
-    border: 1px solid #ccc !important;
-    background: #205c90 url(/++resource++jquery-ui-themes/sunburst/images/ui-bg_flat_45_205c90_40x100.png) 50% 50% repeat-x !important;
-    color: #fff !important;
-}
- */
+
 /* filter group sort */
 .facetview_geo_options {
     margin-top:0;
@@ -329,7 +320,7 @@ li.ui-state-default.ui-corner-top {
 
 .facetview_geo_options .btn.btn-default {
     color: #346f83;
-    padding-left: 7px;
+    padding-left: 7px;google_map_dialog
     padding-right: 7px;
 
 }
