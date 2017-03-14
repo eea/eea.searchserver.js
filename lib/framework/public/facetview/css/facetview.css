@@ -273,7 +273,7 @@ li.ui-state-default.ui-corner-top {
 /* filter group sort */
 .facetview_geo_options {
     margin-top:0;
-    padding: 6px 5px 7px 5px;
+    padding: 3px 5px;
     background-color: #1b928f;
 }
 
@@ -294,11 +294,6 @@ li.ui-state-default.ui-corner-top {
     line-height: 16px;
 }
 
-.facetview_geo_options .btn {
-    color: #1B9591;
-    padding: 2px 4px 2px 4px;
-    margin-right:5px;
-}
 
 .facetview_geo_options span{
     color: white;
@@ -306,23 +301,19 @@ li.ui-state-default.ui-corner-top {
 }
 
 .facetview_geo_options span {
-    padding-left:0 !important;
+    padding-left: 0 !important;
     margin: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
 
-.facetview_geo_options .btn {
+.facetview_geo_options .btn.btn-default {
     background-color: #fff;
     font-weight: bold;
     border-radius: 4px;
-}
-
-.facetview_geo_options .btn.btn-default {
     color: #346f83;
-    padding-left: 7px;
-    padding-right: 7px;
-
+    padding: 2px 7px;
+    margin: 3px;
 }
 
 .facetview_geo_options .btn.btn-default:hover {
