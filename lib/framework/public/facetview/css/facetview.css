@@ -325,6 +325,27 @@ li.ui-state-default.ui-corner-top {
     vertical-align: -3px;
 }
 
+
+.shape-switcher-container.ui-buttonset {
+    margin: 0px;
+}
+
+.shape-switcher-container.ui-buttonset label.ui-button {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+
+}
+.shape-switcher-container.ui-buttonset label.ui-button span {
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 4px 12px !important;
+}
+
 /* weird focus problem on accordion header */
 :focus {
   outline-color: transparent;
