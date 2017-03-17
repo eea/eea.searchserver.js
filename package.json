@@ -21,7 +21,8 @@
     "node-crontab": "*",
     "morgan": "*",
     "request": "*",
-    "nodemon": "*"
+    "nodemon": "*",
+    "memcached": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
