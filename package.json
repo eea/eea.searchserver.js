@@ -16,13 +16,11 @@
     "wait-for-port": "*",
     "getenv": "*",
     "dateformat": "*",
-    "memory-cache": "*",
     "body-parser": "*",
     "node-crontab": "*",
     "morgan": "*",
     "request": "*",
-    "nodemon": "*",
-    "memcached": "*"
+    "nodemon": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
