@@ -16,7 +16,6 @@
     "wait-for-port": "*",
     "getenv": "*",
     "dateformat": "*",
-    "memory-cache": "*",
     "body-parser": "*",
     "node-crontab": "*",
     "morgan": "*",
