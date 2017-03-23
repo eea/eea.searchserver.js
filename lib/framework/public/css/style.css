@@ -264,7 +264,7 @@ padding: 1em 1em 0em 1em;
 /* filter group sort */
 .facetview_filter_options {
     margin-top:0;
-    padding: 5px 5px 10px;
+    padding: 6px 5px 7px 5px;
     background-color: #1b928f;
 }
 
@@ -306,9 +306,20 @@ padding: 1em 1em 0em 1em;
 .facetview_filter_options .btn {
     background-color: #fff;
     font-weight: bold;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-radius: 4px;
 }
+
+.facetview_filter_options .btn.btn-default {
+    color: #346f83;
+    padding-left: 7px;
+    padding-right: 7px;
+
+}
+
+.facetview_filter_options .btn.btn-default:hover {
+    color: #8e004d;
+}
+
 
 .facetview_filter_options i {
     margin-top: auto;
