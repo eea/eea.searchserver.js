@@ -359,6 +359,12 @@ li.ui-state-default.ui-corner-top {
     display:none;
 }
 
+.facetview_filter_typeahead .eea-icon-search{
+    position: absolute;
+    color: gray;
+    padding-top: 2px;
+}
+
 div.facetview_filter_typeahead div,
 div.facetview_filter_empty div{
     width:100%;
@@ -380,6 +386,7 @@ div.facetview_filter_typeahead input{
     height:100%;
     background-color:white;
     border:0;
+    padding-left:20px;
 }
 
 div.facetview_filter_typeahead input:focus{
@@ -414,4 +421,84 @@ ul.ui-autocomplete li.autocomplete_facet_value span.facet_label_text {
 ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
   background: #e7f4f9;
   border-radius: 2px;
+}
+
+.facet_order{
+    font-size:10px;
+    float:left;
+    cursor:pointer;
+}
+
+.facet_order .eea-icon{
+    color: rgb(0, 149, 144);
+}
+
+.facet_count_order{
+    margin-right:3px;
+    color: rgb(0, 149, 144);
+}
+
+.facetview_filter_options select.facet_value_operator{
+    font-size:10px;
+    width:70px;
+    height:18px;
+    padding:0px;
+    float:right;
+    color: rgb(0, 149, 144);
+    margin-right:3px;
+}
+
+#content .facetview_filter_options select.facet_value_operator option{
+    color: rgb(0, 149, 144);
+}
+
+.exact_facet_helper {
+    float: right;
+}
+.exact_facet_helper span{
+    color: rgb(0, 149, 144);
+}
+.exact_facet_helper .eea-icon.checkbox{
+    font-size:16px;
+    cursor:pointer;
+}
+
+.eea-icon-sort-amount-asc,
+.eea-icon-sort-amount-desc,
+.eea-icon-sort-alpha-asc,
+.eea-icon-sort-alpha-desc{
+    visibility: hidden;
+}
+
+.facetview_reverse_count .eea-icon-sort-amount-desc{
+    visibility: visible;
+}
+
+.facetview_count .eea-icon-sort-amount-asc{
+    visibility: visible;
+}
+
+.facetview_reverse_term .eea-icon-sort-alpha-desc{
+    visibility: visible;
+}
+
+.facetview_term .eea-icon-sort-alpha-asc{
+    visibility: visible;
+}
+
+#content .facet_cond {
+    display:none;
+}
+
+.tooltip-box-br {
+    width: 180px !important;
+}
+
+.tooltip-box-tl {
+    width: 200px !important;
+    width: 180px;
+}
+
+#content input.facetview_exact {
+    display:none;
 }
