@@ -506,3 +506,8 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 .no-results-message {
     display:none;
 }
+
+.facet_right_options {
+    float:right;
+    width:145px;
+}
