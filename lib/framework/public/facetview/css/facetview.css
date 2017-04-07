@@ -430,12 +430,12 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 }
 
 .facet_order .eea-icon{
-    color: rgb(0, 149, 144);
+    color: #000;
 }
 
 .facet_count_order{
     margin-right:3px;
-    color: rgb(0, 149, 144);
+    color: #000;
 }
 
 .facetview_filter_options select.facet_value_operator{
@@ -444,19 +444,19 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     height:18px;
     padding:0px;
     float:right;
-    color: rgb(0, 149, 144);
+    color: #000;
     margin-right:3px;
 }
 
 #content .facetview_filter_options select.facet_value_operator option{
-    color: rgb(0, 149, 144);
+    color: #000;
 }
 
 .exact_facet_helper {
     float: right;
 }
 .exact_facet_helper span{
-    color: rgb(0, 149, 144);
+    color: #000;
 }
 .exact_facet_helper .eea-icon.checkbox{
     font-size:16px;
@@ -500,5 +500,9 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 }
 
 #content input.facetview_exact {
+    display:none;
+}
+
+.no-results-message {
     display:none;
 }
