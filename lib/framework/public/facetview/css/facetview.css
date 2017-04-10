@@ -208,6 +208,7 @@ li.ui-state-default.ui-corner-top {
     color: #1A679B;
 }
 #facetview_trees .jstree-node .jstree-anchor {
+    width: 100%;
     color: #000;
     position: relative;
 }
@@ -427,6 +428,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     font-size:10px;
     float:left;
     cursor:pointer;
+    padding-top:3px;
 }
 
 .facet_order .eea-icon{
@@ -509,5 +511,6 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 
 .facet_right_options {
     float:right;
-    width:145px;
+    width:150px;
+    padding-top:3px;
 }
