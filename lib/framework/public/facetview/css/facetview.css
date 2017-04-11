@@ -501,10 +501,6 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     width: 180px;
 }
 
-#content input.facetview_exact {
-    display:none;
-}
-
 .no-results-message {
     display:none;
 }
@@ -513,4 +509,5 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     float:right;
     width:150px;
     padding-top:3px;
+    padding-right:10px;
 }

@@ -462,6 +462,7 @@ div.content h1 {
 #facetview_rightcol .filters-header .clear-all:visited {
     color: #000 !important;
     font-size: 12px !important;
+    padding-right:12px;
 }
 
 #facetview_rightcol .filters-header > h2 {
