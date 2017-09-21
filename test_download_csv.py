@@ -3,7 +3,7 @@ import urllib
 import urllib2
 
 HOST = "http://aide.apps.eea.europa.eu"
-DOWNLOAD_URL = HOST + "/download"
+DOWNLOAD_URL = HOST + "/tools/download"
 
 ARGS_RQST = {
     'download_query': '%s/?source=' \
