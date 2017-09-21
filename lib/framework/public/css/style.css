@@ -9,7 +9,7 @@
 .notify_loading {
     width: 100%;
     min-height: 30px;
-    background: url(http://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center center;
+    background: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center center;
 }
 
 .facetview_search_options_container {
