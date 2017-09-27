@@ -9,7 +9,7 @@
 .notify_loading {
     width: 100%;
     min-height: 30px;
-    background: url(http://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center center;
+    background: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center center;
 }
 
 .facetview_search_options_container {
@@ -564,6 +564,11 @@ div#portal-header{
 #portal-globalnav {
     max-width: 100% !important;
     padding-right: 1em !important;
+}
+
+/* #87699 fixed line height of globalnav list items since bootstrap has 18px */
+#portal-globalnav li {
+    line-height: 15px;
 }
 
 div#portal-searchbox{

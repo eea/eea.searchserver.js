@@ -110,6 +110,12 @@ var app = express();
 app.post('/invalidate_templates', eeasearch.routes.invalidateTemplates);
 ```
 
+#### Update external configurations
+
+Any request to ```/tools/update_external_configs``` will get the latest changes
+from the host which was set up in the ```settings.json``` file and save them in
+elasticsearch as a cache document with _id ```externals```.
+
 #### Elastic Proxy
 
 Any GET request with the parameter ```source``` set as a valid Elastic query
