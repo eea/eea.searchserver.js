@@ -9,13 +9,16 @@
 .eea-list-tiles .eea-tileUrl,
 .eea-tile .eea-tileUrl{
     display: inline-block;
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     width: 100%;
     font-size: 10px;
     color: #9e9e9e;
+}
+
+.eea-tile .eea-tileUrl {
+    white-space: nowrap;
 }
 
 #facetview_rightcol .eea-tileUrl{

@@ -564,6 +564,11 @@ div#portal-header{
     padding-right: 1em !important;
 }
 
+/* #87699 fixed line height of globalnav list items since bootstrap has 18px */
+#portal-globalnav li {
+    line-height: 15px;
+}
+
 div#portal-searchbox{
     margin-right: 0;
 }
