@@ -6,6 +6,9 @@
     clear: both;
 }
 
+.eea-tile {
+    overflow: hidden;
+}
 .eea-list-tiles .eea-tileUrl,
 .eea-tile .eea-tileUrl{
     display: inline-block;
@@ -94,8 +97,10 @@
     background-color: #FFF;
     border-top: 1px solid #ddd;
     min-height: 43%;
+    max-height: 95%;
     bottom: 0;
     width: 100%;
+    overflow: hidden;
     -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
     -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
     -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
@@ -169,7 +174,7 @@
 
 .eea-tileType {
     right: 0;
-    bottom: 17%;
+    bottom: 26%;
     background-size: 100%;
 }
 
@@ -183,9 +188,10 @@
 
 .eea-tileMetadata {
     position: absolute;
-    bottom: 5px;
+    bottom: 0;
     width: 95%;
     background-color: white;
+    min-height: 40px;
 }
 
 /* MEDIA Queries, place normal css above this section */
@@ -259,9 +265,15 @@
 @media (min-width: 320px) {
     .eea-tileTitle {
         min-height: 2.5em;
+        max-height: 4em;
         overflow: hidden;
         position: relative;
     }
+
+    .eea-tile:hover .eea-tileTitle {
+        max-height: 100%;
+    }
+
     .eea-tile:hover .eea-tileMetadata::after {
         content: '';
         position: absolute;
