@@ -119,6 +119,8 @@
 .facetview_top select {
     width: 97px; /* avoid select spanning too long on iphone */
     color: #009590;
+    display: inline-block;
+    height: 28px;
 }
 #content .facetview_top option {
     color: #009590;
