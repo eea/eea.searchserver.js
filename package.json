@@ -6,6 +6,7 @@
   "dependencies" : {
     "express": "*",
     "jade": "*",
+    "compression": "*",
     "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
