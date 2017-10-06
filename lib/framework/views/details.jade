@@ -9,7 +9,10 @@ mixin tr_th_td(item, href_base, field_name, show_missing)
                     +ext_link(item, href_base)
             else
                 td
-                    span(class="simple-value")= item.value
+                    if (item.type == "img")
+                        img(class="simple-img" src=item.value)
+                    else
+                        span(class="simple-value")= item.value
     else
         if(show_missing)
             tr(class=field_name)
