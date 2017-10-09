@@ -12,7 +12,6 @@
     "underscore": "*",
     "csv-parse": "*",
     "csv-stringify": "*",
-    "request": "*",
     "sync-request": "*",
     "wait-for-port": "*",
     "getenv": "*",
