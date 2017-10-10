@@ -12,7 +12,10 @@ mixin tr_th_td(item, href_base, field_name, show_missing)
                     if (item.type == "img")
                         img(class="simple-img" src=item.value)
                     else
-                        span(class="simple-value")= item.value
+                        if (item.type == "link")
+                            a(href= item.value  title= item.link_title class="simple_link")= item.link_label
+                        else
+                            span(class="simple-value")= item.value
     else
         if(show_missing)
             tr(class=field_name)
@@ -20,7 +23,10 @@ mixin tr_th_td(item, href_base, field_name, show_missing)
                 td
 
 mixin ext_link(item, href_base)
-    a(href= href_base + item.link  title="go to source details" class="detail_extlink")= item.value
+    if(href_base)
+        a(href= href_base + item.link  title="go to source details" class="detail_extlink")= item.value
+    else
+        a(href= item.link  title="go to source details" class="detail_extlink")= item.value
 
 mixin detail_tables(section, data, href_base, show_missing)
     each section in sections
