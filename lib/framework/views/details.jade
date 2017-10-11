@@ -9,24 +9,58 @@ mixin tr_th_td(item, href_base, field_name, show_missing)
                     +ext_link(item, href_base)
             else
                 td
-                    if (item.type == "img")
-                        img(class="simple-img" src=item.value)
-                    else
-                        if (item.type == "link")
-                            a(href= item.value  title= item.link_title class="simple_link")= item.link_label
-                        else
-                            span(class="simple-value")= item.value
+                    case item.type
+                        when "img"
+                            +simple_img(item)
+                        when "link"
+                            +simple_link(item)
+                        default
+                            +simple_value(item)
     else
         if(show_missing)
             tr(class=field_name)
                 th= item.label
                 td
 
-mixin ext_link(item, href_base)
-    if(href_base)
-        a(href= href_base + item.link  title="go to source details" class="detail_extlink")= item.value
+mixin simple_img(item)
+    if(item.split)
+        div(class="list-values")
+            each val in item.value.split(item.split)
+                img(class="simple-img" src=val)
     else
-        a(href= item.link  title="go to source details" class="detail_extlink")= item.value
+        img(class="simple-img" src=item.value)
+
+mixin simple_value(item)
+    if(item.split)
+        div(class="list-values")
+            each val in item.value.split(item.split)
+                span(class="simple-value")= val
+    else
+        span(class="simple-value")= item.value
+
+mixin simple_link(item)
+    if(item.split)
+        div(class="list-values")
+            each val in item.value.split(item.split)
+                a(href= val  title= item.link_title class="simple_link")= val
+    else
+        a(href= item.value  title= item.link_title class="simple_link")= item.link_label
+
+mixin ext_link(item, href_base)
+
+    if (item.split)
+        div(class="list-values")
+            each val, i in item.value.split(item.split)
+                if(href_base)
+                    a(href= href_base + item.link.split(item.link_split)[i]  title="go to source details" class="detail_extlink")= val
+                else
+                    a(href= item.link.split(item.link_split)[i]  title="go to source details" class="detail_extlink")= val
+
+    else
+        if(href_base)
+            a(href= href_base + item.link  title="go to source details" class="detail_extlink")= item.value
+        else
+            a(href= item.link  title="go to source details" class="detail_extlink")= item.value
 
 mixin detail_tables(section, data, href_base, show_missing)
     each section in sections
