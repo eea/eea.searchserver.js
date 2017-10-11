@@ -1,6 +1,6 @@
 div(class="tileItem visualIEFloatFix")
     a(title="${title}", href="${url}", class="tileImage")
-        img(alt="${title}",title="${title}",src="${thumbUrl}")
+        img(alt="${title}",title="${title}", data-src="${thumbUrl}" class="lazyLoad")
     div(class="tileContent")
         h2(class="tileHeadline", id="data-centre-overview")
             a(title="${title}", class="state-published", href="${url}") ${title}

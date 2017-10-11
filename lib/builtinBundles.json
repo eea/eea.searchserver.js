@@ -24,6 +24,7 @@
       ],
       "layout_page": [
         "facetview/vendor/dist/libs/jquery.js",
+        "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
         "facetview/vendor/dist/jstree.js",
         "facetview/vendor/linkify/1.0/jquery.linkify-1.0-min.js",
         "facetview/vendor/bootstrap/js/bootstrap.min.js",
