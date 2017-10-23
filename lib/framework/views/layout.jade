@@ -37,24 +37,24 @@ html
 
         link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
 
-        if renderJs
-            != renderJs('layout_page')
+        - var debug_mode = settings_es_debug_enabled.indexOf('false') === -1
+
+        if !debug_mode
+            style
+                include:uglify-css ../css/critical.css
         else
-            each script in js_resources.layout_page
-                script(type='text/javascript', src=script)
-        if google_map_key != "false"
-            script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
-        block extrajavascripts
+            link(rel='stylesheet', href="esbootstrap_resources/critical.css")
 
-
-        if renderStyles
-            != renderStyles('layout_page')
+        if (renderStyles && !debug_mode)
+            script
+                include:uglify-js ../javascripts/loadcss.js
+            - var css_render = renderStyles('layout_page')
+            - var only_css = css_render.match(/href\='([^\s]*)'\s/)[1]
+            link(rel="preload" href="#{only_css}" as="style" onload="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href="#{only_css}" /></noscript>
         else
             each style in css_resources.layout_page
                 link(rel='stylesheet', href=style)
-        block extrastyles
-
-        != templateRender(headFile)
 
     body
         != templateRender(headerFile)
@@ -81,3 +81,14 @@ html
 
     != templateRender(footerFile)
 
+    block extrastyles
+
+    if (renderJs && !debug_mode)
+        != renderJs('layout_page')
+    else
+        each script in js_resources.layout_page
+            script(type='text/javascript', src=script)
+    if google_map_key != "false"
+        script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
+    script(type="text/javascript", src="https://www.eea.europa.eu/external_templates_scripts.js")
+    block extrajavascripts
