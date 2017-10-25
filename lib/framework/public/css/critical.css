@@ -223,10 +223,8 @@
         font-size: 100%;
         line-height: normal;
         font-family: Arial,FreeSans,sans-serif;
-        background-color: #fff;
         color: #000;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: #fff initial initial initial initial;
     }
 
     h1,h2,h3,h4,h5 {
@@ -295,14 +293,10 @@
     #portal-globalnav li a {
         display: inline-block;
         padding: .5em 1em 1.8em;
-        background-color: #ddd;
         min-width: 6em;
         white-space: normal;
-        border-right-width: .1em;
-        border-right-style: solid;
-        border-right-color: #fff;
-        background-position: initial initial;
-        background-repeat: initial initial
+        border-right: .1em solid #fff;
+        background: #ddd initial initial initial initial;
     }
 
     #portal-searchbox {
@@ -327,7 +321,84 @@
     #portal-siteactions li {
         margin-right: .5em
     }
+    /* breadcrumbs */
+    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb{
+        margin-top: -17px;
+        margin-bottom: 17px;
+    }
+    #portal-breadcrumbs.plone-breadcrumb{
+        margin: 0;
+        background-color: #e6e4e4;
+        font-size: 100%;
+    }
+    #portal-breadcrumbs.plone-breadcrumb .container{
+        max-width: 1024px;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* */
+    .fullwidth #portal-breadcrumbs.plone-breadcrumb .container {
+        margin: 0;
+    }
+    #portal-breadcrumbs.plone-breadcrumb ol {
+        display: inline-block;
+        padding: 8px 5px;
+        list-style: none;
+        margin: 0;
+    }
+    #portal-breadcrumbs.plone-breadcrumb ol > li {
+        font-weight: 400;
+        display: inline-block;
+        line-height: 0;
+        position: relative;
+        padding: 0 30px 0 0;
+    }
+    #portal-breadcrumbs.plone-breadcrumb ol > li + li:after {
+        content: "";
+        position: absolute;
+        padding: 0 5px;
+        color: #e6e4e4;
+        border-left: 5px solid;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -21px;
+        top: -15px;
+        padding: 0 !important;
+    }
+    #portal-breadcrumbs.plone-breadcrumb ol > li + li:before {
+        content: "";
+        position: absolute;
+        padding: 0 5px;
+        color: #cccccc;
+        border-left: 5px solid;
+        border-top: 15px solid transparent;
+        border-bottom: 15px solid transparent;
+        left: -20px;
+        top: -15px;
+        padding: 0 !important;
+    }
 
+    #portal-breadcrumbs.plone-breadcrumb a {
+        color: #086ca3;
+    }
+    #portal-breadcrumbs.plone-breadcrumb li#breadcrumbs-home i{
+        font-size: 1.5em;
+        position: relative;
+        top: 2px;
+        color: #666;
+    }
+    #portal-breadcrumbs.plone-breadcrumb > #breadcrumbs-current {
+        color: #666;
+    }
+    #portal-breadcrumbs.plone-breadcrumb .breadcrumbSeparator,
+    #portal-breadcrumbs.plone-breadcrumb #breadcrumbs-you-are-here{
+        display: none;
+    }
+    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb {
+        box-shadow: 0 2px 10px #ccc;
+        border: 0;
+    }
     #content {
         line-height: 1.5em;
         clear: both;
@@ -345,16 +416,12 @@
 
     #content a:link,dl.portlet a:link {
         color: #205c90;
-        border-bottom-width: .1em;
-        border-bottom-style: solid;
-        border-bottom-color: #ccc
+        border-bottom: .1em solid #ccc;
     }
 
     #content a:visited,dl.portlet a:visited {
         color: #427597;
-        border-bottom-width: .1em;
-        border-bottom-style: solid;
-        border-bottom-color: #ccc
+        border-bottom: .1em solid #ccc;
     }
 
     dl.portlet {
@@ -364,10 +431,8 @@
 
     dl.portlet dt {
         padding: .42em 1em;
-        background-color: #ddd;
         line-height: normal;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: #ddd initial initial initial initial;
     }
 
     #content textarea {
@@ -1658,6 +1723,12 @@ label {
         margin-top: 1.3em;
         background-color: transparent
     }
+
+    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb {
+        margin-top: 0;
+        margin-bottom: 0; }
+    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb ol {
+        line-height: 2.5em; }
 
     #secondary-portaltabs {
         margin: 0
