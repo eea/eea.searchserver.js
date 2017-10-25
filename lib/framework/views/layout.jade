@@ -54,8 +54,9 @@ html
             link(rel="preload" href="#{only_css}" as="style" onload="this.rel='stylesheet'")
             <noscript><link rel="stylesheet" href="#{only_css}" /></noscript>
         else
-            each style in css_resources.layout_page
-                link(rel='stylesheet', href=style)
+            if css_resources.layout_page
+                each style in css_resources.layout_page
+                    link(rel='stylesheet', href=style)
 
     body
         != templateRender(headerFile)
@@ -90,8 +91,9 @@ html
     if (renderJs && !debug_mode)
         != renderJs('layout_page')
     else
-        each script in js_resources.layout_page
-            script(type='text/javascript', src=script)
+        if js_resources.layout_page
+            each script in js_resources.layout_page
+                script(type='text/javascript', src=script)
     script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js")
     if google_map_key != "false"
         script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
