@@ -39,6 +39,7 @@ html
 
         - var debug_mode = settings_es_debug_enabled.indexOf('false') === -1
 
+        != templateRender(headFile)
         if !debug_mode
             style
                 include:uglify-css ../public/css/critical.css
@@ -58,6 +59,9 @@ html
 
     body
         != templateRender(headerFile)
+        if (enableBreadcrumbs)
+            +portal_breadcrumbs (breadcrumbs)
+
         div(id="portal-columns")
             div(class="container")
                 div(class="content" id="content")
