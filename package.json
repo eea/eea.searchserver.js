@@ -11,7 +11,7 @@
     "nconf": "*",
     "underscore": "*",
     "csv-parse": "*",
-    "csv-stringify": "*",
+    "csv-stringify": "1.1.2",
     "sync-request": "*",
     "wait-for-port": "*",
     "getenv": "*",
