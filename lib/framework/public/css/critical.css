@@ -340,6 +340,7 @@
     /* */
     .fullwidth #portal-breadcrumbs.plone-breadcrumb .container {
         margin: 0;
+        font-size: 12px;
     }
     #portal-breadcrumbs.plone-breadcrumb ol {
         display: inline-block;
