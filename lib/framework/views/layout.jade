@@ -58,7 +58,7 @@ html
                 each style in css_resources.layout_page
                     link(rel='stylesheet', href=style)
 
-    body
+    body(class="fullwidth")
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)

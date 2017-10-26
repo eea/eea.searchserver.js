@@ -332,15 +332,15 @@
         font-size: 100%;
     }
     #portal-breadcrumbs.plone-breadcrumb .container{
-        max-width: 100%;
+        max-width: 1024px;
         width: 100%;
         padding-left: 0;
         padding-right: 0;
-        font-size: 12px;
     }
     /* */
     .fullwidth #portal-breadcrumbs.plone-breadcrumb .container {
         margin: 0;
+        font-size: 12px;
     }
     #portal-breadcrumbs.plone-breadcrumb ol {
         display: inline-block;
