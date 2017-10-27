@@ -1249,6 +1249,12 @@ input[type=checkbox] {
     text-rendering: auto;
     -webkit-font-smoothing: antialiased
 }
+.eea-icon:before {
+    margin: 0 .3em;
+}
+.eea-icon-home:before {
+    content: "\f015";
+}
 
 .eea-icon-lg {
     font-size: 1.333em;
