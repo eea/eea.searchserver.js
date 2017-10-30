@@ -2244,11 +2244,14 @@ div.facetview_filter_typeahead input {
 .content .page-header {
     background: #FFF;
     padding: 1em;
+}
+.car .page-header {
     box-shadow: 1px 1px 5px -1px #9f9f9f;
 }
 
 .page-header h1 {
-    border-bottom-color: #fff
+    border-bottom-color: #fff;
+    font-size: 180%;
 }
 
 .facetview_group_title {
@@ -2352,9 +2355,6 @@ div.facetview_filter_typeahead input {
     font-size: 12px
 }
 
-.eea-icon::before {
-    margin: auto
-}
 
 #content .jstree-container-ul {
     margin-left: 0;

@@ -165,7 +165,6 @@ h1, h2, h3, h4, h5, h6 {
 #content {
     font-size: 12px;
 }
-.eea-icon:before { margin: auto; }
 #content .jstree-container-ul {
     margin-left: 0;
     background-color: #f6fafd;
@@ -211,6 +210,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* pagination */
+.listingBar {
+    background-color: #f3f3f3;
+    text-align: center;
+    text-transform: lowercase;
+    vertical-align: top;
+    font-size: 11px !important;
+    clear: both;
+}
+
 .pagination {
     height: auto;
 }
@@ -221,6 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .pagination a {
     float: none;
+    border: 0;
 }
 
 .pagination li {
