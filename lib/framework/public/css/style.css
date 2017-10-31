@@ -243,8 +243,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* filter group */
 .current-filters {
-background-color: #f5f9fc;
-padding: 1em 1em 0em 1em;
+    background-color: #f5f9fc;
+    padding: 1em 1em 0em 1em;
+    overflow: hidden;
+    min-height: 100px;
+}
+
+#secondary-portaltabs > .eea-accordion-panels {
+    display: none;
 }
 
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
@@ -287,6 +293,7 @@ padding: 1em 1em 0em 1em;
     padding: 3px 0px 4px 3px;
 /*    background-color: #1b928f;*/
     color: #000;
+    overflow: hidden;
 }
 
 .facetview_filter_options > * {
@@ -503,6 +510,7 @@ div.container {
 div#facetview_rightcol {
     width: 77%;
     margin-right: 1%;
+    float: left;
 }
 
 div#right-column {
@@ -553,7 +561,9 @@ div#footer-wrapper {
     border-collapse: separate !important;
 }
 
-
+.row-fluid {
+    overflow: hidden;
+}
 .row-fluid .span3 {
     float:right;
     width: 22%;
@@ -680,12 +690,6 @@ div.visualization-date {
 
 #landing {
     display:none;
-}
-
-@media (max-width: 320px){
-    .content {
-        padding: 8px !important; /* avoid footer spanning too long on iphone */
-    }
 }
 
 @media (max-width: 480px){

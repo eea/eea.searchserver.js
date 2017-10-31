@@ -10,7 +10,6 @@
       ],
       "layout_page": [
         "facetview/vendor/jquery-ui-1.11.4.custom/jquery-ui.css",
-        "facetview/vendor/bootstrap/css/bootstrap.min.css",
         "facetview/vendor/dist/themes/default/style.min.css",
         "facetview/css/style.css",
         "facetview/css/facetview.css",
@@ -19,9 +18,6 @@
       ]
     },
    "js_resources": {
-      "index_page": [
-        "javascripts/esbootstrap.facetview.js"
-      ],
       "layout_page": [
         "facetview/vendor/dist/libs/jquery.js",
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
