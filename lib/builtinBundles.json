@@ -18,6 +18,8 @@
       ]
     },
    "js_resources": {
+      "index_page": [],
+      "details_page": [],
       "layout_page": [
         "facetview/vendor/dist/libs/jquery.js",
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
