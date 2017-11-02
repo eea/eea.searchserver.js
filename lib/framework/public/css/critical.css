@@ -546,6 +546,12 @@ button,input,select,textarea {
     line-height: inherit;
     margin: 0
 }
+select {
+    border: 1px solid #cccccc;
+    color: #333333;
+    vertical-align: top;
+    background: white;
+}
 
 button {
     overflow: visible
@@ -635,7 +641,16 @@ a {
 img {
     vertical-align: middle
 }
-
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0
+}
 .container {
     margin-right: auto;
     margin-left: auto;
