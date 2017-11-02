@@ -703,7 +703,6 @@ div.visualization-date {
     .row-fluid .span9,
     div#facetview_rightcol{ width: 100%; margin-right:0;}
     .row-fluid .span3{ width: 35%;}
-    div.content{ padding-top: 80px; }
     div.container { max-width: 1024px; }
     #content .eea-section .eea-accordion-panels {
         margin-top: 0;
