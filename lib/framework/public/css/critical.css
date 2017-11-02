@@ -114,18 +114,14 @@
         font-size: 180%;
         line-height: 1.4;
         margin: .67em 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         padding-bottom: .25em
     }
 
     h2 {
         font-size: 150%;
         margin: .83em 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         color: #069;
         padding-bottom: .25em
     }
@@ -133,9 +129,7 @@
     h3 {
         font-size: 125%;
         line-height: 1.5;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         margin: 1em 0
     }
 
@@ -358,7 +352,6 @@
     #portal-breadcrumbs.plone-breadcrumb ol > li + li:after {
         content: "";
         position: absolute;
-        padding: 0 5px;
         color: #e6e4e4;
         border-left: 5px solid;
         border-top: 15px solid transparent;
@@ -370,7 +363,6 @@
     #portal-breadcrumbs.plone-breadcrumb ol > li + li:before {
         content: "";
         position: absolute;
-        padding: 0 5px;
         color: #cccccc;
         border-left: 5px solid;
         border-top: 15px solid transparent;
@@ -644,18 +636,6 @@ img {
     vertical-align: middle
 }
 
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    border: 0
-}
-
 .container {
     margin-right: auto;
     margin-left: auto;
@@ -705,9 +685,7 @@ input[type=checkbox] {
     overflow-x: visible;
     padding-right: 15px;
     padding-left: 15px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: transparent;
+    border-top: 1px solid transparent;
     -webkit-box-shadow: rgba(255,255,255,.0980392) 0 1px 0 inset;
     box-shadow: rgba(255,255,255,.0980392) 0 1px 0 inset
 }
@@ -744,10 +722,7 @@ input[type=checkbox] {
     }
 
     .navbar {
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
-        border-bottom-left-radius: 4px
+        border-radius: 4px;
     }
 
     .navbar-header {
@@ -779,10 +754,7 @@ input[type=checkbox] {
     }
 
     .navbar-fixed-top {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0
+        border-radius: 0;
     }
 
     .navbar-toggle {
@@ -802,23 +774,16 @@ input[type=checkbox] {
     padding: 9px 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
+    background: transparent none;
     border: 1px solid transparent;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-radius: 4px;
 }
 
 .navbar-toggle .icon-bar {
     display: block;
     width: 22px;
     height: 2px;
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px;
-    border-bottom-right-radius: 1px;
-    border-bottom-left-radius: 1px
+    border-radius: 1px;
 }
 
 .navbar-toggle .icon-bar+.icon-bar {
@@ -857,6 +822,13 @@ input[type=checkbox] {
 
 .pull-left {
     float: left!important
+}
+.clearfix:before, .clearfix:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after {
+    clear: both;
 }
 
 .hidden,
@@ -906,10 +878,7 @@ input[type=checkbox] {
     }
 
     input,textarea {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0
+        border-radius: 0;
     }
 
     input[type=submit] {
@@ -922,9 +891,7 @@ input[type=checkbox] {
     }
 
     #content p a:link {
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ccc;
+        border-bottom: 1px solid #ccc;
         word-wrap: break-word
     }
 
@@ -944,9 +911,7 @@ input[type=checkbox] {
     }
 
     dl.portlet dt {
-        background-color: transparent;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: transparent initial initial initial initial;
     }
 
     .portlet {
@@ -1019,18 +984,14 @@ input[type=checkbox] {
         font-size: 180%;
         line-height: 1.4;
         margin: .67em 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         padding-bottom: .25em
     }
 
     h2 {
         font-size: 150%;
         margin: .83em 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         color: #069;
         padding-bottom: .25em
     }
@@ -1038,9 +999,7 @@ input[type=checkbox] {
     h3 {
         font-size: 125%;
         line-height: 1.5;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: #ececec;
+        border-bottom: 1px solid #ececec;
         margin: 1em 0
     }
 
@@ -1086,7 +1045,6 @@ input[type=checkbox] {
     }
 
     #portal-globalnav {
-        background-image: none;
         clear: both;
         display: block;
         font-size: 120%;
@@ -1097,8 +1055,7 @@ input[type=checkbox] {
         padding: 0;
         width: 100%;
         position: relative;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: none initial initial initial initial;
     }
 
     #portal-globalnav>li,#secondary-portaltabs>li {
@@ -1112,15 +1069,13 @@ input[type=checkbox] {
     }
 
     #portal-globalnav li a {
-        background-color: transparent;
         color: #fff;
         display: inline-block;
         padding: 1em .8em;
         border: 0;
         min-width: 0;
         font-weight: 700;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: transparent initial initial initial initial;
     }
 
     #portal-globalnav a:hover:after, #portal-globalnav .eea-nav-current a:after, .mini-header #portal-globalnav .eea-nav-current a:hover:after {
@@ -1160,9 +1115,7 @@ input[type=checkbox] {
         font-size: 75%;
         vertical-align: top;
         padding-right: 92px;
-        background-image: url(//www.eea.europa.eu/eu-flag.png);
-        background-position: 123px -3px;
-        background-repeat: no-repeat no-repeat
+        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 123px -3px;
     }
 
     #secondary-portaltabs #portaltab-europe a {
@@ -1182,9 +1135,8 @@ input[type=checkbox] {
         height: 0;
         width: 0;
         position: absolute;
-        border-width: 10px;
-        border-style: solid;
-        border-color: #fff transparent transparent;
+        border: 10px solid transparent;
+        border-top-color: #fff;
         margin-left: -10px;
         display: block
     }
@@ -1230,9 +1182,7 @@ input[type=checkbox] {
     }
 
     .portlet {
-        background-color: #fff;
-        background-position: initial initial;
-        background-repeat: initial initial
+        background: #fff initial initial initial initial;
     }
 
 
@@ -1351,8 +1301,7 @@ input[type=checkbox] {
 }
 
 input.context {
-    background-color: #069;
-    background-image: none;
+    background: #069 none;
     font-weight: 700;
     font-style: normal;
     font-variant: normal;
@@ -1368,13 +1317,10 @@ input.context {
 }
 
 .eea-accordion-panels {
-    border-width: 0 1px 1px;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-color: #ddd;
-    border-bottom-color: #ddd;
-    border-left-color: #ddd;
+    border-top-width: 0;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
     padding: 10px
 }
 
@@ -1383,8 +1329,6 @@ input.context {
 }
 
 .eea-accordion-panel>h2 {
-    background-image: none;
-    background-color: #e2e2e2;
     border: 1px solid #e0e0e0;
     margin: 0;
     font-size: 115%;
@@ -1392,8 +1336,7 @@ input.context {
     line-height: 3em;
     padding: 0 .5em;
     font-weight: 700;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: #e2e2e2 none initial initial initial;
 }
 
 .eea-accordion-panel>h2 .eea-icon-right::before {
@@ -1481,31 +1424,24 @@ input.context {
 .panel {
     display: none;
     z-index: 600;
-    background-color: transparent;
     border: 0;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: transparent initial initial initial initial;
 }
 
 .panel-top {
     margin: auto;
-    background-image: url(//www.eea.europa.eu/panel_arrow.png);
-    background-color: transparent;
     width: 50px;
     height: 25px;
     position: relative;
     top: 2px;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: transparent url(//www.eea.europa.eu/panel_arrow.png) initial initial initial;
 }
 
 .panel-content {
-    background-color: #fff;
     color: #000;
     clear: both;
     padding: 10px;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: #fff initial initial initial initial;
 }
 
 @media screen {
@@ -1517,9 +1453,7 @@ input.context {
 }
 
 #cross-site-top .panel .portlet {
-    background-color: transparent;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: transparent initial initial initial initial;
 }
 
 #tip-siteaction-chooselang {
@@ -1581,16 +1515,13 @@ input.context {
 }
 
 #portal-searchbox input.gsc-search-button {
-    background-image: none;
-    background-color: #069;
     color: #fff;
     font-size: 12px;
     font-style: normal;
     position: relative;
     width: 80px;
     margin-left: -5px;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: #069 none initial initial initial;
 }
 
 #portal-searchbox input.gsc-input:focus {
@@ -1609,19 +1540,13 @@ input.context {
 #portal-searchbox input.gsc-search-button {
     height: 30px;
     width: 70px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0
+    border-radius: 0;
 }
 
 #portal-searchbox input.gsc-input {
     border: 1px solid gray;
     padding: 0 .5em;
-    background-image: url(//www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png)!important;
-    background-color: #fff!important;
-    background-position: 5px 50%!important;
-    background-repeat: no-repeat no-repeat!important
+    background: #fff url(//www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png) no-repeat no-repeat 5px 50% !important;
 }
 
 #portal-searchbox td {
@@ -1742,9 +1667,7 @@ label {
         padding-bottom: 2em;
         width: 100%;
         padding-right: 90px;
-        background-image: url(//www.eea.europa.eu/eu-flag.png);
-        background-position: 100% 0;
-        background-repeat: no-repeat no-repeat
+        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 100% 0;
     }
 
     #portaltab-europe a {
@@ -1828,9 +1751,7 @@ label {
     #portal-globalnav li a {
         padding: .5em 0;
         display: block;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: gray;
+        border-bottom: 1px solid gray;
         line-height: 2em
     }
 
@@ -1841,42 +1762,75 @@ label {
         margin-bottom: 1em
     }
 
+    #right-area, #left-area {
+        float: none;
+        width: 100%;
+        overflow: auto; }
+    .right-area-js {
+        margin-right: 0; }
+    .left-area-js {
+        margin-left: 0; }
+    #faceted-form .eea-accordion-panel {
+        margin: 0;
+        padding-bottom: 0;
+        background-color: #FFF; }
+    #faceted-form legend {
+        display: none; }
     .eea-section {
+        -webkit-transition: all .25s ease-out;
+        -o-transition: all .25s ease-out;
+        -moz-transition: all .25s ease-out;
+        transition: all .25s ease-out;
+        -webkit-overflow-scrolling: touch;
+        /* */
         left: 100%;
         right: inherit;
-        -webkit-transform: translate3d(0,0,0)
-    }
-
+        will-change: transform;
+        -webkit-transform: translate3d(0, 0, 0); }
     .eea-section .eea-accordion-panels {
         margin-top: 65px;
         overflow: auto;
-        border: 0
-    }
-
+        border: 0; }
+    .eea-section .eea-accordion-title {
+        background-color: #006699;
+        color: #FFF;
+        border: 0;
+        border-bottom: 1px solid gray; }
+    .eea-section .eea-accordion-title:hover {
+        background-color: #006699; }
+    .eea-section .eea-accordion-title.current {
+        background-color: #0077b3; }
+    .eea-right-section-active {
+        left: 10% !important; }
     .eea-right-section {
+        width: 90% !important;
         position: fixed;
         right: 100%;
         top: 0;
         overflow: auto;
         z-index: 1000;
         height: 100%;
-        background-color: #069;
-        width: 90%!important
-    }
-
+        background-color: #006699; }
     .eea-right-section-slider {
         position: fixed;
         top: 50%;
         display: table;
         right: 0;
         left: inherit;
-        z-index: 1000
-    }
-
-    .eea-right-section-slider .eea-icon::before {
+        z-index: 1000; }
+    .eea-right-section-slider .eea-icon:before {
         margin: 0;
-        color: #069
-    }
+        color: #006699; }
+    .eea-right-section-slider-active {
+        right: 90%;
+        z-index: 1000;
+        height: 100%;
+        top: 5%;
+        background-color: black;
+        opacity: 0.5;
+        width: 10%; }
+    .eea-right-section-slider-active .eea-icon {
+        display: none; }
 }
 
 @media screen and (max-width:768px) {
@@ -1941,9 +1895,7 @@ label {
     #portaltab-europe {
         padding-right: 95px;
         width: 195px;
-        background-image: url(//www.eea.europa.eu/eu-flag.png);
-        background-position: 100% 0;
-        background-repeat: no-repeat no-repeat
+        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 100% 0;
     }
 
     #portaltab-europe a {
@@ -2089,15 +2041,11 @@ label {
 }
 
 .btn-group .btn:last-child {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-radius: 4px;
 }
 
 :focus {
-    outline-color: transparent;
-    outline-style: none
+    outline: transparent none;
 }
 
 .facetview_filter_empty,.facetview_filter_typeahead {
@@ -2205,9 +2153,7 @@ div.facetview_filter_typeahead input {
 .notify_loading {
     width: 100%;
     min-height: 30px;
-    background-image: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif);
-    background-position: 50% 50%;
-    background-repeat: no-repeat no-repeat
+    background: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat no-repeat 50% 50%;
 }
 
 .facetview_search_options_container {
@@ -2277,11 +2223,8 @@ div.facetview_filter_typeahead input {
 
 .facetview_selected .facetview_clear {
     padding: 1px;
-    background-image: none;
-    background-color: #f0f0f0;
     border-color: #ccc;
-    background-position: initial initial;
-    background-repeat: initial initial
+    background: #f0f0f0 none initial initial initial;
 }
 
 .facetview_filterselected .eea-icon {
@@ -2484,10 +2427,7 @@ div.facetview_filter_typeahead input {
 .facetview_filter_options .btn {
     background-color: #fff;
     font-weight: 700;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px
+    border-radius: 4px;
 }
 
 .facetview-filter-values,.filters-header {
@@ -2498,10 +2438,7 @@ div.facetview_filter_typeahead input {
 .clear-all,.facetview_selection {
     margin-bottom: 4px;
     background-color: #fff;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-radius: 15px;
     clear: both;
     border: 1px solid #ccc!important
 }
@@ -2554,10 +2491,7 @@ input.facetview_freetext.span9 {
 
 div.content {
     padding: 15px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0;
     -webkit-box-shadow: transparent 0 0 0;
     box-shadow: transparent 0 0 0;
     margin: 0 0 2.5em!important
@@ -2566,9 +2500,7 @@ div.content {
 #content h1,div.content h1 {
     color: #00446a;
     margin: .67em 0;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #e9efcd;
+    border-bottom: 1px solid #e9efcd;
     padding-bottom: .25em;
     padding-right: 4em;
     line-height: 1.4
@@ -2632,9 +2564,7 @@ div#right-column {
 }
 
 .eea_download_stripe::after {
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: #d3d3d3;
+    border-right: 1px solid #d3d3d3;
     height: 14px;
     display: inline-block;
     width: 13px;

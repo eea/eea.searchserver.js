@@ -838,6 +838,14 @@ ul.ui-autocomplete .ui-menu-item.ui-state-focus {
     border:0;
 }
 
+.ui-widget-header,
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: transparent none;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background-color: #205c90;
+}
+
 span.did_you_mean,
 a.did_you_mean{
     font-size:18px;
