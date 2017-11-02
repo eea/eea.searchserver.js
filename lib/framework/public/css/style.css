@@ -733,6 +733,9 @@ div.visualization-date {
         clear: both;
         float: left;
     }
+    .facetview_tree {
+        min-height: 45px;
+    }
 }
 
 @media (max-width: 500px){
