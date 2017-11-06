@@ -1649,7 +1649,9 @@ label {
     .portal-logo {
         display: none!important
     }
-
+    #header-holder {
+        height: 70px;
+    }
     #header-holder .navbar-collapse {
         background-color: #069
     }
@@ -1667,11 +1669,9 @@ label {
         background-color: transparent
     }
 
-    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb {
-        margin-top: 0;
-        margin-bottom: 0; }
-    #eea-above-columns #portal-breadcrumbs.plone-breadcrumb ol {
-        line-height: 2.5em; }
+    #eea-above-columns {
+        display: none;
+    }
 
     #secondary-portaltabs {
         margin: 0
