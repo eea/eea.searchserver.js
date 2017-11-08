@@ -4,6 +4,7 @@ html
     head
         block title
         meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         script(type='text/javascript').
             var field_base="#{field_base}";
         script
@@ -39,11 +40,14 @@ html
 
         - var debug_mode = settings_es_debug_enabled.indexOf('false') === -1
 
-        if !debug_mode
-            style
-                include:uglify-css ../public/css/critical.css
+        if !renderCritical
+            != templateRender(headFile)
         else
-            link(rel='stylesheet', href="esbootstrap_resources/critical.css")
+            if !debug_mode
+                style
+                    include:uglify-css ../public/css/critical.css
+            else
+                link(rel='stylesheet', href="esbootstrap_resources/css/critical.css")
 
         if (renderStyles && !debug_mode)
             script
@@ -53,11 +57,17 @@ html
             link(rel="preload" href="#{only_css}" as="style" onload="this.rel='stylesheet'")
             <noscript><link rel="stylesheet" href="#{only_css}" /></noscript>
         else
-            each style in css_resources.layout_page
-                link(rel='stylesheet', href=style)
+            if css_resources.layout_page
+                each style in css_resources.layout_page
+                    link(rel='stylesheet', href=style)
 
-    body
+        block extrastyles
+
+    body(class="fullwidth")
         != templateRender(headerFile)
+        if (enableBreadcrumbs)
+            +portal_breadcrumbs (breadcrumbs)
+
         div(id="portal-columns")
             div(class="container")
                 div(class="content" id="content")
@@ -81,15 +91,15 @@ html
 
         != templateRender(footerFile)
 
-        block extrastyles
 
         if (renderJs && !debug_mode)
             != renderJs('layout_page')
         else
-            each script in js_resources.layout_page
-                script(type='text/javascript', src=script)
+            if js_resources.layout_page
+                each script in js_resources.layout_page
+                    script(type='text/javascript', src=script)
         script(type="text/javascript", src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.js")
+        block extrajavascripts
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
         script(type="text/javascript", src="https://www.eea.europa.eu/external_templates_scripts.js")
-        block extrajavascripts

@@ -1,6 +1,6 @@
 {
   "name": "eea-searchserver",
-  "version": "1.3.7",
+  "version": "1.3.10",
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
@@ -10,8 +10,8 @@
     "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
-    "csv-parse": "*",
-    "csv-stringify": "*",
+    "csv-parse": "1.2.4",
+    "csv-stringify": "1.1.2",
     "sync-request": "*",
     "wait-for-port": "*",
     "getenv": "*",
