@@ -158,6 +158,7 @@ li.ui-state-default.ui-corner-top {
 #facetview_results th {
     display: table-cell;
     vertical-align: top;
+    padding: 8px;
 }
 
 #facetview_results th div {
