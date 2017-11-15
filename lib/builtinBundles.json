@@ -22,6 +22,7 @@
       "details_page": [],
       "layout_page": [
         "facetview/vendor/dist/libs/jquery.js",
+        "facetview/vendor/dist/libs/jquery.migrate.js",
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
         "facetview/vendor/dist/jstree.js",
         "facetview/vendor/linkify/1.0/jquery.linkify-1.0-min.js",
