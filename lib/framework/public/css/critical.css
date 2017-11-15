@@ -218,7 +218,7 @@
         line-height: normal;
         font-family: Arial,FreeSans,sans-serif;
         color: #000;
-        background: #fff initial initial initial initial;
+        background: #fff;
     }
 
     h1,h2,h3,h4,h5 {
@@ -281,7 +281,6 @@
         clear: both;
         font-size: 80%;
         margin: 0 0 1em;
-        background: initial initial initial initial;
     }
 
     #portal-globalnav li a {
@@ -290,7 +289,7 @@
         min-width: 6em;
         white-space: normal;
         border-right: .1em solid #fff;
-        background: #ddd initial initial initial initial;
+        background: #ddd;
     }
 
     #portal-searchbox {
@@ -425,7 +424,7 @@
     dl.portlet dt {
         padding: .42em 1em;
         line-height: normal;
-        background: #ddd initial initial initial initial;
+        background: #ddd;
     }
 
     #content textarea {
@@ -926,7 +925,7 @@ input[type=checkbox] {
     }
 
     dl.portlet dt {
-        background: transparent initial initial initial initial;
+        background: transparent;
     }
 
     .portlet {
@@ -1070,7 +1069,7 @@ input[type=checkbox] {
         padding: 0;
         width: 100%;
         position: relative;
-        background: none initial initial initial initial;
+        background: none;
     }
 
     #portal-globalnav>li,#secondary-portaltabs>li {
@@ -1090,7 +1089,7 @@ input[type=checkbox] {
         border: 0;
         min-width: 0;
         font-weight: 700;
-        background: transparent initial initial initial initial;
+        background: transparent;
     }
 
     #portal-globalnav a:hover:after, #portal-globalnav .eea-nav-current a:after, .mini-header #portal-globalnav .eea-nav-current a:hover:after {
@@ -1197,7 +1196,7 @@ input[type=checkbox] {
     }
 
     .portlet {
-        background: #fff initial initial initial initial;
+        background: #fff;
     }
 
 
@@ -1351,7 +1350,7 @@ input.context {
     line-height: 3em;
     padding: 0 .5em;
     font-weight: 700;
-    background: #e2e2e2 none initial initial initial;
+    background: #e2e2e2 none;
 }
 
 .eea-accordion-panel>h2 .eea-icon-right::before {
@@ -1440,7 +1439,7 @@ input.context {
     display: none;
     z-index: 600;
     border: 0;
-    background: transparent initial initial initial initial;
+    background: transparent;
 }
 
 .panel-top {
@@ -1449,14 +1448,14 @@ input.context {
     height: 25px;
     position: relative;
     top: 2px;
-    background: transparent url(//www.eea.europa.eu/panel_arrow.png) initial initial initial;
+    background: transparent url(//www.eea.europa.eu/panel_arrow.png);
 }
 
 .panel-content {
     color: #000;
     clear: both;
     padding: 10px;
-    background: #fff initial initial initial initial;
+    background: #fff;
 }
 
 @media screen {
@@ -1468,7 +1467,7 @@ input.context {
 }
 
 #cross-site-top .panel .portlet {
-    background: transparent initial initial initial initial;
+    background: transparent;
 }
 
 #tip-siteaction-chooselang {
@@ -1536,7 +1535,7 @@ input.context {
     position: relative;
     width: 80px;
     margin-left: -5px;
-    background: #069 none initial initial initial;
+    background: #069 none;
 }
 
 #portal-searchbox input.gsc-input:focus {
@@ -2239,7 +2238,7 @@ div.facetview_filter_typeahead input {
 .facetview_selected .facetview_clear {
     padding: 1px;
     border-color: #ccc;
-    background: #f0f0f0 none initial initial initial;
+    background: #f0f0f0 none;
 }
 
 .facetview_filterselected .eea-icon {
