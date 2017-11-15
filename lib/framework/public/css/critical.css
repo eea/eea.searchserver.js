@@ -1618,6 +1618,10 @@ html {
     font-size: 16px
 }
 
+#secondary-portaltabs {
+    height: 100%;
+    overflow: hidden;
+}
 #portaltab-europe {
     width: 212px
 }
@@ -1673,7 +1677,7 @@ label {
     }
 
     #secondary-portaltabs {
-        margin: 0
+        margin: 0;
     }
 
     #portaltab-europe {
@@ -1909,7 +1913,7 @@ label {
     #portaltab-europe {
         padding-right: 95px;
         width: 195px;
-        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 100% 0;
+        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 100% -3px;
     }
 
     #portaltab-europe a {
@@ -1928,9 +1932,6 @@ label {
         padding-right: 0!important
     }
 
-    #portal-globalnav {
-        font-size: 95%
-    }
 
     #portal-globalnav li a {
         padding: 1.4em .8em
@@ -1957,7 +1958,7 @@ label {
         padding-right: 0 !important; }
 
     #portal-globalnav {
-        font-size: 95%; }
+        font-size: 90%; }
 
     #portal-globalnav li a {
         padding: 1.4em 0.8em; }
