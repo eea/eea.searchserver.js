@@ -2646,7 +2646,7 @@ div#portal-searchbox {
 
 #facetview_results_wrapper {
     position: relative;
-    overflow: hidden
+    overflow: auto
 }
 
 .jstree-node.facetview_filterchoice.leaf a.jstree-anchor {

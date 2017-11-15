@@ -633,7 +633,7 @@ div.visualization-date {
 
 #facetview_results_wrapper {
     position: relative;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #facetview_results_wrapper em{
