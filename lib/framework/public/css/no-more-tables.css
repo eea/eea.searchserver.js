@@ -3,6 +3,7 @@
 /* Force table to not be like tables anymore */
     table#facetview_results{
         display:table !important;
+        width: 100%;
     }
     #facetview_rightcol table,
     #facetview_rightcol thead,
@@ -31,6 +32,7 @@
         white-space: normal;
         text-align:left;
         min-height:36px;
+        overflow: hidden;
     }
 
     #facetview_rightcol td:before {
