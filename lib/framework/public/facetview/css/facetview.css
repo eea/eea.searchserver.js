@@ -511,3 +511,11 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     padding-top:3px;
     padding-right:10px;
 }
+
+.facetview_facetrange_histogram {
+    position: relative;
+    margin-top: -40px;
+    top: 0;
+    margin-left: 0;
+    width: 100%;
+}
