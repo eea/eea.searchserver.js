@@ -38,7 +38,7 @@ html
 
         link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
 
-        - var debug_mode = skip_resources_bundling && skip_resources_bundling.indexOf('false') === -1
+        - var debug_mode = skip_resources_bundling || false
 
         if !skip_external_template_styles
             != templateRender(headFile)
