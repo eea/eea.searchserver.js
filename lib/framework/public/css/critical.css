@@ -277,21 +277,6 @@
         z-index: 2
     }
 
-    #portal-globalnav {
-        clear: both;
-        font-size: 80%;
-        margin: 0 0 1em;
-    }
-
-    #portal-globalnav li a {
-        display: inline-block;
-        padding: .5em 1em 1.8em;
-        min-width: 6em;
-        white-space: normal;
-        border-right: .1em solid #fff;
-        background: #ddd;
-    }
-
     #portal-searchbox {
         float: right;
         text-align: left;
@@ -1052,16 +1037,20 @@ input[type=checkbox] {
     }
 
     #globalnav-holder {
-        background-color: #069;
+        background-color: #006699;
         width: 100%;
         display: block;
-        clear: both
-    }
-
-    #portal-globalnav {
         clear: both;
-        display: block;
-        font-size: 120%;
+    }
+    /* */
+    .mini-header #globalnav-holder {
+        border-top: 5px solid #FFF;
+    }
+    #portal-globalnav {
+        background: none;
+        clear: both;
+        display: flex;
+        font-size: 105%;
         height: 50px;
         list-style: none;
         margin: 0 auto;
@@ -1069,30 +1058,149 @@ input[type=checkbox] {
         padding: 0;
         width: 100%;
         position: relative;
-        background: none;
     }
-
-    #portal-globalnav>li,#secondary-portaltabs>li {
+    #portal-globalnav > li,
+    #secondary-portaltabs > li {
         margin-bottom: 0;
-        float: left;
-        text-align: center;
-        height: 100%;
-        display: inline-block;
-        white-space: nowrap;
-        box-sizing: border-box
+        height: 50px;
+        display: flex;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
     }
-
-    #portal-globalnav li a {
-        color: #fff;
-        display: inline-block;
-        padding: 1em .8em;
-        border: 0;
-        min-width: 0;
-        font-weight: 700;
+    #portal-globalnav li a  {
         background: transparent;
+        position: relative;
+        border-right: 0;
+        min-width: 0;
+        padding: inherit;
     }
-
-    #portal-globalnav a:hover:after, #portal-globalnav .eea-nav-current a:after, .mini-header #portal-globalnav .eea-nav-current a:hover:after {
+    #portal-globalnav li > a {
+        color: white;
+        padding: 1em 0.8em;
+    }
+    #portal-globalnav li > a {
+        font-weight:bold;
+    }
+    #portal-globalnav > li > a,
+    #secondary-portaltabs > li > a
+    {
+        display: flex;
+        align-items: center;
+    }
+    #portal-globalnav #secondary-portaltabs-container {
+        display: none;
+    }
+    .mini-header #portal-globalnav #secondary-portaltabs-container {
+        display: flex;
+    }
+    #secondary-portaltabs {
+        display: flex;
+        margin-left: 0;
+    }
+    #secondary-portaltabs li a {
+        padding: 1em 0.45em;
+    }
+    /* */
+    .eea-navsiteactions-active > a {
+        color: #346f83 !important;
+        background-color: white !important;
+        position: relative;
+        z-index: 601;
+    }
+    #siteaction-networks-menu .mini-header-expander {
+        background-color: transparent !important;
+    }
+    #siteaction-networks-menu a:hover:after {
+        border-left-color: transparent;
+    }
+    #secondary-globalnav-tips li a {
+        padding: 0.3em 0;
+        font-size: small;
+    }
+    #secondary-globalnav-tips a,
+    #secondary-globalnav-tips a:hover,
+    #secondary-globalnav-tips li a,
+    #secondary-globalnav-tips li a:hover {
+        color: #346f83;
+        font-weight: normal;
+    }
+    #portal-globalnav a:hover,
+    #portal-globalnav .selected a {
+        background: transparent;
+        cursor: pointer;
+    }
+    #portal-globalnav .selected a {
+        background-color: white;
+        position: relative;
+        height: 15px;
+    }
+    #portal-globalnav #portaltab-more,
+    #portal-globalnav #portaltab-eeahome {
+        display: none;
+    }
+    .mini-header #portal-globalnav #portaltab-more,
+    .mini-header #portal-globalnav #portaltab-eeahome {
+        display: flex;
+    }
+    #portal-globalnav .mini-header-expander {
+        margin: 0 0.5em;
+        padding: 0.5em 0.8em !important;
+        display: block;
+        align-items: normal;
+        overflow: visible;
+    }
+    #portaltab-media {
+        margin: 0 0 0 auto;
+    }
+    #secondary-portaltabs .eea-icon:before {
+        margin: 0;
+    }
+    #siteaction-networks-menu .eea-icon-caret-down {
+        display: none;
+    }
+    #portaltab-europe {
+        width: 215px;
+        font-size: 80%;
+        vertical-align: top;
+        padding-right: 92px;
+        background: url("//www.eea.europa.eu/eu-flag.png") no-repeat 122px -3px;
+    }
+    #portaltab-europe a {
+        font-weight: normal !important;
+        /* */
+    }
+    .mini-header #portaltab-europe {
+        display: none;
+    }
+    #portaltab-eeahome  {
+        width: 110px;
+        font-size: 70%;
+        line-height: 1.1;
+        padding-left: 35px;
+        background: url("//www.eea.europa.eu/globalnav-logo.png") no-repeat 10% 60%;
+    }
+    #portal-globalnav #portaltab-eeahome {
+        text-align: left;
+    }
+    #secondary-portaltabs #portaltab-europe a {
+        font-weight: normal;
+        text-align: right;
+        padding: 1em 0;
+    }
+    #portal-globalnav .en_icon {
+        background: url(//www.eea.europa.eu/en_icon.png) no-repeat scroll right -1px transparent;
+    }
+    /* */
+    #globalnav-holder .hiddenStructure{
+        height: 0;
+    }
+    .mini-header #portal-globalnav .eea-nav-inactive a:after {
+        display: none;
+    }
+    #portal-globalnav a:hover:after,
+    #portal-globalnav .eea-nav-current a:after,
+    .mini-header #portal-globalnav .eea-nav-current a:hover:after {
         top: 0;
         left: 50%;
         content: " ";
@@ -1105,54 +1213,10 @@ input[type=checkbox] {
         margin-left: -10px;
         display: block;
     }
-
+    #portaltab-eeahome a:hover:after,
+    #secondary-portaltabs .mini-header-expander a:hover:after,
     #portaltab-europe a:hover:after {
         border: none;
-    }
-
-    #secondary-portaltabs li a {
-        padding: 1em .45em
-    }
-
-    #portal-globalnav #portaltab-eeahome {
-        display: none
-    }
-
-    li#secondary-portaltabs-container {
-        float: right;
-        margin: 0;
-        height: 100%
-    }
-
-    #portaltab-europe {
-        width: 120px;
-        font-size: 75%;
-        vertical-align: top;
-        padding-right: 92px;
-        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 123px -3px;
-    }
-
-    #secondary-portaltabs #portaltab-europe a {
-        font-weight: 400;
-        text-align: right;
-        padding: 1em 0
-    }
-
-    #portal-globalnav li {
-        position: relative
-    }
-
-    #portal-globalnav .eea-nav-current a::after {
-        top: 0;
-        left: 50%;
-        content: ' ';
-        height: 0;
-        width: 0;
-        position: absolute;
-        border: 10px solid transparent;
-        border-top-color: #fff;
-        margin-left: -10px;
-        display: block
     }
 }
 
@@ -1605,7 +1669,8 @@ input.context {
 
 #portal-externalsites li a,#portal-siteactions li a {
     color: #fff;
-    font-size: 11px
+    font-size: 11px;
+    cursor: pointer
 }
 
 #siteaction-contactus {
@@ -1621,9 +1686,6 @@ html {
 #secondary-portaltabs {
     height: 100%;
     overflow: hidden;
-}
-#portaltab-europe {
-    width: 212px
 }
 
 dl {
@@ -1676,29 +1738,71 @@ label {
         display: none;
     }
 
+    #portal-globalnav {
+        display: flex;
+        flex-direction: column; }
+
+    #portaltab-europe {
+        order: 1; }
+
+    #portaltab-media {
+        margin: 0; }
+
+    #portal-globalnav .current a {
+        padding-left: 20px; }
+
+    #portal-globalnav .current a:after {
+        top: 50% !important;
+        left: 0 !important;
+        border-left-color: #fff;
+        border-top-color: transparent !important;
+        margin-left: 0 !important;
+        margin-top: -10px !important; }
+
     #secondary-portaltabs {
         margin: 0;
-    }
+        width: 100%; }
+
+
+    #secondary-portaltabs .portlet {
+        margin-bottom: 0;
+        padding: 0; }
+
+    #globalnav-holder, #portal-globalnav {
+        height: inherit; }
+
+    .mini-header #globalnav-holder {
+        border: 0; }
+
+    #portal-globalnav > li > a {
+        padding: 0.5em 0;
+        line-height: 2em;
+        width: 100%; }
+
+    .portal-globalnav li a {
+        border-bottom: 1px solid gray; }
+
+    #portal-globalnav a:hover:after, #portal-globalnav .eea-nav-current a:after, .mini-header #portal-globalnav .eea-nav-current a:hover:after {
+        top: 7px;
+        left: -1%;
+        border-left-color: #FFF;
+        border-top-color: transparent;
+        margin-left: -11px; }
 
     #portaltab-europe {
         margin-top: 1em;
         padding-bottom: 2em;
         width: 100%;
         padding-right: 90px;
-        background: url(//www.eea.europa.eu/eu-flag.png) no-repeat no-repeat 100% 0;
-    }
-
+        background: url("//www.eea.europa.eu/eu-flag.png") no-repeat right -5px }
     #portaltab-europe a {
         text-align: left;
-        margin-top: 1em
-    }
+        margin-top: 1em; }
 
-    #secondary-portaltabs #portaltab-europe a {
-        padding: .5em 0 2em;
-        border-bottom-width: 0;
-        text-align: left
-    }
-
+    #portaltab-europe a {
+        padding: 0.5em 0 2em 0;
+        border-bottom: 0;
+        text-align: left; }
     .panel {
         max-width: 335px;
         left: 20px!important
@@ -1766,12 +1870,6 @@ label {
         height: inherit
     }
 
-    #portal-globalnav li a {
-        padding: .5em 0;
-        display: block;
-        border-bottom: 1px solid gray;
-        line-height: 2em
-    }
 
     .right-column-area {
         float: none;
