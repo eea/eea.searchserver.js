@@ -599,9 +599,6 @@ td {
     box-sizing: border-box
 }
 
-html {
-    font-size: 10px
-}
 
 body {
     font-family: 'Open Sans',Verdana,Helvetica,Arial,sans-serif;
@@ -1679,9 +1676,6 @@ input.context {
 
 
 
-html {
-    font-size: 16px
-}
 
 #secondary-portaltabs {
     height: 100%;

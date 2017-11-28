@@ -63,7 +63,7 @@ html
 
         block extrastyles
 
-    body(class="fullwidth")
+    body(class="fullwidth #{app_id}")
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
