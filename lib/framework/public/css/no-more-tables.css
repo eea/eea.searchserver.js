@@ -52,4 +52,7 @@
     Label the data
     */
     #facetview_rightcol td:before { content: attr(data-title); }
+    #facetview_results td:empty {
+        display: none;
+    }
 }
