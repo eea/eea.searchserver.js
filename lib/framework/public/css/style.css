@@ -628,36 +628,6 @@ div.visualization-date {
     content: "\f03a";
 }
 
-.eea-icon-twitter-square:before {
-    content: "\f081";
-}
-
-.eea-icon-facebook-square:before {
-    content: "\f082";
-}
-
-.eea-icon-youtube-square:before {
-    content: "\f166";
-}
-
-.eea-icon-rss-square:before {
-    content: "\f143";
-}
-
-.portlet-subscription .eea-icon-lg {
-    line-height: 0.75em;
-    width: 20px;
-    color: #596EA0;
-}
-.portlet-subscription .eea-icon-twitter-square {
-    color: #1da1f2;
-}
-.portlet-subscription .eea-icon-rss-square {
-    color: #ED8628;
-}
-.portlet-subscription .eea-icon-youtube-square {
-    color: #DB2B28;
-}
 
 /* end eea-icons definitions */
 
