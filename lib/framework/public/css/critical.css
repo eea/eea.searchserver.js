@@ -484,12 +484,21 @@
     }
     .moreLink {
         border: 0 !important;
-        background: transparent url(//www.eea.europa.eu/sprite-eeaimages.png) no-repeat scroll -441px -9px;
         display: inline-block;
-        padding-left: 25px;
+        padding-left: 20px;
         height: 18px;
         font-size: 11px;
         line-height: 1.6;
+        position: relative;
+    }
+    .moreLink:before {
+        content: "\f138";
+        font-family: FontAwesome;
+        font-size: 16px;
+        color: gray;
+        position: absolute;
+        margin-left: -18px;
+        top: -3px;
     }
 }
 
@@ -843,7 +852,8 @@ input[type=checkbox] {
 
     ul {
         margin: 0 0 0 1.5em;
-        list-style: square inside url(//www.eea.europa.eu/bullet.gif)
+        list-style: square;
+        color: #638c9c;
     }
 
     li {
@@ -949,6 +959,33 @@ input[type=checkbox] {
 
     .portlet-subscription dd,.portlet-subscription dd div {
         margin-bottom: .5em
+    }
+
+    .portlet-subscription .eea-icon-lg {
+        line-height: 0.75em;
+        color: #596EA0;
+        width: 20px;
+    }
+    .portlet-subscription .eea-icon-facebook-square::before {
+        content: "\f082";
+    }
+    .portlet-subscription .eea-icon-twitter-square::before {
+        content: "\f081";
+    }
+    .portlet-subscription .eea-icon-twitter-square {
+        color: #1da1f2;
+    }
+    .portlet-subscription .eea-icon-rss-square::before {
+        content: "\f143";
+    }
+    .portlet-subscription .eea-icon-rss-square {
+        color: #ED8628;
+    }
+    .portlet-subscription .eea-icon-youtube-square::before {
+        content: "\f166";
+    }
+    .portlet-subscription .eea-icon-youtube-square {
+        color: #DB2B28;
     }
 
     body {
@@ -1169,16 +1206,6 @@ input[type=checkbox] {
     }
     .mini-header #portaltab-europe {
         display: none;
-    }
-    #portaltab-eeahome  {
-        width: 110px;
-        font-size: 70%;
-        line-height: 1.1;
-        padding-left: 35px;
-        background: url("//www.eea.europa.eu/globalnav-logo.png") no-repeat 10% 60%;
-    }
-    #portal-globalnav #portaltab-eeahome {
-        text-align: left;
     }
     #secondary-portaltabs #portaltab-europe a {
         font-weight: normal;
@@ -2257,11 +2284,6 @@ div.facetview_filter_typeahead input {
     width: 286px
 }
 
-.notify_loading {
-    width: 100%;
-    min-height: 30px;
-    background: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat no-repeat 50% 50%;
-}
 
 .facetview_search_options_container {
     display: none
