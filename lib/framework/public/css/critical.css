@@ -576,7 +576,8 @@ table {
     border-spacing: 0
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(odd),
+.table-striped > tr:nth-of-type(odd) {
     background-color: #f9f9f9;
 }
 
@@ -584,7 +585,8 @@ table {
     border: 1px solid #dddddd;
 }
 .table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > td
+.table-bordered > tbody > tr > td,
+.table-bordered >  tr > td
 {
     border: 1px solid #dddddd;
 }
