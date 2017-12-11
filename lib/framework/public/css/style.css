@@ -615,6 +615,7 @@ div.visualization-date {
     background-color: #009590;
 }
 
+/* eea-icons definitions */
 .eea-icon.tabular:before {
     content: "\f0ce";
 }
@@ -627,6 +628,8 @@ div.visualization-date {
     content: "\f03a";
 }
 
+
+/* end eea-icons definitions */
 
 .facetview_display_type a {display:inline-block;margin:0 5px;padding:5px;border:1px solid #fff;outline:0!important;text-transform:capitalize;}
 .facetview_display_type a.active, .facetview_display_type a:hover {border: 1px solid #ccc;border-radius:3px;background-color:#ececec;}

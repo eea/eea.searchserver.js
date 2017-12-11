@@ -48,6 +48,8 @@ html
                     include:uglify-css ../public/css/critical.css
             else
                 link(rel='stylesheet', href="esbootstrap_resources/css/critical.css")
+            link(rel="preload" href="https://www.eea.europa.eu/external_templates_custom.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href="https://www.eea.europa.eu/external_templates_custom.css" /></noscript>
 
         if (renderStyles && !debug_mode)
             script
@@ -61,9 +63,10 @@ html
                 each style in css_resources.layout_page
                     link(rel='stylesheet', href=style)
 
+
         block extrastyles
 
-    body(class="fullwidth")
+    body(class="fullwidth #{app_id}")
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
