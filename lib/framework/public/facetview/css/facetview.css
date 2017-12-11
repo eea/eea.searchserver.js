@@ -76,7 +76,7 @@
 }
 
 .facetview_tree {
-/*    
+/*
     overflow-y: auto;
     overflow-x: hidden;
 */
@@ -502,6 +502,33 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     width: 180px;
 }
 
+.histogram-tooltip {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 9;
+}
+
+.histogram-tooltip.hidden {
+    display: none;
+}
+
+.histogram-tooltip p {
+    margin: 0;
+    font-family: Futura;
+    font-size: 10px;
+}
+
 .no-results-message {
     display:none;
 }
@@ -514,7 +541,6 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 
 .facetview_facetrange_histogram {
     position: relative;
-/*    margin-top: -40px;*/
     top: 0;
     margin-left: 0;
     width: 100%;
