@@ -28,7 +28,7 @@
         "facetview/vendor/linkify/1.0/jquery.linkify-1.0-min.js",
         "facetview/vendor/bootstrap/js/bootstrap.min.js",
         "facetview/vendor/jquery-ui-1.11.4.custom/jquery-ui.js",
-        "https://d3js.org/d3.v4.min.js",
+        "facetview/vendor/d3/d3.v4.js",
         "facetview/jquery.facetview.js",
         "facetview/facetviewhelpers.js",
         "facetview/landing.js",
