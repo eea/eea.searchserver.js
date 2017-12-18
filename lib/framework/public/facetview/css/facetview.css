@@ -565,7 +565,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     -moz-user-select : none;
     -webkit-user-select : none;
     color: gray;
-    cursor: pointer;
+    cursor: cursor;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px){
