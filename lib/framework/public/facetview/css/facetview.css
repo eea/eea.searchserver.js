@@ -543,6 +543,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     position: relative;
     top: 0;
     margin-left: 0;
+    padding: 0;
 }
 
 
@@ -556,7 +557,6 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 
 .facetview_facetrange_histogram.facetview_rangecontainer input.right {
     float: right;
-
 }
 
 .facetview_facetrange_histogram input.disabled {
@@ -567,18 +567,9 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     cursor: cursor;
 }
 
-@media screen and (max-width: 768px){
-    .facetview_facetrange_histogram.facetview_rangecontainer input {
-        width: 45%;
-    }
-    .facetview_facetrange_histogram.facetview_rangecontainer input.right {
-        float:right;
-    }
 
-}
-
-@media screen and (min-width: 768px) and (max-width: 1280px){
-    .facetview_facetrange_histogram.facetview_rangecontainer input {
-        width: 45%;
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .facetview_facetrange_histogram h3 {
+        width: 92%;
     }
 }
