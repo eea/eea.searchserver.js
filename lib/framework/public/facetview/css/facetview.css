@@ -573,3 +573,15 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
         width: 92%;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .facetview_facetrange_histogram.facetview_rangecontainer input {
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 935px){
+    .facetview_facetrange_histogram.facetview_rangecontainer input {
+        width: 40%;
+    }
+}
