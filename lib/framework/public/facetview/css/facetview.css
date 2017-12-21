@@ -539,6 +539,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     padding-right:10px;
 }
 
+.facetview_rangecontainer,
 .facetview_facetrange_histogram {
     position: relative;
     top: 0;
