@@ -557,6 +557,8 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     width: 30%;
 }
 
+
+
 .facetview_rangecontainer input.right,
 .facetview_facetrange_histogram.facetview_rangecontainer input.right {
     float: right;
@@ -571,10 +573,25 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     cursor: cursor;
 }
 
+.facetview_rangecontainer .um ,
+.facetview_facetrange_histogram.facetview_rangecontainer .um {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 12px;
+}
 
 @media screen and (min-width: 480px) and (max-width: 767px){
     .facetview_facetrange_histogram h3 {
         width: 92%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1212px) {
+    .facetview_rangecontainer .um ,
+    .facetview_facetrange_histogram.facetview_rangecontainer .um {
+        display: none !important;
     }
 }
 
@@ -583,11 +600,17 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     .facetview_facetrange_histogram.facetview_rangecontainer input {
         width: 46%;
     }
+
 }
 
 @media screen and (min-width: 800px) and (max-width: 935px){
     .facetview_rangecontainer input ,
     .facetview_facetrange_histogram.facetview_rangecontainer input {
         width: 40%;
+    }
+    .facetview_rangecontainer .um ,
+    .facetview_facetrange_histogram.facetview_rangecontainer .um {
+        display: none !important;
+
     }
 }
