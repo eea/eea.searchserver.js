@@ -504,7 +504,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 
 .histogram-tooltip {
     position: absolute;
-    width: 80px;
+    width: 100px;
     height: auto;
     padding: 5px;
     text-align: center;
