@@ -1384,6 +1384,14 @@ input[type=checkbox] {
     content: '\f160'
 }
 
+.eea-icon-sort-alpha-desc::before {
+    content: '\f15e'
+}
+
+.eea-icon-sort-amount-desc::before {
+    content: '\f161'
+}
+
 .eea-icon-share-alt::before {
     content: '\f1e0'
 }
