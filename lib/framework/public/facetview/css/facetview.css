@@ -403,7 +403,6 @@ ul.ui-autocomplete {
 }
 
 ul.ui-autocomplete li.autocomplete_facet_value{
-    float:left;
     font-size:12px;
     font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
     padding:0px 0px 0px 0px;
