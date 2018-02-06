@@ -76,7 +76,7 @@
 }
 
 .facetview_tree {
-/*    
+/*
     overflow-y: auto;
     overflow-x: hidden;
 */
@@ -403,7 +403,6 @@ ul.ui-autocomplete {
 }
 
 ul.ui-autocomplete li.autocomplete_facet_value{
-    float:left;
     font-size:12px;
     font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
     padding:0px 0px 0px 0px;
@@ -502,6 +501,33 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     width: 180px;
 }
 
+.histogram-tooltip {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+    pointer-events: none;
+    z-index: 9;
+}
+
+.histogram-tooltip.hidden {
+    display: none;
+}
+
+.histogram-tooltip p {
+    margin: 0;
+    font-family: Futura;
+    font-size: 10px;
+}
+
 .no-results-message {
     display:none;
 }
@@ -512,10 +538,78 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     padding-right:10px;
 }
 
+.facetview_rangecontainer,
 .facetview_facetrange_histogram {
     position: relative;
-/*    margin-top: -40px;*/
     top: 0;
     margin-left: 0;
-    width: 100%;
+    padding: 0;
+}
+
+
+.facetview_rangecontainer input ,
+.facetview_facetrange_histogram.facetview_rangecontainer input
+{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: 0;
+    width: 30%;
+}
+
+
+
+.facetview_rangecontainer input.right,
+.facetview_facetrange_histogram.facetview_rangecontainer input.right {
+    float: right;
+}
+
+.facetview_rangecontainer input.disabled,
+.facetview_facetrange_histogram input.disabled {
+    user-select : none;
+    -moz-user-select : none;
+    -webkit-user-select : none;
+    color: gray;
+    cursor: cursor;
+}
+
+.facetview_rangecontainer .um ,
+.facetview_facetrange_histogram.facetview_rangecontainer .um {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    white-space: pre-wrap;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .facetview_facetrange_histogram h3 {
+        width: 92%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1212px) {
+    .facetview_rangecontainer .um ,
+    .facetview_facetrange_histogram.facetview_rangecontainer .um {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .facetview_rangecontainer input ,
+    .facetview_facetrange_histogram.facetview_rangecontainer input {
+        width: 46%;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 935px){
+    .facetview_rangecontainer input ,
+    .facetview_facetrange_histogram.facetview_rangecontainer input {
+        width: 40%;
+    }
+    .facetview_rangecontainer .um ,
+    .facetview_facetrange_histogram.facetview_rangecontainer .um {
+        display: none !important;
+
+    }
 }

@@ -44,3 +44,7 @@ h4 {
     overflow-x: auto;
     overflow-y: hidden;
 }
+
+.text-right {
+    text-align: right;
+}
