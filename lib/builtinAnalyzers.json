@@ -45,5 +45,15 @@
       "type" : "pattern",
       "lowercase" : false,
       "pattern" : "\\|"
+    },
+    "freetext": {
+      "filter": [
+        "lowercase"
+      ],
+      "char_filter": [
+        "html_strip"
+      ],
+      "type": "custom",
+      "tokenizer": "standard"
     }
 }

@@ -561,6 +561,7 @@ div#footer-wrapper {
     border-collapse: separate !important;
 }
 
+
 .row-fluid {
     overflow: hidden;
 }
@@ -832,7 +833,7 @@ clear: left;
 }
 
 ul.ui-autocomplete .ui-menu-item {
-    float:left;
+    display: block;
     font-size:20px;
     font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
     padding:5px 0px 5px 37px;
