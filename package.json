@@ -20,7 +20,8 @@
     "node-crontab": "*",
     "morgan": "*",
     "request": "*",
-    "nodemon": "*"
+    "nodemon": "*",
+    "deep-extend": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
