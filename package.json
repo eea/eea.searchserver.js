@@ -21,7 +21,8 @@
     "morgan": "*",
     "request": "*",
     "nodemon": "*",
-    "elasticsearch": "*"
+    "elasticsearch": "*",
+    "elasticsearch-scrolltoend" : "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
