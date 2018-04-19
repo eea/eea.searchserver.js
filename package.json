@@ -23,7 +23,9 @@
     "nodemon": "*",
     "elasticsearch": "*",
     "elasticsearch-scrolltoend" : "*",
-    "fast-array-diff": "*"
+    "fast-array-diff": "*",
+    "deep-extend": "*",
+    "csv-reader": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
