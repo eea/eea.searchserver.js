@@ -25,7 +25,8 @@
     "elasticsearch-scrolltoend" : "*",
     "fast-array-diff": "*",
     "deep-extend": "*",
-    "csv-reader": "*"
+    "csv-reader": "*",
+    "detect-character-encoding": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
