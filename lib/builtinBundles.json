@@ -21,7 +21,7 @@
       "index_page": [],
       "details_page": [],
       "layout_page": [
-        "facetview/vendor/dist/libs/jquery.min.js",
+        "facetview/vendor/dist/libs/jquery.1.11.0.min.js",
         "facetview/vendor/dist/libs/jquery.migrate.js",
 
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
