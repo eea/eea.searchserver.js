@@ -1,0 +1,161 @@
+{
+  "_index": "global-search",
+  "_type": "resource",
+  "_id": "http://www.eea.europa.eu/about-us/jobs/eeavacancy.2017-03-21.1866878418",
+  "_version": 1,
+  "_score": 1,
+  "_source": {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#about": "http://www.eea.europa.eu/about-us/jobs/eeavacancy.2017-03-21.1866878418",
+    "year": "2017-03-21T12:00:00Z",
+    "items_count_http://purl.org/dc/terms/creator": 1,
+    "http://www.eea.europa.eu/ontologies.rdf#objectProvides": [
+      "Products.NavigationManager.sections.interfaces.INavigationSectionPositionable"
+    ,
+      "eea.pdf.subtypes.interfaces.IPDFAware"
+    ,
+      "plone.locking.interfaces.ITTWLockable"
+    ,
+      "EEA Job Vacancy"
+    ,
+      "eea.cache.subtypes.interfaces.ICacheAware"
+    ,
+      "webdav.interfaces.IDAVResource"
+    ,
+      "Products.CMFDynamicViewFTI.interfaces.ISelectableBrowserDefault"
+    ,
+      "AccessControl.interfaces.IRoleManager"
+    ,
+      "persistent.interfaces.IPersistent"
+    ,
+      "Products.CMFCore.interfaces._content.IOpaqueItemManager"
+    ,
+      "OFS.interfaces.ITraversable"
+    ,
+      "Products.CMFCore.interfaces._content.IContentish"
+    ,
+      "OFS.interfaces.ISimpleItem"
+    ,
+      "eea.workflow.interfaces.IHasMandatoryWorkflowFields"
+    ,
+      "Products.CMFCore.interfaces._content.IWorkflowAware"
+    ,
+      "eea.geotags.storage.interfaces.IGeoTaggable"
+    ,
+      "archetypes.schemaextender.interfaces.IExtensible"
+    ,
+      "Products.Archetypes.interfaces.referenceable.IReferenceable"
+    ,
+      "Products.ATContentTypes.interfaces.interfaces.IHistoryAware"
+    ,
+      "eea.progressbar.interfaces.IBaseObject"
+    ,
+      "eea.themecentre.interfaces.IThemeTaggable"
+    ,
+      "plone.uuid.interfaces.IUUIDAware"
+    ,
+      "eea.alchemy.interfaces.IAlchemyDiscoverable"
+    ,
+      "Products.Archetypes.interfaces.base.IBaseObject"
+    ,
+      "eea.annotator.subtypes.interfaces.IAnnotatorAware"
+    ,
+      "Products.GenericSetup.interfaces.IDAVAware"
+    ,
+      "Products.Archetypes.interfaces.athistoryaware.IATHistoryAware"
+    ,
+      "OFS.interfaces.IItem"
+    ,
+      "eea.relations.content.interfaces.IBaseObject"
+    ,
+      "eea.epub.subtypes.interfaces.IEPUBAware"
+    ,
+      "plone.app.iterate.interfaces.IIterateAware"
+    ,
+      "App.interfaces.IPersistentExtra"
+    ,
+      "webdav.interfaces.IWriteLock"
+    ,
+      "eea.promotion.interfaces.IPromotable"
+    ,
+      "OFS.interfaces.ICopySource"
+    ,
+      "Products.LinguaPlone.interfaces.ITranslatable"
+    ,
+      "z3c.relationfield.interfaces.IHasIncomingRelations"
+    ,
+      "Products.Archetypes.interfaces.metadata.IExtensibleMetadata"
+    ,
+      "plone.portlets.interfaces.ILocalPortletAssignable"
+    ,
+      "Products.CMFCore.interfaces._content.ICatalogAware"
+    ,
+      "Products.ATContentTypes.interfaces.document.IATDocument"
+    ,
+      "AccessControl.interfaces.IOwned"
+    ,
+      "AccessControl.interfaces.IPermissionMappingSupport"
+    ,
+      "OFS.interfaces.IPropertyManager"
+    ,
+      "Products.EEAContentTypes.interfaces.IEEAPossibleContent"
+    ,
+      "webdav.EtagSupport.EtagBaseInterface"
+    ,
+      "Acquisition.interfaces.IAcquirer"
+    ,
+      "App.interfaces.IUndoSupport"
+    ,
+      "Products.CMFCore.interfaces._content.IDynamicType"
+    ,
+      "eea.versions.interfaces.IVersionEnhanced"
+    ,
+      "Products.Archetypes.interfaces.base.IBaseContent"
+    ,
+      "plone.app.imaging.interfaces.IBaseObject"
+    ],
+    "items_count_places": 1,
+    "organisation": "European Environment Agency (EEA)",
+    "items_count_year": 1,
+    "language": "en",
+    "items_count_organisation": 1,
+    "items_count_cluster_id": 1,
+    "items_count_http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState": 1,
+    "http://purl.org/dc/terms/description": "Project Officer – Quality Assurance – IT development and maintenance Contract Agent (FG III)",
+    "items_count_http://www.w3.org/1999/02/22-rdf-syntax-ns#type": 1,
+    "http://purl.org/dc/terms/spatial": "Other",
+    "items_count_http://www.eea.europa.eu/portal_types#topic": 1,
+    "creator_cms": "laurac",
+    "items_count_http://www.w3.org/1999/02/22-rdf-syntax-ns#about": 1,
+    "cluster_id": "eea_vacancies",
+    "items_count_creator_cms": 1,
+    "items_count_language": 1,
+    "http://www.eea.europa.eu/ontologies.rdf#hasWorkflowState": "published",
+    "http://www.eea.europa.eu/ontologies.rdf#fleschReadingEaseScore": 16,
+    "http://purl.org/dc/terms/modified": "2017-03-22T13:35:50Z",
+    "text": "eeavacancy.2017-03-21.1866878418 EEA/CA/2017/5 Project Officer – Quality Assurance – IT development and maintenance Contract Agent (FG III) The European Environment Agency (EEA) is organising an open competition with a view to recruiting a contract agent to work as Project Officer for quality assurance within the areas of software development and IT operations and further with a view to establishing a reserve list.   THE AGENCY:  The EEA is an Agency of the European Union (EU) and one of the decentralised Union bodies. The EEA aims to support sustainable development and to help achieve significant and measurable improvement in Europe’s environment, through the provision of timely, targeted, relevant and reliable information to policy-making agents and the public.   JOB DESCRIPTION:  Under the responsibility of the Head of Group – IT development and maintenance, reporting to the Head of the ICT and Data Management Programme , the Project Officer will be responsible for quality assurance of software development and maintenance, including the support on IT security.   He/she will work together with the IT architect, project managers, and project support staff who serve as the liaisons between the business and the software development contractors. Most of the software is based on Plone or Tomcat on Linux servers. We are using Jenkins to facilitate static code analysis and automated tests and builds. We are currently in the process of redeploying software applications as Docker images on public cloud servers.   The position will entail the following tasks carried out in line with the objectives of the EEA multi-annual work programme:   Design and monitor the procedures for software development to minimise defects and security vulnerabilities; Collaborate with the developers on configuration and tailoring of the applications for stability, security and auditability; Maintain documentation on application configuration and dependencies; Ensure correct deployment of homemade applications – both traditional and Docker installations – throughout the lifecycle; Monitor and review the use of relevant ITIL processes in the IT operations group; Manage security scanning of software applications; Advise on penetration testing of applications and servers; Implement security configuration management; Periodically review firewall configuration to match application needs.  ELIGIBILITY CRITERIA:  Candidates applying must satisfy the following eligibility criteria on the closing date for the submission of applications:   a)       A level of post-secondary education attested by a diploma, OR a level of secondary education attested by a diploma giving access to post-secondary education and appropriate professional experience of at least 3 years;   b)       Following the award of one of the qualifications above, candidates must have a minimum of 3 years of relevant professional experience.   In addition, in order to be eligible a candidate must: Be a national of one of the member countries of the EEA (Member States of the European Union plus Iceland, Liechtenstein, Norway, Switzerland and Turkey); Enjoy full rights as a citizen; Have fulfilled any obligations imposed by law concerning military service; Have a thorough knowledge of one of the languages of the EEA member countries and a satisfactory knowledge of another of these languages ( corresponding to level B.2 of the Common European Framework of Reference for languages  CEFR ); Meet the character requirements for the duties involved; Be physically fit to perform the duties linked to the post.  Candidates should assess carefully and check before submitting their application whether they fulfil all the conditions for admission laid down in the vacancy notice, particularly in terms of qualifications and relevant professional experience.   SELECTION CRITERIA:  Essential:  Professional experience with software development and test procedures; Proven experience with IT security scanning tools; Sound knowledge or practical experience with IT system administration; Knowledge about Agile (Scrum or Kanban) project management; Good knowledge of written and spoken English; Ability to prioritise work and manage his/her responsibilities; Strong communication and interpersonal skills, with a demonstrable ability to establish and maintain effective working relations in a multicultural environment.   Advantageous:  Experience with database administration; Experience with static code analysis tools; Experience with Continuous Delivery software engineering.  CONTRACTUAL CONDITIONS:  The successful candidate will be offered a Contract Agent contract in accordance with Article 3a) of the Conditions of Employment of Other Servants of the European Union . The duration of the contract will be for a limited period of four years. The contract may be renewed once for a maximum of four years.   Successful candidates who are recruited undergo an initial probation period of 9 months.   Please note that recruitment is done in the first step of the grade within Function Group III to which the successful candidate qualifies, depending on the duration of the acquired professional experience.   For information on salary, please see information published under Contract Agents .   The place of work will be Copenhagen, Denmark.   It is brought to the particular attention of candidates that the provisions of Articles 11 to 26 of the Staff Regulations, concerning the rights and obligations of officials, shall apply by analogy to Temporary Agents. These rules specify that:   “An official shall carry out his duties and conduct himself solely with the interests of the Union in mind. He shall neither seek nor take instructions from any government, authority, organization or person outside his institution. He shall carry out the duties assigned to him objectively, impartially and in keeping with his duty of loyalty to the Union.   An official shall not without the permission of the appointing authority accept from any government or from any other source outside the institution to which he belongs any honour, decoration, favour, gift or payment of any kind whatever, except for services rendered either before his appointment or during special leave for military or other national service and in respect of such service.   Before recruiting an official, the appointing authority shall examine whether the candidate has any personal interest such as to impair his independence or any other conflict of interest. To that end, the candidate, using a specific form, shall inform the appointing authority of any actual or potential conflict of interest. In such cases, the appointing authority shall take this into account in a duly reasoned opinion. If necessary, the appointing authority shall take the measures referred to in Article 11a(2).”   For further information on the Staff Regulations and the Conditions of Employment of Other Servants of the European Union see:  Staff Regulations   SELECTION PROCEDURE:  A Selection Committee is set up for the selection procedure. It consists of members designated by the Appointing Authority and the Staff Committee. The Selection Committee is bound by the principle of confidentiality as enshrined in Article 6 of Annex III to the Staff Regulations. This works in two ways: first, it imposes obligations to ensure equal treatment for candidates; and second, it seeks to protect the Selection Committee to ensure that its decisions are totally impartial.   The Selection Committee adheres strictly to the conditions of admission laid down in the vacancy notice when deciding whether or not candidates are eligible. Candidates admitted to a previous selection procedure will not automatically be eligible. Candidates are strictly forbidden to make any contact with the members of the Selection Committee, either directly or indirectly. Any infringement of this rule will lead to disqualification from the selection procedure.   Should the Selection Committee discover at any stage in the procedure that the candidate does not meet one or more of the general or special conditions for admission to the selection procedure, the candidate will be disqualified.   The Selection Committee decides on those candidates who are admitted to the selection procedure in accordance with the requirements as specified under eligibility criteria. The applications of the candidates admitted to the selection procedure are reviewed to establish whether or not they show evidence of all requirements as specified under selection criteria. The Selection Committee will invite for an interview up to a maximum of 10 candidates that they deem best qualified. The interview will be held in English and the candidate’s knowledge of other languages will also be assessed during the interview. Candidates invited for an interview will be asked to undergo a written test in the area of expertise required for the post. The test and the interview will take place in Copenhagen (Denmark) where the EEA has its seat and where the place of employment is.   At the end of the interviews the Selection Committee will submit the list of suitable candidates to the Appointing Authority who will decide on the appointment of the successful candidate and the establishment of a reserve list for the post advertised or similar posts that may become available. This usually follows from follow-up recruitment interviews conducted by the Appointing Authority with the suitable candidates. Candidates shall note that inclusion on the reserve list does not guarantee recruitment. Recruitment will be based on availability of posts and budget.  The reserve list for this post will be valid until 31 December 2018 and may be extended at the discretion of the Appointing Authority.  Prior to contract signature, the successful candidate will be asked: to provide original or certified copies of all relevant documents proving his/her eligibility, including a police certificate confirming the absence of any criminal record; to undergo a compulsory medical examination to establish that he/she meets the standard of physical fitness necessary to perform the duties involved.   PERSONAL DATA PROTECTION:  Any personal data provided by the applicant shall be processed pursuant to European Regulation related to personal data protection, in particular Regulation (EC) No 45/2001 on the protection of individuals with regard to the processing of personal data by the Union institutions and bodies and on the free movements of such data. This applies in particular to the confidentiality and security of such data.   Personal data shall be processed solely for the purposes of this selection procedure.   The applicant shall have the right of access to his/her personal data and the right to rectify or update any such data that is inaccurate or incomplete at any time during the application procedure. The right to rectify can only be exercised up to the closing date for submission of applications. However, inaccurate identification data may be rectified at any time during and after the application procedure. Any request for access or rectification of personal data shall be addressed in writing to the Human Management Resource Group at the address: European Environment Agency, Kongens Nytorv 6, 1050 Copenhagen K, Denmark, or at the e-mail address: recruitment.enquiries@eea.europa.eu .   The applicant can, upon request, be provided with their evaluation results at all stages of the selection procedure. The request must be submitted to the Human Management Resource Group at the address: European Environment Agency, Kongens Nytorv 6, 1050 Copenhagen K, Denmark, or at the e-mail address: recruitment.enquiries@eea.europa.eu .   The Agency does not make public the names of successful candidates on reserve lists. However, it is possible that, for the purposes of recruitment and related planning purposes, members of the Agency’s senior management team may have access to reserve lists and in specific cases, to the application of a candidate.   Should the applicant have any queries concerning the processing of his/her personal data, s/he shall address them to the European Environment Agency at the following e-mail address:  dataprotectionofficer@eea.europa.eu   Applicants are entitled to have recourse at any time to the European Data Protection Supervisor ( http://www.edps.europa.eu ; EDPS@edps.europa.eu ) if they consider that their rights under Regulation (EC) No 45/2001 have been infringed as a result of the processing of their personal data by the EEA.   For further detailed information please refer to the privacy statement available on the EEA website at the following address: http://www.eea.europa.eu/about-us/documents/data-protection-inventory (Annex 1 to selection procedure for TA and CA – HR1).   EQUAL TREATMENT:  EEA is an equal opportunities employer and accepts applications without distinction on the grounds of gender, colour, racial, social or ethnic origin, genetic features, language, religion or belief, political or any other opinion, membership of a national minority, property, birth, disability, age or sexual orientation, marital status or family situation, or any other status. Staff is recruited on the broadest possible geographical basis from among nationals of all EEA member countries.   APPLICATION PROCEDURE:  Interested candidates must apply by filling in electronically the application form below.   Please note that the address indicated on the form will be used as the location for travel for candidates invited to an interview.   To the application form must be attached:   The European CV below duly filled in A letter of motivation   Application documents:  Template Europass CV  Instructions for Europass CV (the icon)   NB: Failure to submit any of the required documents will lead to exclusion from the procedure.   Closing date for application: Friday 21 April 2017, at 12.00 (Central European Time)  Applications sent after this date will be rejected.   Please ensure that you observe the following:   Remember to take time zones into consideration when sending your application. Remember to fill in the application form below. Include a CV using the Europass template attached and a letter of motivation. Ensure to specify in your CV exact starting and end dates of professional experiences (date/month/year) as well as percentage of work activity in case the experience is not full time. Once your application has been submitted, you will receive an automatic reply. It is your responsibility to keep the automatic reply message as proof of submission of your application. Should you not receive an automatic reply message, please check whether the e-mail has been filtered by the spam filter set up on your e-mail account. Please re-submit your application if this is not the case, or contact Human Resources on the e-mail address indicated at the end of this vacancy notice. Please do not leave it until the last minute to submit your application.   Experience has shown that the system can become overloaded as the deadline for applications approaches and you may find it difficult to submit your application in time. Applications not submitted in time cannot be considered valid. You may apply in any of the official languages of the European Union but the use of English is encouraged to facilitate the selection process.   REQUEST FOR REVIEW:  A candidate who feels that a mistake has been made regarding eligibility may ask to have his/her application reconsidered by sending, within 10 calendar days of the date of notification, a request for review, quoting the number of the selection procedure concerned to the Chairperson of the Selection Committee at the following address: European Environment Agency, Kongens Nytorv 6, 1050 Copenhagen K, Denmark, or electronically at the e-mail address: recruitment.enquiries@eea.europa.eu .      The Selection Committee will reconsider the application and notify the candidate of its decision within 15 working days of receipt of the request for review.   APPEAL PROCEDURES:  If a candidate considers that he/she has been adversely affected by a particular decision, he/she can lodge a complaint under Article 90(2) of the Staff Regulations of Officials and Conditions of employment of other servants of the European Union, at the following address:   Executive Director European Environment Agency Kongens Nytorv 6 1050 Copenhagen K Denmark   The complaint must be lodged within 3 months. The time limit for initiating this type of procedure starts to run from the time the candidate is notified of the act adversely affecting him/her.   If the complaint is rejected the candidate may bring a case under Article 270 of the Treaty on the Functioning of the European Union and Article 91 of the Staff Regulations of Officials of the European Union before:   The European Union Civil Service Tribunal Postal address: L – 2925 Luxembourg   Please note that the Appointing Authority does not have the power to amend the decisions of a Selection Committee. The Court has consistently held that the wide discretion enjoyed by the Selection Committee is not subject to review by the Court unless rules which govern the proceedings of Selection Committee have been infringed.   It is also possible to complain to the European Ombudsman pursuant to Article 228(1) of the Treaty on the functioning of the European Union and in accordance with the conditions laid down in the Decision of the European Parliament of 9 March 1994 on the regulations and the general conditions governing the performance of the Ombudsman’s duties, published in Official Journal of the European Union L 113 of 4 May 1994:   European Ombudsman 1 avenue du Président Robert Schuman – CS 30403 F-67001 Strasbourg Cedex   Please note that complaints made to the Ombudsman have no suspensive effect on the period laid down in Article 90(2) and 91 of the Staff Regulations of Officials of the European Union for lodging, respectively, a complaint or an appeal with the European Union Civil Service Tribunal under Article 270 of the Treaty on the Functioning of the European Union.          ",
+    "items_count_cluster_name": 1,
+    "items_count_http://purl.org/dc/terms/title": 1,
+    "cluster_name": "EEA Website (www.eea.europa.eu)",
+    "http://www.eea.europa.eu/ontologies.rdf#readingTime": 12,
+    "items_count_http://purl.org/dc/terms/expires": 1,
+    "items_count_http://www.eea.europa.eu/ontologies.rdf#fleschReadingEaseScore": 1,
+    "items_count_label": 1,
+    "label": "Project Officer – Quality Assurance – IT development and maintenance Contract Agent (FG III)",
+    "items_count_http://purl.org/dc/terms/description": 1,
+    "http://purl.org/dc/terms/format": "text/html",
+    "places": "unknown",
+    "http://purl.org/dc/terms/expires": "2017-04-21T12:00:00Z",
+    "http://purl.org/dc/terms/creator": "European Environment Agency (EEA)",
+    "items_count_http://purl.org/dc/terms/modified": 1,
+    "http://purl.org/dc/terms/issued": "2017-03-21T12:00:00Z",
+    "items_count_http://purl.org/dc/terms/spatial": 1,
+    "items_count_http://purl.org/dc/terms/issued": 1,
+    "items_count_http://www.eea.europa.eu/ontologies.rdf#objectProvides": 52,
+    "items_count_http://purl.org/dc/terms/format": 1,
+    "http://purl.org/dc/terms/title": "EEA/CA/2017/5",
+    "http://www.eea.europa.eu/portal_types#topic": "Various other issues",
+    "items_count_http://www.eea.europa.eu/ontologies.rdf#readingTime": 1,
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type": "EEA Job Vacancy",
+    "items_count_text": 1
+  }
+}

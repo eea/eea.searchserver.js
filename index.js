@@ -5,6 +5,7 @@ exports.Server = require('./lib/Server');
 exports.Helpers = require('./lib/Helpers');
 exports.builtinCommands = require('./lib/builtinCommands');
 exports.builtinCommandsRDF = require('./lib/builtinCommandsRDF');
+exports.builtinCommandsFile = require('./lib/builtinCommandsFile');
 exports.builtinCommandsRivers = require('./lib/builtinCommandsRivers');
 exports.builtinRoutes = require('./lib/builtinRoutes');
 exports.esAPI = require('./lib/esAPI');
