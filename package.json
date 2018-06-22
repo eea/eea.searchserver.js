@@ -1,6 +1,6 @@
 {
   "name": "eea-searchserver",
-  "version": "1.3.25",
+  "version": "2.0.2",
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies": {
@@ -11,6 +11,8 @@
     "csv-stringify": "1.1.2",
     "dateformat": "*",
     "express": "*",
+    "sync-request": "5.0.0",
+    "wait-for-port": "*",
     "getenv": "*",
     "jade": "*",
     "morgan": "*",
@@ -23,6 +25,13 @@
     "sync-request": "^6.0.0",
     "underscore": "*",
     "wait-for-port": "*"
+    "nodemon": "*",
+    "elasticsearch": "*",
+    "elasticsearch-scrolltoend" : "*",
+    "fast-array-diff": "*",
+    "deep-extend": "*",
+    "csv-reader": "*",
+    "detect-character-encoding": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
