@@ -22,7 +22,7 @@
       "index_page": [],
       "details_page": [],
       "layout_page": [
-
+        "facetview/vendor/dist/libs/jquery.js",
         "facetview/vendor/dist/libs/jquery.migrate.3.0.0.min.js",
 
         "facetview/vendor/bootstrap4/js/bootstrap.4.1.1.min.js",
