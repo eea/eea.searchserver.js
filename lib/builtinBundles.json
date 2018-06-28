@@ -25,11 +25,9 @@
         "facetview/vendor/dist/libs/jquery.js",
         "facetview/vendor/dist/libs/jquery.migrate.3.0.0.min.js",
 
-        "facetview/vendor/bootstrap4/js/bootstrap.4.1.1.min.js",
-
         "facetview/vendor/jquery-ui.1.12.1/jquery-ui.min.js",
 
-
+        "facetview/vendor/bootstrap4/js/bootstrap.4.1.1.min.js",
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",
         "facetview/vendor/dist/jstree.js",
         "facetview/vendor/linkify/1.0/jquery.linkify-1.0-min.js",
