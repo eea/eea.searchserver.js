@@ -615,5 +615,5 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 }
 
 .option_group {
-    margin-top: 0;
+    margin-top: 0 !important;
 }
