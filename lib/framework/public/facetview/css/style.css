@@ -48,3 +48,14 @@ h4 {
 .text-right {
     text-align: right;
 }
+
+#relevanceDebug h4{
+    margin-top:5px;
+    margin-bottom:3px;
+    line-height:1em;
+}
+
+#relevanceDebug h3{
+    margin-top:0;
+    margin-bottom:5px;
+}

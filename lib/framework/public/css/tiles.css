@@ -292,3 +292,7 @@
 }
 
 /* /MEDIA Queries, place normal css above this entire section */
+
+.explanation li.jstree-node {
+    background-color:white;
+}
