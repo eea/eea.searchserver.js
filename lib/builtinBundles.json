@@ -21,6 +21,8 @@
       "index_page": [],
       "details_page": [],
       "layout_page": [
+        "facetview/vendor/raven/raven.min.js",
+        "javascripts/sentry.js",
         "facetview/vendor/dist/libs/jquery.js",
         "facetview/vendor/dist/libs/jquery.migrate.js",
         "facetview/vendor/jquery-lazy/jquery.lazy.min.js",

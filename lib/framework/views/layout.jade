@@ -66,7 +66,7 @@ html
 
         block extrastyles
 
-    body(class="fullwidth #{app_id}")
+    body(class="fullwidth #{app_id}" data-sentry-dsn="#{sentry_dsn}" data-sentry-ver="#{sentry_ver}" data-sentry-env="#{sentry_rancher_env}" data-sentry-instance="#{sentry_instance}" data-sentry-app-name="#{sentry_app_name}")
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
