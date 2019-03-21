@@ -32,6 +32,7 @@
         "facetview/vendor/jquery-ui-1.11.4.custom/jquery-ui.min.js",
         "facetview/vendor/touchpunch/jquery.ui.touch-punch.min.js",
         "facetview/vendor/d3/d3.v4.js",
+        "facetview/vendor/lzma/lzma-c.js",
         "facetview/jquery.facetview.js",
         "facetview/facetviewhelpers.js",
         "facetview/landing.js",
