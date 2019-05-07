@@ -3,12 +3,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#portal-searchbox form {
-    margin: 0;
-}
-
-#portal-searchbox form input {
-    width: 286px;
+#eea-above-columns {
+    background-color: #FFF:
 }
 
 .notify_loading {
@@ -581,21 +577,6 @@ div#footer-wrapper {
     padding: 0;
 }
 
-div#portal-header{
-    max-width: 100% !important;
-    width: 100%;
-    padding-right: 20px;
-}
-
-#portal-globalnav {
-    max-width: 100% !important;
-    padding-right: 1em !important;
-}
-
-
-div#portal-searchbox{
-    margin-right: 0;
-}
 
 div.visualization-date {
     margin:15px 0;
