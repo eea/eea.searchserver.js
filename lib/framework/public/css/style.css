@@ -3,10 +3,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#eea-above-columns {
-    background-color: #FFF:
-}
-
 .notify_loading {
     width: 100%;
     min-height: 30px;
@@ -47,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-header h1 {
     border-bottom-color: #fff;
+    font-size: 180%;
 }
 .facetview_group_title {
     font-size: 1.2em;
