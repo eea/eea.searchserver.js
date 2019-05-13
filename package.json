@@ -1,6 +1,6 @@
 {
   "name": "eea-searchserver",
-  "version": "2.0.22",
+  "version": "2.0.23",
   "description": "EEA Node.js Search Server module",
   "main": "index.js",
   "dependencies" : {
@@ -21,7 +21,7 @@
     "morgan": "*",
     "request": "*",
     "nodemon": "*",
-    "elasticsearch": "*",
+    "elasticsearch": "15.4.1",
     "elasticsearch-scrolltoend" : "*",
     "fast-array-diff": "*",
     "deep-extend": "*",
