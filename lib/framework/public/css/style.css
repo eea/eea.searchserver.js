@@ -643,7 +643,7 @@ div.visualization-date {
 }
 
 .facet_label_text{
-    width: 81%;
+    width: 74%;
     overflow:hidden;
     text-overflow:ellipsis;
     margin-left: .5em;
