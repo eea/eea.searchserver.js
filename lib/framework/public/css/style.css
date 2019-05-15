@@ -242,10 +242,6 @@ h1, h2, h3, h4, h5, h6 {
     min-height: 100px;
 }
 
-#secondary-portaltabs > .eea-accordion-panels {
-    display: none;
-}
-
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
     background-color: #fff;
     color: #00446A;
