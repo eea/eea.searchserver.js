@@ -36,20 +36,27 @@ html
         script
             != mapping
 
-        link(rel="shortcut icon", type="image/x-icon", href="http://www.eea.europa.eu/favicon.ico")
+        - var external_url = external_templates_url || 'https://www.eea.europa.eu'
+
+        link(rel="shortcut icon", type="image/x-icon", href="#{external_url}/favicon.ico")
 
         - var debug_mode = skip_resources_bundling || false
+
+        if !debug_mode
+            style
+                include:uglify-css ../public/css/critical.css
+        else
+            link(rel='stylesheet', href="esbootstrap_resources/css/critical.css")
 
         if !skip_external_template_styles
             != templateRender(headFile)
         else
-            if !debug_mode
-                style
-                    include:uglify-css ../public/css/critical.css
-            else
-                link(rel='stylesheet', href="esbootstrap_resources/css/critical.css")
-            link(rel="preload" href="https://newdesign.eea.europa.eu/templates/external_templates_custom.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
-            <noscript><link rel="stylesheet" href="https://newdesign.eea.europa.eu/external_templates_custom.css" /></noscript>
+            link(rel="preload" href="#{external_url}/critical.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href="#{external_url}/critical.css" /></noscript>
+            link(rel="preload" href="#{external_url}/external_templates_styles.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href="#{external_url}/external_templates_styles.css" /></noscript>
+            link(rel="preload" href="#{external_url}/external_templates_custom.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href="#{external_url}/external_templates_custom.css" /></noscript>
 
         if (renderStyles && !debug_mode)
             script
@@ -104,4 +111,4 @@ html
         block extrajavascripts
         if google_map_key != "false"
             script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
-        script(type="text/javascript", src="https://newdesign.eea.europa.eu/external_templates_scripts.js")
+        script(type="text/javascript", src="#{external_url}/external_templates_scripts.js")
