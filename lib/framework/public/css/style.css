@@ -3,14 +3,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-#portal-searchbox form {
-    margin: 0;
-}
-
-#portal-searchbox form input {
-    width: 286px;
-}
-
 .notify_loading {
     width: 100%;
     min-height: 30px;
@@ -51,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-header h1 {
     border-bottom-color: #fff;
+    font-size: 180%;
 }
 .facetview_group_title {
     font-size: 1.2em;
@@ -127,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #009590;
     display: inline-block;
     height: 28px;
+    background-color: #FFF;
 }
 #content .facetview_top option {
     color: #009590;
@@ -247,10 +241,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 1em 1em 0em 1em;
     overflow: hidden;
     min-height: 100px;
-}
-
-#secondary-portaltabs > .eea-accordion-panels {
-    display: none;
 }
 
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
@@ -581,21 +571,6 @@ div#footer-wrapper {
     padding: 0;
 }
 
-div#portal-header{
-    max-width: 100% !important;
-    width: 100%;
-    padding-right: 20px;
-}
-
-#portal-globalnav {
-    max-width: 100% !important;
-    padding-right: 1em !important;
-}
-
-
-div#portal-searchbox{
-    margin-right: 0;
-}
 
 div.visualization-date {
     margin:15px 0;
@@ -665,7 +640,7 @@ div.visualization-date {
 }
 
 .facet_label_text{
-    width: 81%;
+    width: 74%;
     overflow:hidden;
     text-overflow:ellipsis;
     margin-left: .5em;

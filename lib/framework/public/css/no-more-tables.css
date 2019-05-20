@@ -1,10 +1,12 @@
 @media only screen and (max-width: 1024px) {
 
 /* Force table to not be like tables anymore */
-    table#facetview_results{
-        display:table !important;
-        width: 100%;
-    }
+/*    #105453 have tables as block  for mobile in order to
+      force wrapping of table columns */
+/*    table#facetview_results{*/
+/*        display:table !important;*/
+/*        width: 100%;*/
+/*    }*/
     #facetview_rightcol table,
     #facetview_rightcol thead,
     #facetview_rightcol tbody,

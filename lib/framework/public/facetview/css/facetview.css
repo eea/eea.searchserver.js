@@ -554,6 +554,7 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
     padding-right: 0.5em;
     margin-left: 0;
     width: 30%;
+    font-weight: bold;
 }
 
 
