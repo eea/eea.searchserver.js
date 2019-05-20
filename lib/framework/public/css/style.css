@@ -120,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #009590;
     display: inline-block;
     height: 28px;
+    background-color: #FFF;
 }
 #content .facetview_top option {
     color: #009590;
