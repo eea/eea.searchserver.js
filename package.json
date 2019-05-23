@@ -26,6 +26,7 @@
     "package.json": "^2.0.1",
     "request": "*",
     "nodemon": "*",
+    "elasticsearch": "15.4.1",
     "elasticsearch-scrolltoend" : "*",
     "fast-array-diff": "*",
     "deep-extend": "*",
