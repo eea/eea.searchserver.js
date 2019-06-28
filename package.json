@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies" : {
     "express": "*",
-    "jade": "*",
+    "pug": "*",
     "compression": "*",
     "sparql-client": "*",
     "nconf": "*",
