@@ -38,7 +38,7 @@ html
 
         - var external_url = external_templates_url || 'https://www.eea.europa.eu'
 
-        link(rel="shortcut icon", type="image/x-icon", href="#{external_url}/favicon.ico")
+        link(rel="shortcut icon", type="image/x-icon", href=external_url+"/favicon.ico")
 
         - var debug_mode = skip_resources_bundling || false
 
@@ -51,20 +51,20 @@ html
         if !skip_external_template_styles
             != templateRender(headFile)
         else
-            link(rel="preload" href="#{external_url}/critical.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
-            <noscript><link rel="stylesheet" href="#{external_url}/critical.css" /></noscript>
-            link(rel="preload" href="#{external_url}/external_templates_styles.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
-            <noscript><link rel="stylesheet" href="#{external_url}/external_templates_styles.css" /></noscript>
-            link(rel="preload" href="#{external_url}/external_templates_custom.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
-            <noscript><link rel="stylesheet" href="#{external_url}/external_templates_custom.css" /></noscript>
+            link(rel="preload" href=external_url + "/critical.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href=external_url + "/critical.css" /></noscript>
+            link(rel="preload" href=external_url + "/external_templates_styles.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href=external_url + "/external_templates_styles.css" /></noscript>
+            link(rel="preload" href=external_url + "/external_templates_custom.css" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href=external_url + "/external_templates_custom.css" /></noscript>
 
         if (renderStyles && !debug_mode)
             script
                 include:uglify-js ../public/javascripts/loadcss.js
             - var css_render = renderStyles('layout_page')
             - var only_css = css_render.match(/href\='([^\s]*)'\s/)[1]
-            link(rel="preload" href="#{only_css}" as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
-            <noscript><link rel="stylesheet" href="#{only_css}" /></noscript>
+            link(rel="preload" href=only_css as="style" onload="this.rel='stylesheet'" onerror="this.rel='stylesheet'")
+            <noscript><link rel="stylesheet" href=only_css /></noscript>
         else
             if css_resources.layout_page
                 each style in css_resources.layout_page
@@ -73,7 +73,7 @@ html
 
         block extrastyles
 
-    body(class="fullwidth #{app_id}" data-sentry-dsn="#{sentry_dsn}" data-sentry-ver="#{sentry_ver}" data-sentry-env="#{sentry_rancher_env}" data-sentry-instance="#{sentry_instance}" data-sentry-app-name="#{sentry_app_name}")
+    body(class="fullwidth " + app_id data-sentry-dsn=sentry_dsn data-sentry-ver=sentry_ver data-sentry-env=sentry_rancher_env data-sentry-instance=sentry_instance data-sentry-app-name=sentry_app_name)
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)
@@ -95,9 +95,9 @@ html
         div(id="landing")
             block landing
 
-        input(id="card_view_template", type="hidden", value="#{cardViewTemplate}")
+        input(id="card_view_template", type="hidden", value=cardViewTemplate)
 
-        input(id="list_view_template", type="hidden", value="#{listViewTemplate}")
+        input(id="list_view_template", type="hidden", value=listViewTemplate)
 
         != templateRender(footerFile)
 
@@ -110,5 +110,5 @@ html
                     script(type='text/javascript', src=script)
         block extrajavascripts
         if google_map_key != "false"
-            script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=#{google_map_key}")
-        script(type="text/javascript", src="#{external_url}/external_templates_scripts.js")
+            script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key="+google_map_key)
+        script(type="text/javascript", src=external_url + "/external_templates_scripts.js")
