@@ -3,10 +3,10 @@ div(class="eea-tile")
         div(class="eea-tileThumb")
             img(data-src="${thumbUrl}", alt="${title}" class="lazyLoad")
         div(class="eea-tileBody")
-            p(class="eea-tileUrl")${url}
+            p(class="eea-tileUrl") ${url}
             strong(class="eea-tileType lazyLoad", title="${type}", data-src="${typeIcon}")
                 span(class="eea-tileTypeIcon, eea-tileType-${typeClass}", title="${type}")
-                ${type}
+                p(class="eea-type") ${type}
             h4(class="eea-tileTitle") ${title}
             div(class="eea-tileDescription") ${description}
             div(class="eea-tileMetadata")
