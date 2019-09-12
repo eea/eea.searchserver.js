@@ -26,7 +26,8 @@
     "fast-array-diff": "*",
     "deep-extend": "*",
     "csv-reader": "*",
-    "detect-character-encoding": "*"
+    "detect-character-encoding": "*",
+    "JSONStream": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
