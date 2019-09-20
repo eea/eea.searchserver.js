@@ -1,0 +1,21 @@
+{
+  "@metadata": {
+    "authors": [
+      "Miu Razvan"
+    ],
+    "last-updated": "2019-09-13",
+    "locale": "en",
+    "message-documentation": "qqq"
+  },
+
+  "Search term": "Search term",
+  "Current filters": "Current filters",
+  "Reset filters": "Reset filters",
+  "Include archived content" : "Include archived content ",
+  "Results": "Results ",
+  "Display as": "Display as ",
+  "Order": "Order ",
+  "Relevance": "Relevance",
+  "Download TSV": "Download TSV",
+  "Download CSV": "Descarca CSV"
+}
