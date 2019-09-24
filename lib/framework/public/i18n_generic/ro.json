@@ -8,14 +8,33 @@
     "message-documentation": "qqq"
   },
 
-  "Search term": "Cauta termen",
+  "Title": "Căutare și catalog global",
+  "Further info": "Conținutul acestui catalog a fost creat datorită abordării de date deschise a UE și contribuției multor organizații care fac parte din rețeaua SEE (Eionet).",
+
+  "Search term": "Caută termen",
   "Current filters": "Filtre curente",
   "Reset filters": "Reseteaza filtre",
   "Include archived content" : "Include arhive ",
   "Results": "Rezultate ",
-  "Display as": "Afiseaza ca ",
-  "Order": "Ordoneaza ",
-  "Relevance": "Relevanta",
-  "Download TSV": "Descarca TSV",
-  "Download CSV": "Descarca CSV"
+  "Display as": "Afișează ca ",
+
+  "Order": "Ordonează ",
+
+  "Relevance": "Relevanță",
+  "Title a-z": "Titlu a-z",
+  "Oldest": "Cel mai vechi",
+  "Newest": "Cel mai nou",
+
+  "Download TSV": "Descarcă TSV",
+  "Download CSV": "Descarcă CSV",
+
+  "Instantly search over 20 years of environmental knowledge by EEA": "Căutați imediat peste 20 de ani de cunoștințe de mediu de către SEE",
+  "Documents": "Documente",
+  "Languages": "Limbi",
+
+  "Recently addded": "Adăugate recent",
+
+  "See all results": "Vezi toate rezultatele",
+  "from": "din",
+  "until": "pana"
 }

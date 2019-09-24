@@ -37,6 +37,8 @@ html
             != mapping
         script
             != settings_default_language
+        script
+            != settings_languages
 
         - var external_url = external_templates_url || 'https://www.eea.europa.eu'
 
@@ -75,7 +77,7 @@ html
 
         block extrastyles
 
-    body(class="fullwidth " + app_id data-sentry-dsn=sentry_dsn data-sentry-ver=sentry_ver data-sentry-env=sentry_rancher_env data-sentry-instance=sentry_instance data-sentry-app-name=sentry_app_name)
+    body(class="fullwidth " + app_id data-sentry-dsn=sentry_dsn data-sentry-ver=sentry_ver data-sentry-env=sentry_rancher_env data-sentry-instance=sentry_instance data-sentry-app-name=sentry_app_name id="app")
         != templateRender(headerFile)
         if (enableBreadcrumbs)
             +portal_breadcrumbs (breadcrumbs)

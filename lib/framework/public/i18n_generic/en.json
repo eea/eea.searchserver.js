@@ -8,14 +8,33 @@
     "message-documentation": "qqq"
   },
 
+  "Title": "Global search and catalogue",
+  "Further info": "The content of this catalogue has been created thanks to the EU's open data approach and the contribution of many organisations part of EEA's network (Eionet).",
+
   "Search term": "Search term",
   "Current filters": "Current filters",
   "Reset filters": "Reset filters",
   "Include archived content" : "Include archived content ",
   "Results": "Results ",
   "Display as": "Display as ",
+
   "Order": "Order ",
+
   "Relevance": "Relevance",
+  "Title a-z": "Title a-z",
+  "Oldest": "Oldest",
+  "Newest": "Newest",
+
   "Download TSV": "Download TSV",
-  "Download CSV": "Descarca CSV"
+  "Download CSV": "Descarca CSV",
+
+  "Instantly search over 20 years of environmental knowledge by EEA": "Instantly search over 20 years of environmental knowledge by EEA",
+  "Documents": "Documents",
+  "Languages": "Languages",
+
+  "Recently addded": "Recently added",
+
+  "See all results": "See all results",
+  "from": "from",
+  "until": "until"
 }
