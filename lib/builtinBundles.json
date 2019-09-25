@@ -14,7 +14,8 @@
         "facetview/css/style.css",
         "facetview/css/facetview.css",
         "css/style.css",
-        "css/tiles.css"
+        "css/tiles.css",
+        "css/loading.css"
       ]
     },
    "js_resources": {
@@ -37,6 +38,18 @@
         "facetview/landing.js",
         "facetview/jquery.autocompletewithhighlight.js",
         "facetview/jquery.autocompleteforfacet.js",
+
+        "javascripts/CLDRPluralRuleParser.js",
+        "javascripts/jquery.i18n.js",
+        "javascripts/jquery.i18n.messagestore.js",
+        "javascripts/jquery.i18n.fallbacks.js",
+        "javascripts/jquery.i18n.language.js",
+        "javascripts/jquery.i18n.parser.js",
+        "javascripts/jquery.i18n.emitter.js",
+        "javascripts/jquery.i18n.emitter.bidi.js",
+        "javascripts/languages/ru.js",
+
+        "javascripts/loading.js",
         "javascripts/main.js"
       ]
     }
