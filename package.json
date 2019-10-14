@@ -27,7 +27,8 @@
     "deep-extend": "*",
     "csv-reader": "*",
     "detect-character-encoding": "*",
-    "JSONStream": "*"
+    "JSONStream": "*",
+    "unique-filename": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
