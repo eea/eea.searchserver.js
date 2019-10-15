@@ -10,7 +10,7 @@
     "sparql-client": "*",
     "nconf": "*",
     "underscore": "*",
-    "csv-parse": "1.2.4",
+    "csv-parse": "4.6.3",
     "csv-stringify": "1.1.2",
     "sync-request": "5.0.0",
     "wait-for-port": "*",
