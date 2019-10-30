@@ -396,7 +396,7 @@ div.facetview_filter_typeahead input:focus{
 }
 
 ul.ui-autocomplete {
-    z-index: 9999;
+    z-index: 3;
     max-height: 200px;
     overflow-y: scroll;
     border:0;
@@ -617,4 +617,8 @@ ul.ui-autocomplete li.autocomplete_facet_value.ui-state-focus{
 
 .option_group {
     margin-top: 0 !important;
+}
+
+#app_loading-overlay {
+    z-index: 4!important;
 }
