@@ -24,3 +24,17 @@
   background-color: #000;
   color: #fff;
 }
+
+#loading-overlay {
+  display:none;
+  background-color: #000;
+  opacity: 0.3;@s3
+}
+
+/* http://projects.lukehaas.me/css-loaders/ by @lukehaas */
+.loading-animation {
+    margin: 25% auto;
+    width: 100%;
+    min-height: 30px;
+    background: url(https://www.eea.europa.eu/++resource++faceted_images/ajax-loader-small.gif) no-repeat center center;
+}
