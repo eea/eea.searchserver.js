@@ -28,7 +28,8 @@
     "csv-reader": "*",
     "detect-character-encoding": "*",
     "JSONStream": "*",
-    "unique-filename": "*"
+    "unique-filename": "*",
+    "autodetect-decoder-stream": "*"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
