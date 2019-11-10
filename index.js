@@ -6,6 +6,7 @@ exports.Helpers = require('./lib/Helpers');
 exports.indexHelpers = require('./lib/indexHelpers');
 exports.esAPI = require('./lib/esAPI');
 exports.streamConsumer = require('./lib/streamConsumer');
+exports.sparqlConsumer = require('./lib/sparqlConsumer');
 exports.builtinRoutes = require('./lib/builtinRoutes');
 exports.EEAFacetFramework = require('./lib/framework/EEAFacetFramework');
 exports.builtinCommands = require('./lib/builtinCommands');
