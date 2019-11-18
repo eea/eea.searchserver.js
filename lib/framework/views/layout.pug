@@ -83,6 +83,10 @@ html
         div(id="portal-columns")
             div(class="container")
                 div(class="content" id="content")
+                    if index_in_progress
+                        div(class="portalMessage warningMessage")
+                            span
+                                | Indexing in progress
                     block content
                     div(class="visualization-date")
                         span(class="discreet")
