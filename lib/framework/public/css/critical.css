@@ -1106,7 +1106,7 @@ a.did_you_mean:visited,a.original_term:visited {
 .portalMessage {
     font-size: 120%;
     margin: 1em 0;
-    padding: 1em 1.5em 1em 4.5em;
+    padding: 1em 1.5em 1em 4.5em !important;
     vertical-align: middle;
     border: none;
 }
