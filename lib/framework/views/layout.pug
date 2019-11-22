@@ -88,6 +88,11 @@ html
                             span
                                 | Indexing in progress, please check 
                                 a(href="/API/v1/status") /API/v1/status
+                    if diffs_in_indices
+                        div(class="portalMessage warningMessage")
+                            span
+                                | There are differences in the columns compared to the production index, please check 
+                                a(href="/API/v1/status") /API/v1/status
                     block content
                     div(class="visualization-date")
                         span(class="discreet")
