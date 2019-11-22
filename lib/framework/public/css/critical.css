@@ -1102,3 +1102,36 @@ a.did_you_mean:visited,a.original_term:visited {
         padding-left: 1px
     }
 }
+
+.portalMessage {
+    font-size: 120%;
+    margin: 1em 0;
+    padding: 1em 1.5em 1em 4.5em;
+    vertical-align: middle;
+    border: none;
+}
+
+.portalMessage:before, .portalMessage .eea-icon:before {
+    float: left;
+    display: block;
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    line-height: inherit;
+    text-decoration: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: none;
+    margin-left: -2.3em;
+    font-size: 150%;
+}
+
+.attentionMessage:before {
+    content: "\f0e7";
+    vertical-align: baseline;
+}
+
+.warningMessage:before {
+    content: "\f071";
+    vertical-align: baseline;
+}
