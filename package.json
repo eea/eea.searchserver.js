@@ -7,7 +7,7 @@
     "express": "*",
     "pug": "*",
     "compression": "*",
-    "sparql-client": "*",
+    "sparql-client": "https://github.com/thomasfr/node-sparql-client.git",
     "nconf": "*",
     "underscore": "*",
     "csv-parse": "1.2.4",
