@@ -9,6 +9,7 @@ exports.streamConsumer = require('./lib/streamConsumer');
 exports.sparqlConsumer = require('./lib/sparqlConsumer');
 exports.sparqlHelpers = require('./lib/sparqlHelpers');
 exports.rivers = require('./lib/rivers');
+exports.rdfriver = require('./lib/rdfriver');
 exports.builtinRoutes = require('./lib/builtinRoutes');
 exports.EEAFacetFramework = require('./lib/framework/EEAFacetFramework');
 exports.builtinCommands = require('./lib/builtinCommands');
