@@ -845,3 +845,8 @@ a.original_term:hover,
 a.original_term:active {
     color:#2d749c !important;
 }
+
+.right-column-area h3 {
+    color: #00446A;
+    border: none;
+}
