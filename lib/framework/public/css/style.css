@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
 }
 .facetview_top .filter-by {
-    margin: 0 0 2em 2em;
+    margin: 0 0 0 2em;
     float: right;
     line-height: 2;
 }
@@ -849,4 +849,13 @@ a.original_term:active {
 .right-column-area h3 {
     color: #00446A;
     border: none;
+}
+
+.eea_download_btn {
+    margin-bottom: 4px;
+    background-color: #1A679B;
+    border-radius: 15px;
+    clear: both;
+    border: 1px solid #ccc !important;
+    line-height:18px;
 }

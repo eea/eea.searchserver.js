@@ -226,8 +226,8 @@ li.ui-state-default.ui-corner-top {
 }
 
 .facetview_download {
-    background-color: #009590;
-    padding: 0.2em 0.5em;
+    background-color: white;
+    padding:none;
     margin-left: 2em;
 }
 
