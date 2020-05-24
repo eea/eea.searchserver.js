@@ -292,6 +292,14 @@ h1, h2, h3, h4, h5, h6 {
     content: "\f053";
 }
 
+#content .eea-accordion-panel .facetview_open .eea-icon-eraser:before {
+    content: "\f12d" !important;
+}
+#content .eea-accordion-panel .facetview_open:hover .eea-eraser:before {
+    content: "\f12d" !important;
+}
+
+
 #content .eea-accordion-panels .eea-accordion-panel > h2.facetview_open {
     background-color: #1A679B;
     color: white;
@@ -398,6 +406,7 @@ h1, h2, h3, h4, h5, h6 {
     float:left;
     cursor:pointer;
     height:52px;
+    width:100%
 }
 
 .filters-header .eea-icon-eraser{
@@ -473,6 +482,15 @@ div#facetview_rightcol {
 
 #facetview_rightcol .filters-header__header {
     display: inline-block;
+}
+
+#content .filters-header .current-filters-collapsible .filters-header__header {
+    margin:0;
+    width:100%
+}
+
+#content .filters-header .current-filters-collapsible .filters-header__header .facetview_arrow_right {
+    margin-top: 7px;
 }
 
 input.facetview_freetext.span9 {
