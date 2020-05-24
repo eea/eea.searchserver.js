@@ -355,6 +355,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 5px;
     overflow: hidden;
 }
+
+.filters-header .current-filters-collapsible .filters-header__header{
+    float:left;
+    border:none;
+    background:none;
+    padding:0;
+}
+
+.current-filters-collapsible{
+    float:left;
+    cursor:pointer;
+    height:52px;
+}
+
+.filters-header .eea-icon-eraser{
+    margin-top:4px
+}
+
+.facetview-filter-values {
+    display: none;
+}
 .facetview_selection,
 .clear-all {
     margin-bottom: 4px;
