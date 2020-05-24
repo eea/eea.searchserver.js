@@ -204,13 +204,44 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* pagination */
-.listingBar {
-    background-color: #f3f3f3;
+#facetview_rightcol .facetview_metadata .listingBar {
     text-align: center;
-    text-transform: lowercase;
     vertical-align: top;
-    font-size: 11px !important;
+    font-size: 12px !important;
     clear: both;
+    float:right;
+    margin-top:5px;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li{
+    padding: 1px;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li a{
+    font-weight:bold;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li.prev,
+#facetview_rightcol .facetview_metadata .listingBar li.next{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li.prev,
+#facetview_rightcol .facetview_metadata .listingBar li.next{
+    background-color: #1A679B;
+    border-radius: 15px;
+    border: 1px solid #ccc !important;
+    line-height: 18px;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li.prev a,
+#facetview_rightcol .facetview_metadata .listingBar li.next a{
+    color:white;
+}
+
+#facetview_rightcol .facetview_metadata .listingBar li.active a{
+    color:#1A679B;
 }
 
 .pagination {
@@ -879,4 +910,8 @@ a.original_term:active {
     clear: both;
     border: 1px solid #ccc !important;
     line-height:18px;
+}
+
+.top-pagination {
+    display: none;
 }
