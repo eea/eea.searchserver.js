@@ -998,6 +998,7 @@ content: "\f054";
 
 #content .facetview_tree {
     border-color:white !important;
+    margin-top:0;
 }
 
 #content #facetview_trees .jstree-node .jstree-anchor {
@@ -1016,3 +1017,53 @@ content: "\f054";
     font-weight:bold;
 }
 
+#content .filters-header-title {
+    color:#1A679B;
+    font-size:2em;
+    padding-left:8px;
+    margin-bottom:10px;
+}
+
+#content .facetview_filter_typeahead .eea-icon-search {
+    color:#1A679B;
+}
+
+#content .facetview_filter_typeahead {
+    padding-left:6px;
+}
+
+
+#content div.facetview_filter_typeahead input:focus,
+#content div.facetview_filter_typeahead input:hover {
+    background-color: #f4f6f8;
+    border-radius:15px;
+}
+
+#content .facet_order.facet_count_order {
+    margin-left:8px;
+}
+
+#content .facet_order.facet_count_order,
+#content .facet_order.facet_value_order{
+    color:gray;
+}
+
+
+#content .facet_value_operator {
+    color:gray;
+    background-color:white;
+    border:none;
+}
+
+#content .facet_value_operator:hover {
+    background-color: #f4f6f8;
+    border-radius:15px;
+}
+#content .facetview_filter_options {
+    border-top:1px solid #ECECEC;
+    border-bottom:1px solid #ECECEC;
+}
+
+#content .facet_order .eea-icon {
+    color:gray;
+}
