@@ -923,7 +923,7 @@ a.original_term:active {
 
 .eea_custom_btn {
     margin-bottom: 4px;
-    background-color: #1A679B;
+    background-color: #004B87;
     border-radius: 15px;
     clear: both;
     border: 1px solid #ccc !important;
@@ -982,9 +982,9 @@ content: "\f054";
     font-weight:500;
 }
 
-#content .eea-accordion-title:hover,
-#content .eea-accordion-panel > h2:hover,
-#content .eea-accordion-panel > h2.facetview_open:hover {
+#content #facetview_trees .eea-accordion-title:hover,
+#content #facetview_trees .eea-accordion-panel > h2:hover,
+#content #facetview_trees .eea-accordion-panel > h2.facetview_open:hover {
     background-color: #f4f6f8 !important;
 }
 
@@ -1067,3 +1067,116 @@ content: "\f054";
 #content .facet_order .eea-icon {
     color:gray;
 }
+
+#content .facetedview_search .eea-icon {
+    color:#1A679B;
+}
+
+#content .current-filters .eea-icon-right {
+    float:left;
+    width:28px;
+}
+
+#content .current-filters .eea-reset-filters.clear-all {
+    background-color:transparent;
+    border:none !important;
+    color:white !important;
+}
+
+#content .current-filters {
+    background-color:white;
+    padding:0;
+}
+
+#content .current-filters .filters-header{
+    padding:0;
+    margin:0;
+}
+
+#content .current-filters .filters-header h2{
+    padding-left:10px;
+    background-color:#004B87;
+    color:white;
+    border-radius:15px;
+    padding-top:3px;
+}
+
+#content .facetview-filter-values{
+    padding-left: 15px;
+}
+
+#content .facetview_group_title{
+    color:gray;
+    font-style: normal;
+    font-weight: normal;
+    float:left;
+}
+
+#content .facetview_group_title span{
+    font-style: normal;
+}
+
+#content .facetview_group_title span.title,
+#content .facetview_group_title span.colon{
+    float:left;
+}
+
+#content .status_facetview_selection,
+#content .year_facetview_selection,
+#content .facetview_selection {
+    clear:none;
+    background-color:#EBF3F6;
+    margin-left:5px;
+    border:none !important;
+    padding-top:3px;
+    padding-bottom:3px;
+    margin-top:4px;
+}
+
+#content .status_facetview_selection span,
+#content .year_facetview_selection span{
+    float:left;
+    color:#1A679B;
+    font-weight:bold;
+    margin-right:15px;
+}
+
+#content .status_facetview_selection a,
+#content .year_facetview_selection a{
+    float:left;
+}
+
+#content .status_facetview_selection a i,
+#content .year_facetview_selection a i{
+    margin-left:0;
+    background-color:white;
+    border-radius:15px;
+}
+
+#content .status_facetview_selection a i{
+    background-color:#f4f6f8;
+    color:#ccc;
+}
+
+#content .year_facetview_selection a i{
+    color:#1A679B;
+}
+
+
+#facetview_group_status,
+#facetview_group_year{
+    min-width:0;
+}
+
+#content .status_facetview_selection:hover,
+#content .year_facetview_selection:hover,
+#content .facetview_selection:hover{
+    background-color:#D1DBE4;
+}
+
+#content .year_facetview_selection:hover i,
+#content .facetview_selection:hover i{
+    color:white;
+    background-color:#1A679B;
+}
+
