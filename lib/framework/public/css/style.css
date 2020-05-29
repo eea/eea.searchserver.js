@@ -964,3 +964,55 @@ a.original_term:active {
 .eea-accordion-title > .eea-icon-right:before {
 content: "\f054";
 }
+
+#facetview_trees {
+    border:none;
+}
+
+#content .eea-accordion-panels .eea-accordion-panel > h2 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#content .eea-accordion-panels .eea-accordion-panel > h2.facetview_open {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white !important;
+    color: #00446A;
+    font-weight:500;
+}
+
+#content .eea-accordion-title:hover,
+#content .eea-accordion-panel > h2:hover,
+#content .eea-accordion-panel > h2.facetview_open:hover {
+    background-color: #f4f6f8 !important;
+}
+
+.jstree-node:nth-child(odd) {
+    background-color: white;
+}
+
+.jstree-node:nth-child(even) {
+    background-color: white;
+}
+
+#content .facetview_tree {
+    border-color:white !important;
+}
+
+#content #facetview_trees .jstree-node .jstree-anchor {
+    color:gray;
+}
+
+#content #facetview_trees .jstree-node.selected .jstree-anchor,
+#content #facetview_trees .jstree-node.selected .jstree-anchor .facet_label_count {
+    color:#1A679B;
+    font-weight:bold;
+}
+
+#facetview_trees .jstree-node:hover,
+#content #facetview_trees .jstree-anchor.jstree-hovered {
+    background-color:#f4f6f8;
+    font-weight:bold;
+}
+
