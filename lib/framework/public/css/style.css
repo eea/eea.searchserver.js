@@ -289,7 +289,7 @@ h1, h2, h3, h4, h5, h6 {
     content: "\f078";
 }
 .eea-accordion-panel .facetview_open:hover .eea-icon:before {
-    content: "\f053";
+    content: "\f054";
 }
 
 #content .eea-accordion-panel .facetview_open .eea-icon-eraser:before {
@@ -958,4 +958,9 @@ a.original_term:active {
 #content #facetview_rightcol .facetview_metadata .listingBar {
     float:right;
     margin-top:0;
+}
+
+.eea-accordion-panel > h2 .eea-icon-right:before,
+.eea-accordion-title > .eea-icon-right:before {
+content: "\f054";
 }

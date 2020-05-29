@@ -201,11 +201,11 @@ li.ui-state-default.ui-corner-top {
  }
 
 #facetview_trees .jstree-checkbox:before {
-    content: "\f096";
+    content: "\f10c";
 }
 
 #facetview_trees .jstree-clicked .jstree-checkbox:before {
-    content: "\f14a";
+    content: "\f05d";
     color: #1A679B;
 }
 #facetview_trees .jstree-node .jstree-anchor {
