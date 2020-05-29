@@ -213,27 +213,27 @@ h1, h2, h3, h4, h5, h6 {
     margin-top:5px;
 }
 
-#facetview_rightcol .facetview_metadata .listingBar li{
+/*#facetview_rightcol .facetview_metadata .listingBar li{
     padding: 1px;
-}
+}*/
 
 #facetview_rightcol .facetview_metadata .listingBar li a{
-    font-weight:bold;
+    font-weight:normal;
 }
 
-#facetview_rightcol .facetview_metadata .listingBar li.prev,
+/*#facetview_rightcol .facetview_metadata .listingBar li.prev,
 #facetview_rightcol .facetview_metadata .listingBar li.next{
     padding-left: 10px;
     padding-right: 10px;
-}
+}*/
 
-#facetview_rightcol .facetview_metadata .listingBar li.prev,
+/*#facetview_rightcol .facetview_metadata .listingBar li.prev,
 #facetview_rightcol .facetview_metadata .listingBar li.next{
     background-color: #1A679B;
     border-radius: 15px;
     border: 1px solid #ccc !important;
     line-height: 18px;
-}
+}*/
 
 #facetview_rightcol .facetview_metadata .listingBar li.prev a,
 #facetview_rightcol .facetview_metadata .listingBar li.next a{
@@ -921,15 +921,41 @@ a.original_term:active {
     border: none;
 }
 
-.eea_download_btn {
+.eea_custom_btn {
     margin-bottom: 4px;
     background-color: #1A679B;
     border-radius: 15px;
     clear: both;
     border: 1px solid #ccc !important;
     line-height:18px;
+    padding: 3px 7px 3px 7px;
+    display:block;
+    font-weight:normal;
 }
 
 .top-pagination {
     display: none;
+}
+
+#content .facetview_download{
+    margin-left:0;
+    padding-left:0;
+    float:left;
+}
+
+#content .facetview_download a{
+    color: white;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+}
+
+#content .facetview_metadata {
+    float:right;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+#content #facetview_rightcol .facetview_metadata .listingBar {
+    float:right;
+    margin-top:0;
 }
