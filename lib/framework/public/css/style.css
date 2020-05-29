@@ -1134,7 +1134,8 @@ content: "\f054";
 }
 
 #content .status_facetview_selection span,
-#content .year_facetview_selection span{
+#content .year_facetview_selection span,
+#content .facetview_selection span{
     float:left;
     color:#1A679B;
     font-weight:bold;
@@ -1142,12 +1143,14 @@ content: "\f054";
 }
 
 #content .status_facetview_selection a,
-#content .year_facetview_selection a{
+#content .year_facetview_selection a,
+#content .facetview_selection a{
     float:left;
 }
 
 #content .status_facetview_selection a i,
-#content .year_facetview_selection a i{
+#content .year_facetview_selection a i,
+#content .facetview_selection a i{
     margin-left:0;
     background-color:white;
     border-radius:15px;
@@ -1158,13 +1161,15 @@ content: "\f054";
     color:#ccc;
 }
 
-#content .year_facetview_selection a i{
+#content .year_facetview_selection a i,
+#content .facetview_selection a i{
     color:#1A679B;
 }
 
 
 #facetview_group_status,
-#facetview_group_year{
+#facetview_group_year,
+#content .facetview_selected{
     min-width:0;
 }
 
