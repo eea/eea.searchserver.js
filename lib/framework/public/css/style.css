@@ -1185,3 +1185,15 @@ content: "\f054";
     background-color:#1A679B;
 }
 
+#facetview_results_wrapper {
+    margin-bottom: 1em;
+}
+
+.facetview_filter .jstree-checkbox {
+    font-size:14px;
+    font-weight:100;
+}
+
+#content .facetview_download a.eea-icon span{
+    font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+}
