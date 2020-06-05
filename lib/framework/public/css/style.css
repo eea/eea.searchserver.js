@@ -271,7 +271,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f5f9fc;
     padding: 1em 1em 0em 1em;
     overflow: hidden;
-    min-height: 100px;
+    min-height: 0px;
 }
 
 #content .eea-accordion-panels .eea-accordion-panel > h2 {
@@ -1196,4 +1196,30 @@ content: "\f054";
 
 #content .facetview_download a.eea-icon span{
     font-family: 'Open Sans', Verdana, Helvetica, Arial, sans-serif;
+}
+
+.facetedview_search input{
+    border-radius:15px;
+}
+
+div.span9{
+    margin-top:20px;
+}
+
+.current-filters-collapsible {
+    margin-top:12px;
+}
+
+#facetview_rightcol .current-filters {
+    border-radius:15px;
+    margin-top:10px;
+    padding-top:0;
+}
+
+@font-face{font-family:'FontAwesome';src:url("/fonts-search/fontawesome-webfont.eot?v=4.7.0"),
+        url("/fonts-search/fontawesome-webfont.eot?v=4.7.0") format("embedded-opentype"),
+        url("/fonts-search/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+        url("/fonts-search/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+        url("/fonts-search/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+        url("/fonts-search/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");font-weight:normal;font-style:normal
 }
