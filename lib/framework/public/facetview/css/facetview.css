@@ -216,6 +216,13 @@ li.ui-state-default.ui-corner-top {
 #facetview_trees .jstree-anchor .facet_label_count {
     color: #666;
 }
+#facetview_freetext_clear {
+    position: absolute;
+    top: 28%;
+    right: 5px;
+    cursor: pointer;
+    opacity: 50%;
+}
 
 .jstree-node:nth-child(odd) {
     background-color: #f6fafd;
