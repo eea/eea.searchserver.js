@@ -22,6 +22,8 @@ html
         script
             != settings_suggestions_enabled
         script
+            != settings_autocorrect_disable
+        script
             != settings_es_debug_enabled
         script
             != settings_selected_navigation_tab
@@ -88,12 +90,12 @@ html
                     if index_in_progress
                         div(class="portalMessage warningMessage")
                             span
-                                | Indexing in progress, please check 
+                                | Indexing in progress, please check
                                 a(href="/API/v1/status") /API/v1/status
                     if diffs_in_indices
                         div(class="portalMessage warningMessage")
                             span
-                                | There are differences in the columns compared to the production index, please check 
+                                | There are differences in the columns compared to the production index, please check
                                 a(href="/API/v1/status") /API/v1/status
                     block content
                     div(class="visualization-date")
